@@ -1,0 +1,9 @@
+# Never commit large raw data
+*.parquet
+*.fits
+*.zip
+*.img
+
+*.pyc
+__pycache__/
+.ipynb_checkpoints/
