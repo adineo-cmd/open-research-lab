@@ -1,3 +1,4 @@
+# NOTE (2026-11-11, improvement sweep): the conf column of this compact render carries STALE counts (A 39 / B 310 / C 16 / blank 256). Authoritative vetting counts for the 621 POSSIBLE-NEW survivors are A 39 / B 555 / C 27 (results/vetting_v2.md funnel summary; see also results/blink_vetting.md "v2 compact-CSV discrepancy"). The 39-id confidence-A set here is verified set-identical to results/blink_vetting.csv (39 PROMOTED), so downstream target lists are unaffected. Regenerate the full-fidelity file via scripts/vet2.py finalize + scripts/apply_lit_checks.py.
 source_id,ra2016,dec2016,pm,dist_pc,H,conf,ev
 778994474926961152,167.41774,43.81838,248.7,248.6,16.98,A,M2|C|N|ok|U
 1296928326363004416,224.85124,40.84244,246.4,205.3,16.93,A,M2|C|N|ok|U
