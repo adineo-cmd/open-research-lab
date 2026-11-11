@@ -1,0 +1,121 @@
+{
+ "claim": "Joint two-sided aggregation lower bounds past the 11x11 frontier (F-24/F-27 follow-up): LB_3(12,13)=36, LB_3(13,12)=36, LB_3(13,13)=52 (all proven CP-SAT optima, hence valid lower bounds on T_3); LB_3(12,12)=18 revalidated; on the (k,7) row LB_3(12,7)=0 and LB_3(13,7)=2. Discriminator runs at FGGP OBS_3 boundary sizes all consistent with the true FGGP statement (OBS_3 = minimal NON-3-colorable grids, Def 1.4 + Thm 6.1/6.5 of arXiv:1005.3750, full text verified 2026-11-12): a session brief had G_13,7 as rect-free, which the model refutes \u2014 OPTIMAL lb=2 at (13,7) is impossible if a rectangle-free coloring existed, since every real coloring is a feasible point of the relaxation.",
+ "tool": "tools/joint_relax.py (joint two-sided aggregation relaxation, F-27 build, used unmodified)",
+ "runs": [
+  {
+   "m": 12,
+   "n": 7,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 5.43,
+   "workers": 2,
+   "role": "self-check: FGGP Thm 6.5/6.1 says G_12,7 IS 3-colorable -> T_3(12,7)=0 -> any valid relaxation optimum must be 0 (matches)"
+  },
+  {
+   "m": 13,
+   "n": 7,
+   "status": "OPTIMAL",
+   "lb": 2,
+   "objective": 2,
+   "wall_s": 14.86,
+   "workers": 2,
+   "role": "new quantitative bound: T_3(13,7) >= 2 (FGGP Thm 6.1: G_13,7 NOT 3-colorable; first COUNT beyond non-colorability)"
+  },
+  {
+   "m": 12,
+   "n": 12,
+   "status": "OPTIMAL",
+   "lb": 18,
+   "objective": 18,
+   "wall_s": 10.66,
+   "workers": 2,
+   "role": "validation: matches F-24 one-sided LB_3(12,12)=18"
+  },
+  {
+   "m": 12,
+   "n": 13,
+   "status": "OPTIMAL",
+   "lb": 36,
+   "objective": 36,
+   "wall_s": 21.16,
+   "workers": 2,
+   "role": "new: LB_3(12,13) = 36"
+  },
+  {
+   "m": 13,
+   "n": 12,
+   "status": "OPTIMAL",
+   "lb": 36,
+   "objective": 36,
+   "wall_s": 17.93,
+   "workers": 2,
+   "role": "new: LB_3(13,12) = 36 (equals transposed orientation; joint model kills the F-24 orientation asymmetry)"
+  },
+  {
+   "m": 13,
+   "n": 13,
+   "status": "OPTIMAL",
+   "lb": 52,
+   "objective": 52,
+   "wall_s": 24.59,
+   "workers": 2,
+   "role": "new: LB_3(13,13) = 52"
+  },
+  {
+   "m": 10,
+   "n": 10,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 9.42,
+   "workers": 2,
+   "role": "discriminator: G_10,10 3-colorable (FGGP Thm 6.2, F-24 certified OPTIMAL 0) -> relaxation optimum 0 (matches)"
+  },
+  {
+   "m": 11,
+   "n": 10,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 4.01,
+   "workers": 2,
+   "role": "honest negative: FGGP Thm 6.4 proves G_11,10 NOT 3-colorable, but the relaxation is blind here (LB 0) \u2014 same blindness phenomenon as below-threshold sizes"
+  },
+  {
+   "m": 16,
+   "n": 5,
+   "status": "OPTIMAL",
+   "lb": 2,
+   "objective": 2,
+   "wall_s": 3.17,
+   "workers": 2,
+   "role": "discriminator: G_16,5 NOT 3-colorable (FGGP Thm 6.1) -> positive LB consistent (T_3(16,5) >= 2)"
+  },
+  {
+   "m": 19,
+   "n": 4,
+   "status": "OPTIMAL",
+   "lb": 1,
+   "objective": 1,
+   "wall_s": 6.31,
+   "workers": 2,
+   "role": "discriminator: G_19,4 NOT 3-colorable (FGGP Thm 6.1) -> positive LB consistent (T_3(19,4) >= 1)"
+  }
+ ],
+ "solver": {
+  "engine": "ortools CP-SAT",
+  "version": "9.15.6755",
+  "status": "OPTIMAL (all runs)",
+  "workers": 2,
+  "seed": 20261109,
+  "nice": 10,
+  "time_limit_s": {
+   "frontier": 60,
+   "discriminators": 90
+  }
+ },
+ "c": 3,
+ "date": "2026-11-12",
+ "note": "All identities in the joint model are exact on real colorings, so every proven optimum is a valid LB. The 13x7 result contradicts the session brief's reading of FGGP and matches the paper itself: OBS_3 is the obstruction (non-colorable) set, so G_12,7 is rect-free (LB 0) and G_13,7 is not (LB 2). Orientation symmetry of the joint model confirmed at 12x13/13x12 (both 36)."
+}

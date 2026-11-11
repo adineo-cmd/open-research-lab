@@ -1,0 +1,31 @@
+{
+ "claim": "T_3(12,12) <= 23 (upper bound: simulated-annealing witness coloring with 23 monochromatic rectangles; NOT proven optimal)",
+ "tool": "tools/sa_ub.py (simulated annealing, exact delta evaluation, random start, seed 1, 45 s, kick=rows)",
+ "independent_recount": {
+  "sa_embedded_column_pair": 23,
+  "column_pair_counter": {
+   "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+   "rectangles": 23,
+   "match": true
+  }
+ },
+ "c": 3,
+ "k": 12,
+ "n": 12,
+ "date": "2026-11-12",
+ "witness_grid": [
+  [2, 1, 2, 2, 0, 1, 1, 0, 0, 1, 0, 2],
+  [0, 2, 0, 2, 0, 2, 2, 0, 1, 1, 1, 2],
+  [1, 2, 1, 2, 0, 0, 0, 1, 2, 1, 2, 0],
+  [0, 0, 2, 1, 1, 2, 0, 2, 0, 1, 2, 1],
+  [2, 2, 0, 1, 2, 1, 1, 1, 0, 0, 2, 0],
+  [2, 0, 1, 0, 1, 2, 1, 0, 2, 2, 1, 0],
+  [0, 1, 1, 1, 2, 2, 2, 1, 1, 0, 0, 0],
+  [0, 1, 2, 0, 1, 0, 2, 1, 0, 2, 2, 1],
+  [2, 0, 1, 0, 0, 1, 2, 2, 2, 0, 1, 1],
+  [1, 1, 2, 1, 2, 0, 0, 0, 2, 0, 1, 2],
+  [1, 2, 0, 0, 1, 1, 0, 2, 1, 2, 0, 2],
+  [1, 0, 0, 2, 2, 0, 1, 2, 1, 2, 0, 1]
+ ],
+ "note": "First UB witness past the 11x11 frontier for c=3. Composed bracket: 18 <= T_3(12,12) <= 23 (LB = proven joint-relaxation optimum, see c3_lbjoint_frontier.json). SA round 2 (seed 13, 60 s) did not improve; honest record in results/c3-extension.md."
+}

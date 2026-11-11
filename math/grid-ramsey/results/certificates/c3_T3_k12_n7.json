@@ -1,0 +1,31 @@
+{
+ "claim": "T_3(12,7) = 0 EXACT: the 12x7 grid admits a rectangle-free 3-coloring (witness below, machine-checked), and 0 is trivially a lower bound.",
+ "tool": "witness: tools/sa_ub.py (SA, seed 12, 0.4 s, found rect-free almost immediately); consistency: tools/joint_relax.py OPTIMAL lb=0 (5.4 s)",
+ "independent_recount": {
+  "sa_embedded_column_pair": 0,
+  "column_pair_counter": {
+   "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+   "rectangles": 0,
+   "match": true
+  }
+ },
+ "c": 3,
+ "k": 12,
+ "n": 7,
+ "date": "2026-11-12",
+ "witness_grid": [
+  [1, 2, 2, 0, 2, 0, 1],
+  [1, 0, 0, 2, 1, 1, 2],
+  [2, 0, 1, 0, 2, 1, 0],
+  [2, 2, 1, 2, 1, 0, 0],
+  [2, 0, 2, 1, 0, 1, 1],
+  [1, 0, 1, 1, 2, 2, 2],
+  [0, 1, 2, 0, 0, 1, 2],
+  [1, 1, 2, 2, 0, 2, 0],
+  [2, 1, 0, 1, 0, 0, 2],
+  [0, 0, 1, 2, 2, 0, 1],
+  [2, 1, 0, 0, 1, 2, 1],
+  [0, 2, 0, 1, 1, 2, 0]
+ ],
+ "note": "Corroborates FGGP 2010 (arXiv:1005.3750) Theorem 6.5: G_12,7 is 3-colorable (12x7 contains no member of OBS_3). This session verified the FGGP full text: OBS_3 (Def 1.4) is the set of MINIMAL NON-3-colorable grids \u2014 a session brief had inverted this; the solver results independently reproduce the correct statement. Honest note: the exact count model tools/min_mono_rect3.py at 12x7 timed out at FEASIBLE obj=1 / bound 0 in 120 s (2 workers) \u2014 it failed to FIND the rect-free coloring in budget (symmetry breaking slows witness search); SA found one in 0.4 s."
+}

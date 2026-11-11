@@ -1,0 +1,31 @@
+{
+ "claim": "T_3(12,13) <= 40 and T_3(13,12) <= 40 (upper bound: simulated-annealing witness; NOT proven optimal)",
+ "tool": "tools/sa_ub.py (simulated annealing, exact delta evaluation, random start, seed 2, 45 s, kick=cells)",
+ "independent_recount": {
+  "sa_embedded_column_pair": 40,
+  "column_pair_counter": {
+   "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+   "rectangles": 40,
+   "match": true
+  }
+ },
+ "c": 3,
+ "k": 12,
+ "n": 13,
+ "date": "2026-11-12",
+ "witness_grid": [
+  [0, 1, 1, 0, 0, 1, 2, 2, 2, 2, 2, 0, 1],
+  [0, 1, 2, 2, 0, 2, 1, 0, 0, 2, 1, 1, 0],
+  [1, 1, 2, 0, 1, 0, 2, 0, 1, 0, 2, 2, 0],
+  [2, 1, 2, 1, 0, 0, 0, 1, 2, 1, 0, 2, 2],
+  [0, 2, 0, 1, 1, 1, 1, 1, 2, 2, 0, 2, 0],
+  [2, 2, 0, 0, 2, 1, 0, 0, 1, 1, 2, 1, 2],
+  [1, 2, 2, 1, 2, 1, 0, 2, 0, 0, 1, 0, 0],
+  [0, 0, 1, 2, 1, 0, 0, 2, 1, 0, 1, 2, 2],
+  [2, 2, 0, 2, 1, 0, 2, 1, 0, 1, 1, 0, 1],
+  [2, 0, 0, 1, 0, 2, 1, 2, 1, 0, 2, 1, 1],
+  [1, 0, 1, 0, 2, 2, 2, 1, 0, 2, 0, 1, 2],
+  [1, 0, 1, 2, 2, 2, 1, 0, 2, 1, 0, 0, 1]
+ ],
+ "note": "First UB witness past the 11x11 frontier for c=3. The transpose of this grid is a certified 13x12 witness with the same count (re-counted by tools/count_rects.py = 40; T_3 is transpose-invariant). Composed brackets: 36 <= T_3(12,13) <= 40 and 36 <= T_3(13,12) <= 40."
+}

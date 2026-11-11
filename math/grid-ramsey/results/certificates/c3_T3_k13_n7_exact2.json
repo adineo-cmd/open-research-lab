@@ -1,0 +1,33 @@
+{
+ "claim": "T_3(13,7) = 2 EXACT (NEW VALUE): every 3-coloring of the 13x7 grid has at least 2 monochromatic rectangles (proven CP-SAT optimum of the joint two-sided aggregation relaxation), and a witness coloring with exactly 2 is given below. First computed minimum-count value on the (k,7) row and the first non-zero exact T_3 value for any non-square instance.",
+ "tool": "lower bound: tools/joint_relax.py OPTIMAL lb=2 (14.9 s, 2 workers, seed 20261109); upper bound: tools/sa_ub.py (SA, seed 11, 45 s, kick=rows)",
+ "independent_recount": {
+  "sa_embedded_column_pair": 2,
+  "column_pair_counter": {
+   "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+   "rectangles": 2,
+   "match": true
+  }
+ },
+ "c": 3,
+ "k": 13,
+ "n": 7,
+ "date": "2026-11-12",
+ "witness_grid": [
+  [1, 2, 2, 1, 0, 0, 2],
+  [0, 2, 1, 2, 0, 1, 1],
+  [2, 1, 2, 1, 0, 2, 0],
+  [0, 1, 0, 2, 1, 2, 1],
+  [1, 0, 0, 2, 2, 0, 1],
+  [0, 0, 2, 1, 2, 1, 1],
+  [2, 2, 1, 1, 2, 0, 0],
+  [1, 0, 2, 2, 1, 1, 0],
+  [0, 2, 1, 1, 1, 2, 0],
+  [1, 1, 0, 0, 2, 2, 0],
+  [0, 1, 1, 0, 2, 0, 2],
+  [1, 0, 1, 0, 0, 2, 2],
+  [2, 1, 0, 2, 0, 1, 2]
+ ],
+ "lower_bound_certificate": "results/certificates/c3_lbjoint_frontier.json (run m=13, n=7: status OPTIMAL, lb=2)",
+ "note": "Composes to an exact value: LB 2 (proven relaxation optimum; valid because every real coloring is feasible in the relaxation) = UB 2 (verified witness). Prior art: FGGP 2010 Theorem 6.1 proves G_13,7 NOT 3-colorable (existence-level: T_3 >= 1); the F-24 audit established no c>=3 minimum counts exist in the literature \u2014 so the value 2 itself is new. Honest note: the exact count model tools/min_mono_rect3.py at 13x7 timed out at FEASIBLE obj=5 / bound 0 in 120 s (2 workers) \u2014 it did not close either side in budget; the LB/UB composition above is the certificate."
+}
