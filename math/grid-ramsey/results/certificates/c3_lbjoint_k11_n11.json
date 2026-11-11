@@ -1,0 +1,45 @@
+{
+ "claim": "LB_joint(11,11) = 2: the JOINT two-sided aggregation relaxation (row-pair AND column-pair views with exact linking identities) has proven optimum 2 at 11x11 with 3 colors — no improvement over the one-sided F-24 bound (honest negative). Validation: the same model reproduces the F-24 one-sided optima LB(11,12)=15 and LB(12,12)=18.",
+ "tool": "tools/joint_relax.py (joint two-sided aggregation: row-pair agreements a_ij^c tied to column counts, column-pair agreements b_pq^c tied to row counts, color-total identity sum_k z_kc = sum_r w_rc, pigeonhole links a >= w_i + w_j - n / a <= min(w_i, w_j) and transposes; T equal to BOTH views)",
+ "runs": [
+  {
+   "m": 11,
+   "n": 11,
+   "colors": 3,
+   "status": "OPTIMAL",
+   "lb": 2,
+   "objective": 2,
+   "wall_s": 58.63,
+   "workers": 2
+  },
+  {
+   "m": 11,
+   "n": 12,
+   "colors": 3,
+   "status": "OPTIMAL",
+   "lb": 15,
+   "objective": 15,
+   "wall_s": 26.28,
+   "workers": 2
+  },
+  {
+   "m": 12,
+   "n": 12,
+   "colors": 3,
+   "status": "OPTIMAL",
+   "lb": 18,
+   "objective": 18,
+   "wall_s": 28.17,
+   "workers": 2
+  }
+ ],
+ "solver": {
+  "engine": "ortools CP-SAT",
+  "status": "OPTIMAL",
+  "workers": 2,
+  "seed": 20261109
+ },
+ "c": 3,
+ "date": "2026-11-11",
+ "note": "All identities are exact on real colorings, so the optimum is a valid LB. The joint model fixes F-24's orientation asymmetry at the model level (11x12 and 12x11 both give the 15-class bound) but at the square threshold instance the optimum is still 2: the missing ingredient for LB >= 3 is realizability, not one-sidedness."
+}

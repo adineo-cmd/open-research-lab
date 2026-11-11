@@ -1,0 +1,30 @@
+{
+ "claim": "T_3(11,11) <= 10 (upper bound: simulated-annealing witness coloring with 10 monochromatic rectangles; improves the F-24 UB of 18; NOT proven optimal)",
+ "tool": "tools/sa_ub.py (simulated annealing, exact delta evaluation, seed 1, 20 s, start = F-24 18-rectangle witness)",
+ "independent_recount": {
+  "corner_counter": 10,
+  "column_pair_counter": {
+   "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+   "rectangles": 10,
+   "match": true
+  }
+ },
+ "c": 3,
+ "k": 11,
+ "n": 11,
+ "date": "2026-11-11",
+ "witness_grid": [
+  [2, 0, 2, 1, 1, 2, 0, 2, 0, 1, 1],
+  [0, 1, 2, 0, 2, 1, 2, 0, 0, 1, 2],
+  [2, 1, 1, 2, 1, 2, 2, 0, 2, 0, 0],
+  [0, 0, 1, 1, 0, 2, 1, 2, 2, 0, 2],
+  [0, 1, 0, 1, 2, 2, 0, 1, 1, 2, 0],
+  [1, 1, 0, 2, 2, 0, 1, 2, 0, 0, 1],
+  [2, 2, 1, 0, 2, 1, 0, 1, 2, 0, 1],
+  [1, 0, 2, 2, 1, 0, 1, 1, 2, 2, 0],
+  [1, 2, 1, 2, 0, 0, 0, 0, 1, 1, 2],
+  [2, 0, 0, 0, 1, 1, 1, 0, 1, 2, 2],
+  [1, 2, 0, 1, 0, 1, 2, 2, 0, 2, 0]
+ ],
+ "note": "Found in 20 s of SA from the F-24 18-rectangle witness (1.5M flip steps). Count verified by two independent code paths: embedded corner-based counter and tools/count_rects.py column-pair decomposition, both = 10. New bracket: 2 <= T_3(11,11) <= 10."
+}
