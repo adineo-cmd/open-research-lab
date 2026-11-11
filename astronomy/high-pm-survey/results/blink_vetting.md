@@ -5,6 +5,27 @@ Status: complete (2026-11-11 session). Script: `scripts/blink_vet.py`
 evidence CSV: `results/blink_vetting.csv`; append-mode query log:
 `results/blink_querylog.csv`.
 
+## Related work
+
+Closest prior art on method: Karpov, Malkov & Avdeeva 2025, "New
+ultracool dwarf candidates from multi-epoch WISE data", A&A 695, A195
+(doi:10.1051/0004-6361/202452011, arXiv:2408.15067) — motion detection
+in the unTimely single-epoch WISE coadds (>~0.3''/yr) with ML artifact
+rejection and cross-survey spectral typing, publishing 21,885
+significant-PM detections, 258 of them previously unpublished and
+dominated by ultracool-dwarf candidates. The relationship is
+complementary, not overlapping: that search vets at catalog level
+inside WISE epochs, while this track starts from an independent
+full-sky Gaia DR3 high-PM harvest and vets **per object, epoch-aware,
+across independent catalogs** — a 2MASS detection at the PM-propagated
+pre-Gaia position (~17-yr baseline), the CatWISE2020 *measured* PM
+vector vs Gaia's, and LS-DR9 two-position imagery blink — with every
+per-object test, separation and verdict published in
+`results/blink_vetting.csv`. Overlap between the Karpov+ 258-object
+list (CDS J/A+A/695/A195) and this track's 39 confidence-A candidates
+is a cross-check to run at follow-up time, not an input to this
+vetting.
+
 ## Why v3 (recap of the F-13 position)
 
 v2's confidence-A class (39 candidates) rested on SIMBAD cones at two

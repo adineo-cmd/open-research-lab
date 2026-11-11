@@ -6,6 +6,22 @@ Status: complete (2026-11-11 session). Script:
 `results/spectroscopy_querylog.csv` (created only on live IRSA runs;
 the packaged run was offline — see Honest failures).
 
+## Related work
+
+Method-level prior art: Karpov, Malkov & Avdeeva 2025, "New ultracool
+dwarf candidates from multi-epoch WISE data", A&A 695, A195
+(doi:10.1051/0004-6361/202452011, arXiv:2408.15067) publishes 258
+previously-unpublished high-PM WISE (unTimely) objects, most consistent
+with ultracool dwarfs, selected by WISE-internal motion plus
+cross-survey color typing. Delta of this package: targets come from a
+full-sky Gaia DR3 harvest vetted per object and epoch-aware across
+2MASS / CatWISE2020 / Gaia DR3 / LS-DR9 (see `results/blink_vetting.md`),
+each with a published three-epoch coherent-motion evidence trail
+(`results/blink_vetting.csv`), here packaged into observation-ready
+coordinates at any epoch, priority order and NIR exposure estimates.
+The Karpov+ candidate list (CDS J/A+A/695/A195) should be
+cross-checked against these 29 targets at follow-up time.
+
 ## Purpose and framing
 
 F-21 (blink_vetting) promoted 29 of the 39 confidence-A candidates to
