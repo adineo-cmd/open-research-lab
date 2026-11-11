@@ -1,0 +1,54 @@
+{
+ "claim": "T_3(4,5) = 0 (minimum #monochromatic rectangles over all 3-colorings of a 4 x 5 grid)",
+ "tool": "tools/min_mono_rect3.py (count model v2, c-ary)",
+ "independent_recount": {
+  "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+  "rectangles": 0,
+  "match": true
+ },
+ "solver": {
+  "engine": "ortools CP-SAT",
+  "version": "9.15.6755",
+  "status": "OPTIMAL",
+  "objective": 0,
+  "best_bound": 0,
+  "wall_s": 0.0,
+  "workers": 3,
+  "seed": 20261109
+ },
+ "c": 3,
+ "k": 4,
+ "n": 5,
+ "date": "2026-11-11",
+ "witness_grid": [
+  [
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  [
+   0,
+   2,
+   1,
+   1,
+   1
+  ],
+  [
+   0,
+   2,
+   2,
+   2,
+   2
+  ]
+ ],
+ "note": "OPTIMAL: objective equals proven lower bound (0 is a trivial LB whenever objective is 0); witness re-counted by two independent counters that agree."
+}

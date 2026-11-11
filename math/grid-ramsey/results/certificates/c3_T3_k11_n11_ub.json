@@ -1,0 +1,37 @@
+{
+ "claim": "T_3(11,11) <= 18 (upper bound: CP-SAT witness coloring with 18 monochromatic rectangles; NOT proven optimal)",
+ "tool": "tools/min_mono_rect3.py (count model v2, c-ary)",
+ "independent_recount": {
+  "tool": "tools/count_rects.py (column-pair decomposition, fresh code path)",
+  "rectangles": 18,
+  "match": true
+ },
+ "solver": {
+  "engine": "ortools CP-SAT",
+  "version": "9.15.6755",
+  "status": "FEASIBLE",
+  "objective": 18,
+  "best_bound": 2,
+  "wall_s": 120.1,
+  "workers": 3,
+  "seed": 20261109
+ },
+ "c": 3,
+ "k": 11,
+ "n": 11,
+ "date": "2026-11-11",
+ "witness_grid": [
+  [0, 1, 2, 1, 2, 1, 0, 2, 0, 2, 0],
+  [0, 0, 2, 0, 1, 1, 2, 0, 2, 1, 2],
+  [0, 2, 0, 2, 0, 1, 1, 2, 2, 2, 1],
+  [1, 0, 0, 1, 1, 2, 2, 0, 0, 2, 1],
+  [1, 1, 0, 0, 2, 2, 0, 1, 2, 1, 0],
+  [1, 2, 1, 0, 2, 0, 2, 2, 1, 1, 0],
+  [2, 0, 1, 1, 0, 0, 0, 1, 2, 2, 1],
+  [2, 0, 2, 2, 1, 1, 1, 1, 1, 0, 0],
+  [2, 1, 0, 2, 2, 0, 2, 0, 1, 0, 1],
+  [2, 1, 1, 0, 0, 2, 1, 2, 0, 0, 2],
+  [2, 2, 2, 1, 0, 2, 1, 0, 1, 1, 0]
+ ],
+ "note": "FEASIBLE only: run hit the 120 s limit with proven lower bound 2 (from tools/relax_lb3.py, passed via --lb). Bracket: 2 <= T_3(11,11) <= 18."
+}

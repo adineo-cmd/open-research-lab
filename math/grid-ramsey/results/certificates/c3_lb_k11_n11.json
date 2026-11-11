@@ -1,0 +1,19 @@
+{
+ "claim": "LB_3(11,11) = 2 (proven optimum of the exact aggregation relaxation; valid lower bound on T_3(11,11))",
+ "tool": "tools/relax_lb3.py (c-ary aggregation relaxation, exact identities)",
+ "solver": {
+  "engine": "ortools CP-SAT",
+  "version": "9.15.6755",
+  "status": "OPTIMAL",
+  "objective": 2,
+  "lb": 2,
+  "wall_s": 1.38,
+  "workers": 3,
+  "seed": 20261109
+ },
+ "c": 3,
+ "k": 11,
+ "n": 11,
+ "date": "2026-11-11",
+ "note": "Relaxation keeps only exact aggregate identities (per-color row-pair agreement counts vs per-color column counts), drops realizability; c=2 mode reproduces the lab's relax_lb.py values 1,6,21,40,74 at (5,5)..(9,9) (tight vs OEIS A399620 at 6,7,8). For rectangular grids take max over both orientations (transpose preserves T_3)."
+}
