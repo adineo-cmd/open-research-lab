@@ -1,0 +1,120 @@
+{
+ "claim": "Frontier LB sweep extension (session 2026-11-15, follow-up to F-24/c3-extension): 11 new joint two-sided aggregation lower bounds, all proven CP-SAT optima hence valid LBs on T_3: LB_3(11,12)=LB_3(12,11)=15, LB_3(11,13)=LB_3(13,11)=30, LB_3(11,14)=LB_3(14,11)=45, LB_3(12,14)=LB_3(14,12)=54, LB_3(13,14)=LB_3(14,13)=74, LB_3(14,14)=91. All orientation-symmetric (the joint model kills the F-24 one-sided asymmetry at every new size). Notable structure: the 11\u00d7n row runs 15/30/45 \u2014 arithmetic +15 per added column for n=12,13,14.",
+ "tool": "tools/joint_relax.py (joint two-sided aggregation relaxation, F-27 build, used unmodified)",
+ "environment": "ortools CP-SAT 9.9.3963 (pip wheel), 4 workers, time-limit 180 s per size, seed default",
+ "prior_art": "Rule 0 check 2026-11-15: no c>=3 minimum-count values in the literature (web search; FGGP arXiv:1005.3750 is colorability-only; Cooper et al. counting is 2-color; Apon thesis bounds existences; F-24 audit results/prior-art-audit.md row for c>=3 stands). The 11 new LBs and the 14\u00d714 first measurement are new.",
+ "date": "2026-11-15",
+ "runs": [
+  {
+   "m": 11,
+   "n": 12,
+   "status": "OPTIMAL",
+   "lb": 15,
+   "objective": 15,
+   "wall_s": 3.44,
+   "workers": 4,
+   "role": "new: one-sided F-24 value 15 confirmed by the joint model (orientation-symmetric) \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 12,
+   "n": 11,
+   "status": "OPTIMAL",
+   "lb": 15,
+   "objective": 15,
+   "wall_s": 2.59,
+   "workers": 4,
+   "role": "new: joint kills the F-24 one-sided asymmetry (one-sided LB(12,11)=0) \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 11,
+   "n": 13,
+   "status": "OPTIMAL",
+   "lb": 30,
+   "objective": 30,
+   "wall_s": 2.09,
+   "workers": 4,
+   "role": "new \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 13,
+   "n": 11,
+   "status": "OPTIMAL",
+   "lb": 30,
+   "objective": 30,
+   "wall_s": 3.83,
+   "workers": 4,
+   "role": "new: equals transposed orientation \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 11,
+   "n": 14,
+   "status": "OPTIMAL",
+   "lb": 45,
+   "objective": 45,
+   "wall_s": 3.8,
+   "workers": 4,
+   "role": "new \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 14,
+   "n": 11,
+   "status": "OPTIMAL",
+   "lb": 45,
+   "objective": 45,
+   "wall_s": 4.25,
+   "workers": 4,
+   "role": "new: equals transposed orientation \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 12,
+   "n": 14,
+   "status": "OPTIMAL",
+   "lb": 54,
+   "objective": 54,
+   "wall_s": 5.3,
+   "workers": 4,
+   "role": "new \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 14,
+   "n": 12,
+   "status": "OPTIMAL",
+   "lb": 54,
+   "objective": 54,
+   "wall_s": 3.95,
+   "workers": 4,
+   "role": "new: equals transposed orientation \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 13,
+   "n": 14,
+   "status": "OPTIMAL",
+   "lb": 74,
+   "objective": 74,
+   "wall_s": 7.21,
+   "workers": 4,
+   "role": "new \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 14,
+   "n": 13,
+   "status": "OPTIMAL",
+   "lb": 74,
+   "objective": 74,
+   "wall_s": 8.61,
+   "workers": 4,
+   "role": "new: equals transposed orientation \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  },
+  {
+   "m": 14,
+   "n": 14,
+   "status": "OPTIMAL",
+   "lb": 91,
+   "objective": 91,
+   "wall_s": 8.4,
+   "workers": 4,
+   "role": "new \u2014 largest grid measured in the lab to date \u2014 every real coloring induces a feasible relaxation point, so the proven optimum is a valid LB on T_3"
+  }
+ ],
+ "note": "Baseline revalidation this session before extending: committed witnesses re-counted exactly (2/0/23/40/40/54 via tools/count_rects.py) and joint 12\u00d712 re-solved OPTIMAL lb=18 (3.07 s, 4 workers)."
+}

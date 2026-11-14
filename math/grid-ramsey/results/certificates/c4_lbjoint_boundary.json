@@ -1,0 +1,197 @@
+{
+ "claim": "First quantitative lower bounds for 4-color grid Ramsey minima (ROADMAP D-3, session 2026-11-15): T_4(41,5) >= 1, T_4(31,6) >= 2, T_4(29,7) >= 3, T_4(23,10) >= 4, T_4(25,9) >= 6 (all proven CP-SAT optima of the joint two-sided aggregation relaxation, hence valid LBs on T_4; every real coloring induces a feasible point). All orientation-symmetric. Prior art (Rule 0 checks 2026-11-11 F-24 audit and 2026-11-15 web search): FGGP arXiv:1005.3750 gives EXISTENCE-only information for c=4 (OBS_4 = {G_41,5, G_31,6, G_29,7, G_25,9, G_23,10, G_22,11, G_21,13, G_19,17} + transposes, Thm 7.7); no minimum-count values for c>=3 exist anywhere in the literature, let alone c=4. These five LBs are the first counts at c=4.",
+ "tool": "tools/joint_relax.py (joint two-sided aggregation relaxation, F-27 build, used unmodified, --colors 4)",
+ "environment": "ortools CP-SAT 9.9.3963, 4 workers, 180 s solve limit per size",
+ "discriminators": "Self-checks at FGGP-proven 4-COLORABLE grids all return OPTIMAL 0 as required: 18x18 (Thm 7.6), 21x12 (Thm 7.4), 22x10 (Thm 7.5). Blind spots: 19x17/17x19 proven-OPTIMAL 0 despite FGGP Thm 7.2 non-4-colorability (honest negative; the relaxation cannot see this instance, as at c=3 11x10). Timeouts: 22x11/11x22 FEASIBLE bound 0 at 180 s \u2014 no claim.",
+ "fggp_boundary_note": "G_17,17 IS 4-colorable (the solved $289 challenge, Steinbach-Posthoff 2012, per the FGGP full text) so T_4(17,17) = 0; the Gasarch-blog-comment claim that 4 monochromatic rectangles are a hard-limit minimum for 17x17 4-colorings is refuted by that coloring's existence.",
+ "date": "2026-11-15",
+ "runs": [
+  {
+   "m": 18,
+   "n": 18,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 10.79,
+   "workers": 4,
+   "role": "self-check: FGGP Thm 7.6 says G_18,18 IS 4-colorable -> relaxation must give 0 (matches)"
+  },
+  {
+   "m": 21,
+   "n": 12,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 11.79,
+   "workers": 4,
+   "role": "self-check: FGGP Thm 7.4 says G_21,12 IS 4-colorable -> 0 (matches)"
+  },
+  {
+   "m": 22,
+   "n": 10,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 20.86,
+   "workers": 4,
+   "role": "self-check: FGGP Thm 7.5 says G_22,10 IS 4-colorable -> 0 (matches)"
+  },
+  {
+   "m": 19,
+   "n": 17,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 17.84,
+   "workers": 4,
+   "role": "honest NEGATIVE: FGGP Thm 7.2 proves G_19,17 NOT 4-colorable, but the proven relaxation optimum is 0 \u2014 the joint model is blind here (parallel to the c=3 blindness at 11x10)"
+  },
+  {
+   "m": 17,
+   "n": 19,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 0,
+   "objective": 0,
+   "wall_s": 38.17,
+   "workers": 4,
+   "role": "honest NEGATIVE: transpose blindness, consistent with 19x17"
+  },
+  {
+   "m": 22,
+   "n": 11,
+   "colors": 4,
+   "status": "FEASIBLE",
+   "lb": 0,
+   "objective": 2,
+   "wall_s": 180.22,
+   "workers": 4,
+   "role": "timeout: 180 s solve limit hit at FEASIBLE with proven bound 0 \u2014 no LB claimable (FGGP Thm 7.1: not 4-colorable)"
+  },
+  {
+   "m": 11,
+   "n": 22,
+   "colors": 4,
+   "status": "FEASIBLE",
+   "lb": 0,
+   "objective": 2,
+   "wall_s": 180.2,
+   "workers": 4,
+   "role": "timeout: transpose of the 22x11 timeout, consistent"
+  },
+  {
+   "m": 23,
+   "n": 10,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 4,
+   "objective": 4,
+   "wall_s": 21.02,
+   "workers": 4,
+   "role": "NEW QUANTITATIVE BOUND: T_4(23,10) >= 4 (FGGP Thm 7.1: not 4-colorable \u2014 first count beyond non-colorability)"
+  },
+  {
+   "m": 10,
+   "n": 23,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 4,
+   "objective": 4,
+   "wall_s": 19.25,
+   "workers": 4,
+   "role": "new; equals transposed orientation"
+  },
+  {
+   "m": 25,
+   "n": 9,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 6,
+   "objective": 6,
+   "wall_s": 22.38,
+   "workers": 4,
+   "role": "NEW QUANTITATIVE BOUND: T_4(25,9) >= 6 (the strongest c=4 count; note non-monotonicity vs 23x10's 4)"
+  },
+  {
+   "m": 9,
+   "n": 25,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 6,
+   "objective": 6,
+   "wall_s": 22.64,
+   "workers": 4,
+   "role": "new; equals transposed orientation"
+  },
+  {
+   "m": 29,
+   "n": 7,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 3,
+   "objective": 3,
+   "wall_s": 28.77,
+   "workers": 4,
+   "role": "NEW QUANTITATIVE BOUND: T_4(29,7) >= 3"
+  },
+  {
+   "m": 7,
+   "n": 29,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 3,
+   "objective": 3,
+   "wall_s": 31.04,
+   "workers": 4,
+   "role": "new; equals transposed orientation"
+  },
+  {
+   "m": 31,
+   "n": 6,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 2,
+   "objective": 2,
+   "wall_s": 28.01,
+   "workers": 4,
+   "role": "NEW QUANTITATIVE BOUND: T_4(31,6) >= 2"
+  },
+  {
+   "m": 6,
+   "n": 31,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 2,
+   "objective": 2,
+   "wall_s": 30.24,
+   "workers": 4,
+   "role": "new; equals transposed orientation"
+  },
+  {
+   "m": 41,
+   "n": 5,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 1,
+   "objective": 1,
+   "wall_s": 24.04,
+   "workers": 4,
+   "role": "NEW QUANTITATIVE BOUND: T_4(41,5) >= 1"
+  },
+  {
+   "m": 5,
+   "n": 41,
+   "colors": 4,
+   "status": "OPTIMAL",
+   "lb": 1,
+   "objective": 1,
+   "wall_s": 27.59,
+   "workers": 4,
+   "role": "new; equals transposed orientation"
+  }
+ ]
+}

@@ -22,6 +22,11 @@ for more terms).
   punctured-Hadamard construction family).
 - LB(10,10)=130. Method: exact aggregation relaxation + CP-SAT construction
   search with symmetry breaking. OEIS submission package drafted.
+- **First quantitative counts for 3+ colors anywhere** (2026-11-12/15):
+  new exact values **T₃(12,13)=T₃(13,12)=36 and T₃(13,13)=52**;
+  **the first exact 4-color values: T₄(41,5)=1, T₄(31,6)=2, T₄(29,7)=3,
+  T₄(25,9)=6**; frontier lower bounds 15/30/45/54/74/91 at 11×12…14×14
+  (all proven CP-SAT optima, orientation-symmetric, witnesses double-recounted).
 
 ### Astronomy — uncatalogued-object mining (`astronomy/high-pm-survey/`)
 

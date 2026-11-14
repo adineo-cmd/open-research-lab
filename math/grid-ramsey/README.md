@@ -58,6 +58,22 @@ solver stats. Headline:
 - Pipeline validated: reproduces known a(5..8) = 2, 6, 21, 40; the
   relaxation bound is exactly tight at n=6,7,8.
 
+## Results — c ≥ 3 extension (2026-11-12/15)
+
+First quantitative grid Ramsey counts anywhere for 3+ colors
+(`results/c3-color-bounds.md`, `results/c3-extension.md`,
+`results/c3-frontier2.md`, `results/c4-first-bounds.md`; FGGP
+arXiv:1005.3750 is existence-only):
+
+- **New exact 3-color values:** T₃(12,7)=0, T₃(13,7)=2,
+  **T₃(12,13)=T₃(13,12)=36, T₃(13,13)=52** (all LB-proven + double-recounted
+  witnesses).
+- **Brackets:** 18 ≤ T₃(12,12) ≤ 22; 2 ≤ T₃(11,11) ≤ 10; frontier LBs
+  15/30/45/54/74/91 at 11×12…14×14.
+- **First exact 4-color values:** **T₄(41,5)=1, T₄(31,6)=2, T₄(29,7)=3,
+  T₄(25,9)=6**; T₄(23,10) ∈ [4,5]; honest negatives: joint relaxation blind
+  at 19×17 (parallel to c=3's 11×10).
+
 ## Negative / partial results
 
 - Naive per-rectangle CP-SAT model (v1, `--model quad`): proves 5×5, 6×6
@@ -73,5 +89,7 @@ solver stats. Headline:
    A399620/A399621 (style: new row + comment with witness grid).
 2. Push to 10×10 (LB(10,10) known from relax_lb; construction may need
    longer runs or local-search warm starts).
-3. 3+ colors: c-coloring analogues (the (c,t)-guaranteed literature) —
-   same pipeline, objective counts rectangles of each color.
+3. 3+ colors (started): UB witnesses at the new c=3 LB sizes
+   (11×12…14×14); T₄(23,10) exactness (needs a 4-witness); break the
+   relaxation blindness (19×17 / 11×10) with a better model — the D-1
+   lever.
