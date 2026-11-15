@@ -123,6 +123,28 @@ Next levers named: a dedicated SAT-solver attack (portfolio, not CP-SAT),
 or an analytic classification of 8-edge non-2-colorable 3-graphs on 13
 vertices (literature-first: the Fano-uniqueness case analysis).
 
+### Final-report additions (2026-11-16, agent conclusion)
+
+- **NEW verified upper bounds: a(15) ≤ 10 and a(16) ≤ 10** — Fano + 3
+  covering triples, witnesses PASS the independent verifier over all
+  32,768 / 65,536 colorings (certificates a385403b_n15/n16).
+- Measured (not assumed): inclusion-dedupe is a dud — minimal-mono-set
+  filtering keeps 4082/4096 (n=13) and 8177/8192 (n=14) constraints.
+- LP relaxation is feasible in every variant: no LP-only proof exists;
+  branch-and-bound must do the work. Bundled SCIP is single-threaded and
+  slower than CP-SAT at the (10,7) benchmark (58 s vs 25 s).
+- Lazy-loop structure insight: escape colorings are overwhelmingly
+  balanced — 177/196 pooled cuts have red-size 6/7 (mono-set 55); the
+  master turns hard at ~184–196 cuts; the 196-cut pool is saved in the
+  lazy certificate for replay-seeding.
+- Next-session plan (from the final report): seed the lazy master with
+  ALL 1716 size-55 colorings + checkpoint per iteration + fano-free
+  master + 12 workers ≥ 4–6 h; separately probe "does any Fano-free
+  non-2-colorable 3-graph with 8 edges exist (no coverage)" — INFEASIBLE
+  there proves BOTH (13,8) and (14,9) by counting alone; re-run halved
+  (13,8) / fano (14,9) at 12 workers ≥ 3600 s. If (13,8) INFEASIBLE
+  lands, a(13)=9 is immediately proved (k=9 witness already certified).
+
 ## Reproduce
 
 ```bash
