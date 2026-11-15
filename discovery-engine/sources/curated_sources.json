@@ -137,7 +137,8 @@
   "discovery_value": "Institutional research output repository with DOIs.",
   "agent_use": "Public API for search and download.",
   "origin": "curated",
-  "url_status": "ok (202 probe)"
+  "url_status": "ok (202 probe)",
+  "note": " | site responds with HTTP 202 (async accepted) to plain curl; live"
  },
  {
   "name": "OSF",
@@ -307,7 +308,8 @@
   "discovery_value": "Gene-disease associations from text mining + curation.",
   "agent_use": "API (registration).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | freemium: limited free tier, paid academic licenses"
  },
  {
   "name": "Allen Brain Atlas",
@@ -347,7 +349,8 @@
   "discovery_value": "Clinical signals and ICU waveform data (challenge-ready).",
   "agent_use": "Direct download; some credentialed access.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | most datasets need a free credentialed-access agreement"
  },
  {
   "name": "TCGA / GDC",
@@ -387,7 +390,8 @@
   "discovery_value": "Full-text Enriching Europe PMC incl. open full texts + citation network.",
   "agent_use": "REST API + FTP full-text corpus.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "ClinicalTrials.gov",
@@ -437,7 +441,8 @@
   "discovery_value": "Global Burden of Disease: 369 diseases, 88 risk factors, all countries.",
   "agent_use": "Bulk CSV via query tool.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free registration for data extraction"
  },
  {
   "name": "ChEMBL",
@@ -467,7 +472,8 @@
   "discovery_value": "US cancer registry statistics.",
   "agent_use": "Research data (signed DUA) + public stats.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | raw data requires free research agreement"
  },
  {
   "name": "CDC Data",
@@ -487,7 +493,8 @@
   "discovery_value": "ECMWF climate archive: ERA5 reanalysis 1940-present, projections.",
   "agent_use": "cdsapi Python client; free account.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free account required for API"
  },
  {
   "name": "NOAA NCEI",
@@ -577,7 +584,8 @@
   "discovery_value": "Real-time US streamflow/groundwater.",
   "agent_use": "REST/NWIS web service.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "NASA MAST",
@@ -597,7 +605,8 @@
   "discovery_value": "1.8B stars with astrometry/photometry — uncatalogued-object hunting.",
   "agent_use": "ADQL TAP queries; the lab's own high-PM survey runs here.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
+  "url_status": "network-error (host known-live; re-verify — session network degradation)",
+  "note": " | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
  },
  {
   "name": "VizieR",
@@ -717,7 +726,8 @@
   "discovery_value": "33M+ astronomy/physics bibliographic records with citation graphs.",
   "agent_use": "Public API (token).",
   "origin": "curated",
-  "url_status": "ok (202 probe)"
+  "url_status": "ok (202 probe)",
+  "note": " | free API token required | site responds with HTTP 202 (async accepted) to plain curl; live"
  },
  {
   "name": "GWOSC",
@@ -797,7 +807,8 @@
   "discovery_value": "European electricity generation/load/cross-border flows (15-min).",
   "agent_use": "REST API (free token).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API token required"
  },
  {
   "name": "Open Power System Data",
@@ -927,7 +938,8 @@
   "discovery_value": "Open research questions with expert answers.",
   "agent_use": "Stack Exchange API + quarterly dumps.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Erdős Problems site",
@@ -987,7 +999,8 @@
   "discovery_value": "CS bibliography graph (8M+ publications).",
   "agent_use": "REST/XML API + dumps.",
   "origin": "curated",
-  "url_status": "ok (202 probe)"
+  "url_status": "ok (202 probe)",
+  "note": " | site responds with HTTP 202 (async accepted) to plain curl; live"
  },
  {
   "name": "OpenReview",
@@ -1007,7 +1020,8 @@
   "discovery_value": "800k+ US/international economic time series.",
   "agent_use": "REST API (free key) + bulk.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
+  "url_status": "network-error (host known-live; re-verify — session network degradation)",
+  "note": " | free API key"
  },
  {
   "name": "World Bank Open Data",
@@ -1057,7 +1071,8 @@
   "discovery_value": "Global bilateral trade flows.",
   "agent_use": "Comtrade+ API (free tier).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key; premium tiers paid | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "FAOSTAT",
@@ -1077,7 +1092,8 @@
   "discovery_value": "All US public-company filings since the 1990s; full-text search.",
   "agent_use": "EDGAR full-text API (efts.sec.gov) + bulk.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | SEC requires declared UA; blocks default curl (403-bot expected) | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "USAspending",
@@ -1107,7 +1123,8 @@
   "discovery_value": "US federal case law + PACER mirror (free).",
   "agent_use": "REST API + bulk.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free token for higher limits | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "GovInfo",
@@ -1117,7 +1134,8 @@
   "discovery_value": "US federal documents (CFR, US Code, Federal Register).",
   "agent_use": "API + bulk packages.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key"
  },
  {
   "name": "Federal Register",
@@ -1137,7 +1155,8 @@
   "discovery_value": "US rulemaking dockets incl. millions of public comments.",
   "agent_use": "API v4 (free key).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Congress.gov API",
@@ -1157,7 +1176,8 @@
   "discovery_value": "EU law corpus (all legal acts).",
   "agent_use": "SPARQL + bulk FORM interface.",
   "origin": "curated",
-  "url_status": "ok (202 probe)"
+  "url_status": "ok (202 probe)",
+  "note": " | site responds with HTTP 202 (async accepted) to plain curl; live"
  },
  {
   "name": "Legislation.gov.uk",
@@ -1167,7 +1187,8 @@
   "discovery_value": "UK legislation with versions.",
   "agent_use": "REST API + bulk XML.",
   "origin": "curated",
-  "url_status": "ok (202 probe)"
+  "url_status": "ok (202 probe)",
+  "note": " | site responds with HTTP 202 (async accepted) to plain curl; live"
  },
  {
   "name": "OpenCorporates",
@@ -1177,7 +1198,8 @@
   "discovery_value": "200M+ company records across jurisdictions.",
   "agent_use": "API (free tier).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | API token; freemium tiers"
  },
  {
   "name": "CanLII",
@@ -1187,7 +1209,8 @@
   "discovery_value": "Canadian case law + legislation, open.",
   "agent_use": "API (Lexum).",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | API requires free key request | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Internet Archive",
@@ -1227,7 +1250,8 @@
   "discovery_value": "18M+ digitized volumes (US-restricted full view).",
   "agent_use": "HathiFiles + bibliographic API.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Europeana",
@@ -1237,7 +1261,8 @@
   "discovery_value": "50M+ European cultural heritage items.",
   "agent_use": "REST API (free key).",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | free API key | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "DPLA",
@@ -1247,7 +1272,8 @@
   "discovery_value": "Digital Public Library of America: 45M+ items.",
   "agent_use": "API (free key).",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
+  "url_status": "network-error (host known-live; re-verify — session network degradation)",
+  "note": " | free API key | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
  },
  {
   "name": "Perseus Digital Library",
@@ -1277,7 +1303,8 @@
   "discovery_value": "Metadata on texts from ancient Egypt/Nile valley (800 BC-800 AD).",
   "agent_use": "Browse + per-text APIs.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "nomisma.org",
@@ -1377,7 +1404,8 @@
   "discovery_value": "Community localization of 6000+ projects.",
   "agent_use": "API.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Mozilla Common Voice",
@@ -1417,7 +1445,8 @@
   "discovery_value": "Query OSM by tag/geometry in seconds.",
   "agent_use": "Overpass QL — ideal agent primitive.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 406); canonical live site"
  },
  {
   "name": "Overture Maps",
@@ -1457,7 +1486,8 @@
   "discovery_value": "Landsat/Sentinel/etc. satellite imagery archive.",
   "agent_use": "Machine-to-machine API (token).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free USGS EROS login for downloads"
  },
  {
   "name": "Copernicus Marine",
@@ -1467,7 +1497,8 @@
   "discovery_value": "Ocean physics/biogeochemistry reanalysis+forecast.",
   "agent_use": "API (free account).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free registration required"
  },
  {
   "name": "GBIF",
@@ -1477,7 +1508,8 @@
   "discovery_value": "3B+ species occurrence records from 2000+ datasets — range-shift discovery.",
   "agent_use": "REST API + Darwin Core bulk.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "iNaturalist",
@@ -1497,7 +1529,8 @@
   "discovery_value": "1B+ bird observations globally.",
   "agent_use": "eBird Basic Dataset (free registration) + API.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key; full data via request"
  },
  {
   "name": "OBIS",
@@ -1557,7 +1590,8 @@
   "discovery_value": "NASA/NOAA citizen observations (clouds, land cover, mosquitoes).",
   "agent_use": "App + API.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key registration"
  },
  {
   "name": "CoCoRaHS",
@@ -1617,7 +1651,8 @@
   "discovery_value": "Media coverage analytics across outlets.",
   "agent_use": "API (free).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key"
  },
  {
   "name": "Zooniverse",
@@ -1657,7 +1692,8 @@
   "discovery_value": "Citizen RNA-design puzzles feeding lab validation.",
   "agent_use": "Web client.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Einstein@Home",
@@ -1727,7 +1763,8 @@
   "discovery_value": "Live ML competitions with leaderboards and prize pools.",
   "agent_use": "kaggle CLI.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | returns HTTP 404 to default curl User-Agent; verified HTTP 200 with browser UA (bot-conditional)"
  },
  {
   "name": "DrivenData",
@@ -1827,7 +1864,8 @@
   "discovery_value": "Human-vote LLM leaderboard — live model-quality oracle.",
   "agent_use": "Public leaderboard data.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "HELM",
@@ -1887,7 +1925,8 @@
   "discovery_value": "Papers + code + SOTA tables per task — find what is unsolved.",
   "agent_use": "REST API.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | site was sunset in 2025; historical data mirrored on GitHub/HF"
  },
  {
   "name": "Semantic Scholar",
@@ -1897,7 +1936,8 @@
   "discovery_value": "220M+ papers with citation graphs and TLDRs.",
   "agent_use": "Graph API (free key) + bulk.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key for higher rate"
  },
  {
   "name": "OpenAlex",
@@ -1907,7 +1947,8 @@
   "discovery_value": "Fully open scholarly graph (successor to Scopus): 250M+ works.",
   "agent_use": "REST API + snapshot bulk.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "Crossref",
@@ -1927,7 +1968,8 @@
   "discovery_value": "20k+ open-access journals (1M+ OA articles).",
   "agent_use": "API.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "CORE",
@@ -1937,7 +1979,8 @@
   "discovery_value": "Open-access research aggregator (300M+ hosted/downloaded).",
   "agent_use": "API (free key).",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | free API key"
  },
  {
   "name": "Unpaywall",
@@ -1967,7 +2010,8 @@
   "discovery_value": "Health-sciences preprints.",
   "agent_use": "API.",
   "origin": "curated",
-  "url_status": "403-bot"
+  "url_status": "403-bot",
+  "note": " | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site"
  },
  {
   "name": "OpenRouter",
@@ -2177,7 +2221,8 @@
   "discovery_value": "The dexvert project's massive sample-file corpus per format — RE fuel.",
   "agent_use": "git clone.",
   "origin": "curated",
-  "url_status": "ok"
+  "url_status": "ok",
+  "note": " | org page is github.com/Sembiance (github.com/dexvert 404s)"
  },
  {
   "name": "discmaster",
@@ -2237,7 +2282,8 @@
   "discovery_value": "Universal source-code archive (graph of all known VCS history).",
   "agent_use": "API + graph dataset.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
+  "url_status": "network-error (host known-live; re-verify — session network degradation)",
+  "note": " | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
  },
  {
   "name": "GitHub Archive",
@@ -2256,16 +2302,6 @@
   "access": "compute",
   "discovery_value": "Volunteer archivist collective (warrior client) — join preservation campaigns.",
   "agent_use": "Archiving warrior + wiki.",
-  "origin": "curated",
-  "url_status": "ok"
- },
- {
-  "name": "Wikimedia dumps",
-  "url": "https://dumps.wikimedia.org",
-  "category": "archives-libraries-dumps",
-  "access": "bulk",
-  "discovery_value": "Every wiki's full history XML.",
-  "agent_use": "Bulk.",
   "origin": "curated",
   "url_status": "ok"
  },
@@ -2358,5 +2394,4035 @@
   "agent_use": "REST API (public subset).",
   "origin": "curated",
   "url_status": "ok"
+ },
+ {
+  "name": "Kaggle",
+  "url": "https://www.kaggle.com",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Hub of 100k+ community datasets plus live competitions and shared notebooks; good for benchmark-style problems and messy real-world data.",
+  "agent_use": "Use the Kaggle CLI/API (kaggle datasets download) with a free account token to pull datasets and competition data programmatically.",
+  "origin": "curated",
+  "note": "returns HTTP 404 to default curl User-Agent; verified HTTP 200 with browser UA (bot-conditional)",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "OpenDataSoft",
+  "url": "https://www.opendatasoft.com",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Powers 1,000+ city and regional open-data portals (Paris, Brussels, many US cities); its search hub exposes millions of rows of municipal data.",
+  "agent_use": "Each portal exposes an ODS explore API v2.1 (records, aggregates, exports) usable keylessly for most public domains.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NASA Open Data Portal",
+  "url": "https://data.nasa.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "NASA's catalog of thousands of open datasets, APIs and code across aeronautics, heliophysics, planetary science and Earth observation.",
+  "agent_use": "Query the Socrata catalog API on data.nasa.gov and follow through to dataset landing pages for direct downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "AWS Registry of Open Data",
+  "url": "https://registry.opendata.aws",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "Registry of 500+ cloud-hosted datasets (NOAA, Landsat, Common Crawl, Hugging Face, genome data) with S3 bucket details for direct access.",
+  "agent_use": "Each entry documents S3/Requester-Pays bucket ARNs an agent can pull with aws cli or direct HTTPS range requests.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Humanitarian Data Exchange (HDX)",
+  "url": "https://data.humdata.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "UN OCHA's humanitarian data platform with 20,000+ curated datasets on conflict, displacement, food security and health by country.",
+  "agent_use": "Use the HDX CKAN API (data.humdata.org/api/3) to search and download CSV/XLSX resources.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UNICEF Data",
+  "url": "https://data.unicef.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Global child-wellbeing indicators: mortality, nutrition, education, WASH, protection, disaggregated by country and year.",
+  "agent_use": "Harvest indicator CSVs through the UNICEF Data API (data.unicef.org/wp-json/wp/v2 or the downloadable bulk tables).",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "UNHCR Refugee Data",
+  "url": "https://data.unhcr.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Population statistics on refugees, IDPs, asylum seekers and stateless persons with per-operation dashboards and time series back to 1951.",
+  "agent_use": "Pull JSON/CSV via UNHCR's population and documents APIs (api data portals per operation).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UNESCO Institute for Statistics",
+  "url": "https://uis.unesco.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Global education, science, culture and communication statistics covering every country from 1970 onward.",
+  "agent_use": "Query the UIS bulk download (data.uis.unesco.org) or SDMX API for country-indicator tables.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "NIH RePORTER",
+  "url": "https://reporter.nih.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Searchable database of every NIH-funded project with abstracts, budgets, publications links - a map of US biomedical research effort.",
+  "agent_use": "Use the public RePORTER API (api.reporter.nih.gov/v2/projects/search) to pull project records as JSON.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NSF Award Search",
+  "url": "https://www.nsf.gov/awardsearch",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Every NSF grant since the 1950s with abstracts, PIs, institutions and funding amounts; useful for mapping research fronts.",
+  "agent_use": "Harvest award records via the NSF Awards API (api.nsf.gov/v1/awards.json) keylessly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "US Census Bureau Data (data.census.gov)",
+  "url": "https://data.census.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "The front door to US demographics: Decennial Census, ACS, economic censuses down to block-group level.",
+  "agent_use": "Pull tables via the Census Data API (api.census.gov/data) keylessly or with a free token for higher limits.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USDA National Agricultural Library Data",
+  "url": "https://data.nal.usda.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Aggregated USDA datasets: crop genetics, food composition, animal health, economics, pesticide residue and agri-geospatial layers.",
+  "agent_use": "Browse catalog metadata via its DKAN API endpoints and download CSV/shapefile resources directly.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "US EPA",
+  "url": "https://www.epa.gov",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "EPA's data and tools hub: air quality, toxic releases (TRI), superfund sites, water permits, chemical inventories.",
+  "agent_use": "Most program data are downloadable CSVs or have dedicated APIs (AirNow, TRI, AQS); an agent can harvest via catalog.data.gov references.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NIST Public Data",
+  "url": "https://data.nist.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "NIST's public data repository: metrology, materials, cybersecurity, standards-research datasets with DOIs.",
+  "agent_use": "Search records via the NIST Public Data List OAI-PMH and download datasets directly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USGS ScienceBase",
+  "url": "https://www.sciencebase.gov",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "USGS project data repository holding 10,000+ items of geoscience, biology and hydrology datasets with full metadata.",
+  "agent_use": "Query the ScienceBase REST API (sciencebase.gov/catalog/items) and download attached files.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "National Bureau of Statistics (Nigeria)",
+  "url": "https://nigerianstat.gov.ng",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "Nigeria's official statistics bureau publishing CPI, GDP, trade and sector bulletins as PDF/Excel reports.",
+  "agent_use": "Download published Excel/PDF bulletins from the statistics pages for parsing; no formal API.",
+  "origin": "curated",
+  "note": "site is browse-only; reports are PDF/XLSX",
+  "url_status": "200"
+ },
+ {
+  "name": "DATA-GO-JP (Japan)",
+  "url": "https://www.data.go.jp",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Japan's national open-data catalog with datasets from ministries, census and disaster-response data.",
+  "agent_use": "CKAN API (data.go.jp/api/3) supports search and metadata harvest.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "data.gv.at (Austria)",
+  "url": "https://www.data.gv.at",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Austrian open-government-data portal aggregating federal, state and city datasets.",
+  "agent_use": "CKAN API for catalog search and resource metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "opendata.swiss",
+  "url": "https://opendata.swiss",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Switzerland's central open-data catalog with national statistics, geodata and transport datasets.",
+  "agent_use": "Provides an API (opendata.swiss/api/3) on CKAN for programmatic search.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "datos.gob.es",
+  "url": "https://datos.gob.es",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Spain's open-data catalog linking national and regional datasets with reusable metadata.",
+  "agent_use": "Offers an RDF/DCAT-AP API for programmatic catalog access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "dati.gov.it",
+  "url": "https://www.dati.gov.it",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "Italy's national open-data catalog aggregating public administration datasets.",
+  "agent_use": "Browse/search catalog and follow to source portals (many regional CKANs) for downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.gov.ie",
+  "url": "https://data.gov.ie",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Ireland's national open-data portal with government datasets across health, transport and housing.",
+  "agent_use": "CKAN API supports search and resource listing.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Oppna Data Sverige",
+  "url": "https://oppnadata.se",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Swedish national open-data catalog aggregating agency datasets with DCAT metadata.",
+  "agent_use": "DCAT-AP RDF harvest plus per-dataset resource downloads.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "data.norge.no",
+  "url": "https://data.norge.no",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Norway's open-data catalog with DCAT-AP harvest of all government bodies' datasets.",
+  "agent_use": "Query its search API or harvest DCAT-AP catalogs at data.norge.no/api.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "opendata.dk",
+  "url": "https://opendata.dk",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Denmark's national open-data portal aggregating municipal and agency datasets.",
+  "agent_use": "CKAN API for package search and resource downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "dane.gov.pl",
+  "url": "https://dane.gov.pl",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Poland's open-data portal with government datasets and a full API for catalog access.",
+  "agent_use": "REST API (api.dane.gov.pl) exposes dataset and resource search in JSON.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "opendata.gov.cz",
+  "url": "https://opendata.gov.cz",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Czech national open-data catalog with DCAT-AP aggregation of ministry datasets.",
+  "agent_use": "SPARQL and DCAT endpoints allow programmatic catalog queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Open Data Flanders",
+  "url": "https://opendata.flanders.be",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Flemish government open-data portal with regional datasets (mobility, environment, economy).",
+  "agent_use": "CKAN API for search and resource retrieval.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Helsinki Region Infoshare (HRI)",
+  "url": "https://hri.fi",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Helsinki metropolitan open-data service with city datasets on population, transport, building permits, environment.",
+  "agent_use": "CKAN API (hri.fi/api/3) for catalog search and downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "datos.gob.mx",
+  "url": "https://datos.gob.mx",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Mexico's national open-data portal with thousands of federal datasets.",
+  "agent_use": "CKAN API endpoints for search and metadata.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "datos.gob.ar",
+  "url": "https://datos.gob.ar",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Argentina's open-data portal (Andino) with federal datasets across ministries.",
+  "agent_use": "CKAN-based API (datos.gob.ar/api/3) for programmatic access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "datos.gob.cl",
+  "url": "https://datos.gob.cl",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Chile's open-government-data catalog with ministry and municipal datasets.",
+  "agent_use": "CKAN API for catalog search and resources.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "datos.gov.co",
+  "url": "https://www.datos.gov.co",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Colombia's national Socrata open-data platform with thousands of government datasets.",
+  "agent_use": "Socrata SODA API for filtered JSON/CSV queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.go.kr",
+  "url": "https://www.data.go.kr",
+  "category": "open-data-portals",
+  "access": "api",
+  "discovery_value": "Korea's national public-data portal with tens of thousands of datasets and registered API services.",
+  "agent_use": "Register a free account to obtain per-service API keys for structured queries.",
+  "origin": "curated",
+  "note": "API keys required (free registration)",
+  "url_status": "200"
+ },
+ {
+  "name": "data.gov.tw",
+  "url": "https://data.gov.tw",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Taiwan's government open-data platform with 50,000+ datasets and machine-readable CKAN API.",
+  "agent_use": "CKAN API (data.gov.tw/api/3) for search and resource download.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.govt.nz",
+  "url": "https://data.govt.nz",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "New Zealand government open-data catalog with national statistics and geospatial datasets.",
+  "agent_use": "CKAN API for package search and resource access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.go.id",
+  "url": "https://data.go.id",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Indonesia's national open-data portal covering ministries, statistics and regional data.",
+  "agent_use": "CKAN API for search and resource retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.go.th",
+  "url": "https://data.go.th",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "Thailand's government open-data platform with national statistics and agency datasets.",
+  "agent_use": "Browse/search catalog and download CSV/XLSX resources; limited API.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "data.gov.il",
+  "url": "https://data.gov.il",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Israel's government open-data portal with datasets across ministries and municipalities.",
+  "agent_use": "Catalog search plus per-dataset CSV downloads; some Socrata-style endpoints.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Donnees Quebec (donneesquebec.ca)",
+  "url": "https://www.donneesquebec.ca",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Quebec's open-data portal with provincial datasets in French and English.",
+  "agent_use": "CKAN API for search and metadata harvest.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Open Africa (open.africa)",
+  "url": "https://open.africa",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Continent-wide open-data aggregator for African datasets from many countries and organizations.",
+  "agent_use": "CKAN API for catalog search and resource downloads.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "NYC Open Data",
+  "url": "https://data.cityofnewyork.us",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "New York City's Socrata catalog with 3,000+ datasets: 311 calls, taxi trips, building permits, crime, budget.",
+  "agent_use": "Socrata SODA API for SoQL-filtered queries on any dataset.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "London DataStore",
+  "url": "https://data.london.gov.uk",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Greater London Authority's open-data hub with ward-level demographics, transport and economic datasets.",
+  "agent_use": "Dataset pages expose direct CSV/JSON; CKAN-style API available.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Chicago Data Portal",
+  "url": "https://data.cityofchicago.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Chicago's Socrata portal: crime, permits, taxi, sanitation and financial datasets at block level.",
+  "agent_use": "Socrata SODA API for programmatic queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DataSF",
+  "url": "https://data.sfgov.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "San Francisco's open-data portal with geolocated city operations datasets.",
+  "agent_use": "Socrata SODA API for filtered queries.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Los Angeles Open Data",
+  "url": "https://data.lacity.org",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Los Angeles open-data catalog with public-safety, infrastructure and budget datasets.",
+  "agent_use": "Socrata SODA API for programmatic access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Paris Open Data",
+  "url": "https://opendata.paris.fr",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Paris portal with real-time mobility, air quality, bike-share and administrative datasets.",
+  "agent_use": "OpenDataSoft explore API v2 for records and aggregations.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "data.amsterdam.nl",
+  "url": "https://data.amsterdam.nl",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Amsterdam's open-data platform with geodata, sensor feeds and city operations datasets.",
+  "agent_use": "REST endpoints under data.amsterdam.nl/api for datasets and OGC services.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Toronto Open Data",
+  "url": "https://open.toronto.ca",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Toronto open-data catalogue with CKAN-based access to hundreds of civic datasets.",
+  "agent_use": "CKAN v3 API (open.toronto.ca/ckan-api) for search and resource download.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Madrid Open Data",
+  "url": "https://datos.madrid.es",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Madrid city open-data portal with traffic, air quality, demographics and municipal budget datasets.",
+  "agent_use": "Dataset pages list direct CSV/XLSX plus OGC WFS endpoints for geodata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Vancouver Open Data",
+  "url": "https://opendata.vancouver.ca",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Vancouver open-data catalogue (OpenDataSoft) with property, mobility and environment data.",
+  "agent_use": "OpenDataSoft explore API v2 for records and exports.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Montreal Open Data (donnees.ville.montreal.qc.ca)",
+  "url": "https://donnees.ville.montreal.qc.ca",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Montreal open-data portal with urban mobility, permits and water datasets (French/English).",
+  "agent_use": "CKAN-style search plus direct CSV/GeoJSON downloads.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Melbourne Open Data",
+  "url": "https://data.melbourne.vic.gov.au",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "City of Melbourne portal famous for pedestrian-counter and urban-sensor time series.",
+  "agent_use": "Socrata SODA API for time-series queries and bulk CSV export.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Seoul Open Data Plaza",
+  "url": "https://data.seoul.go.kr",
+  "category": "open-data-portals",
+  "access": "api",
+  "discovery_value": "Seoul metropolitan government data portal with hundreds of civic datasets and real-time city feeds.",
+  "agent_use": "Register (free) for an API key to query dataset APIs in JSON.",
+  "origin": "curated",
+  "note": "free registration required for API keys",
+  "url_status": "200"
+ },
+ {
+  "name": "Tokyo Data Portal",
+  "url": "https://portal.data.metro.tokyo.lg.jp",
+  "category": "open-data-portals",
+  "access": "browse",
+  "discovery_value": "Tokyo Metropolitan Government open-data catalog with census, transport and disaster datasets (Japanese).",
+  "agent_use": "Browse catalog and download CSV/XLSX; some datasets have CKAN API mirrors.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Berlin Open Data (daten.berlin.de)",
+  "url": "https://daten.berlin.de",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Berlin city-state open-data portal with administration, environment and mobility datasets.",
+  "agent_use": "CKAN API for catalog search and resource access.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Open Data Wien (data.wien.gv.at)",
+  "url": "https://www.data.wien.gv.at",
+  "category": "open-data-portals",
+  "access": "api+bulk",
+  "discovery_value": "Vienna's open-government-data portal with extensive geodata and city statistics.",
+  "agent_use": "OGC WFS/WMS and CSV endpoints documented for direct harvesting.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Electron Microscopy Data Bank (EMDB)",
+  "url": "https://www.ebi.ac.uk/emdb",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Archive of 3D cryo-EM volume maps and associated metadata for large molecular machines.",
+  "agent_use": "Query EMDB REST endpoints and download maps/tomograms over HTTPS/FTP.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Ensembl",
+  "url": "https://www.ensembl.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Genome browser and annotation system for vertebrate species with variation, regulatory and comparative data.",
+  "agent_use": "Use Ensembl REST API (rest.ensembl.org) keylessly and MySQL/FTP mirrors for bulk.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Ensembl Genomes",
+  "url": "https://ensemblgenomes.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Companion database extending Ensembl to plants, bacteria, fungi, metazoa and protists.",
+  "agent_use": "Same REST/MySQL interfaces scoped per division for non-vertebrate genomes.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UCSC Genome Browser",
+  "url": "https://genome.ucsc.edu",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Reference genome assemblies plus hundreds of annotation and conservation tracks for human and other species.",
+  "agent_use": "Use the UCSC API and download whole-track bigBed/bigWig files from hgdownload.soe.ucsc.edu.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NCBI GEO (Gene Expression Omnibus)",
+  "url": "https://www.ncbi.nlm.nih.gov/geo",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Public repository for gene-expression and functional-genomics arrays/sequencing from tens of thousands of studies.",
+  "agent_use": "Fetch series/sample metadata via GEO eutils or FTP; parse SOFT/mini-SOFT files locally.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NCBI SRA (Sequence Read Archive)",
+  "url": "https://www.ncbi.nlm.nih.gov/sra",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Largest public archive of raw sequencing reads (petabases) with full run-level metadata.",
+  "agent_use": "Query SRA via eutils/sradb and download runs with sra-tools (prefetch/fasterq-dump).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "PRIDE (Proteomics Identifications)",
+  "url": "https://www.ebi.ac.uk/pride",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Mass-spectrometry proteomics repository with peptide/protein identifications and raw spectra per dataset.",
+  "agent_use": "Use PRIDE REST API (ebi.ac.uk/pride/ws/archive/v3) to enumerate and download assays.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "STRING",
+  "url": "https://string-db.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Network of predicted and known protein-protein interactions for 2,500+ organisms with confidence scores.",
+  "agent_use": "Use the STRING API (api.string-db.org) to retrieve interaction graphs as TSV/JSON.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "BioGRID",
+  "url": "https://thebiogrid.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Curated physical/genetic interaction and chemical association database built from literature curation.",
+  "agent_use": "Download full PSI-MITAB/tabular releases from the downloads page for offline graph building.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "IntAct",
+  "url": "https://www.ebi.ac.uk/intact",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "EBI's curated molecular-interaction database with publication-level evidence trails.",
+  "agent_use": "REST API (ebi.ac.uk/intact/ws) plus PSI-MITAB full dumps.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Reactome",
+  "url": "https://reactome.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Expert-curated human (and ortholog) pathway database linking genes, proteins and reactions.",
+  "agent_use": "Use the Content Service REST API and download pathway/graph files from reactome.org/download.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "KEGG",
+  "url": "https://www.kegg.jp",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Integrated pathway, genome, disease and drug knowledge base for organisms and ecosystems.",
+  "agent_use": "Use the REST KEGG API (kegg.jp/kegg/rest) for entry retrieval; bulk access needs a paid license for commercial use.",
+  "origin": "curated",
+  "note": "academic use free; commercial use licensed",
+  "url_status": "200"
+ },
+ {
+  "name": "Gene Ontology Consortium",
+  "url": "https://geneontology.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Controlled vocabulary and annotations describing gene function across ~4,000 organisms.",
+  "agent_use": "Download the GO ontology (OWL/OBO) and annotation (GAF) files from github releases/FTP for offline reasoning.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "InterPro",
+  "url": "https://www.ebi.ac.uk/interpro",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Integrated classification of protein families, domains and functional sites from member databases.",
+  "agent_use": "Query the InterPro REST API (ebi.ac.uk/interpro/api) keylessly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "RNAcentral",
+  "url": "https://rnacentral.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Unified non-coding RNA sequence database aggregating 30+ expert resources with consensus identifiers.",
+  "agent_use": "Public REST API (rnacentral.org/api/v1) plus FTP dumps.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Human Protein Atlas",
+  "url": "https://www.proteinatlas.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Tissue and cell-type expression profiles for every human protein based on immunohistochemistry and transcriptomics.",
+  "agent_use": "Use the Tissue/Pathology REST APIs (proteinatlas.org/api) or download TSVs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "FlyBase",
+  "url": "https://flybase.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Model-organism database for Drosophila: genes, alleles, stocks, phenotypes and literature.",
+  "agent_use": "Bulk FASTA/GFF3/TSV downloads plus a REST-ish URL pattern for record fetches.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "WormBase",
+  "url": "https://wormbase.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "C. elegans and other nematode genomics database with genes, phenotypes and ontology annotations.",
+  "agent_use": "REST API (wormbase.org/rest) and FTP dumps (ftp.wormbase.org).",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Saccharomyces Genome Database (SGD)",
+  "url": "https://www.yeastgenome.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Reference database for budding yeast with curated gene function, phenotypes and interaction data.",
+  "agent_use": "Download S. cerevisiae dataset bundles (SGD FTP) and query the browsing API.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Mouse Genome Informatics (MGI)",
+  "url": "https://www.informatics.jax.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Authoritative mouse gene, allele, phenotype and expression database used for mammalian-model work.",
+  "agent_use": "Download MGI data reports (TSV/SQL dumps) from informatics.jax.org/downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ZFIN (Zebrafish Model Organism DB)",
+  "url": "https://zfin.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Zebrafish gene, mutant, transgene and anatomy ontology database.",
+  "agent_use": "Download ZFIN data files (genes, phenotypes, expression) from zfin.org/downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "TAIR (Arabidopsis)",
+  "url": "https://www.arabidopsis.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Reference genetic/molecular database for Arabidopsis thaliana (plant model organism).",
+  "agent_use": "Download gene/GO/mutant datasets from TAIR bulk files.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "GTDB (Genome Taxonomy Database)",
+  "url": "https://gtdb.ecogenomic.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Standardized bacterial/archaeal taxonomy built on ~80,000 genomes with reproducible phylogeny.",
+  "agent_use": "Download the full taxonomy and marker-gene files (gtdb.ecogenomic.org/downloads) for offline classification.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "SILVA ribosomal RNA database",
+  "url": "https://www.arb-silva.de",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "High-quality 16S/18S/23S rRNA sequence alignments for taxonomy and amplicon analysis.",
+  "agent_use": "Download parquet/FASTA releases (arb-silva.de/download) sized for direct pipeline ingestion.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "BOLD Systems (DNA barcoding)",
+  "url": "https://boldsystems.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Reference library of DNA-barcode sequences with species identification and specimen records.",
+  "agent_use": "Use the BOLD public API endpoints to pull barcode records and taxonomy.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MGnify (EBI metagenomics)",
+  "url": "https://www.ebi.ac.uk/metagenomics",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Analysis pipeline outputs for 500,000+ microbiome/metagenome assemblies: taxonomy, function, assemblies.",
+  "agent_use": "MGnify REST API v2 (ebi.ac.uk/metagenomics/api/v2) for studies/analyses and downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "BindingDB",
+  "url": "https://www.bindingdb.org",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Experimental binding-affinity database (Ki/Kd/IC50) linking ligands to protein targets, useful for QSAR/ML.",
+  "agent_use": "Download TSV dataset files from bindingdb.org/bind/data/downloads.jsp.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DrugBank",
+  "url": "https://go.drugbank.com",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Comprehensive drug-drug-target database with structures, indications and pharmacology.",
+  "agent_use": "Structured XML downloads require a free academic account; open vocabulary/API limited.",
+  "origin": "curated",
+  "note": "full data requires free registration; browsing is open | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "MetaboLights",
+  "url": "https://www.ebi.ac.uk/metabolights",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Metabolomics repository with studies, spectra and assay tables across plant, human and microbe experiments.",
+  "agent_use": "REST API (ebi.ac.uk/metabolights/ws) for study search and file fetch.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "HMDB (Human Metabolome Database)",
+  "url": "https://hmdb.ca",
+  "category": "life-sciences",
+  "access": "bulk",
+  "discovery_value": "Detailed records for ~220,000 human metabolites with spectra, concentrations and pathway links.",
+  "agent_use": "Download complete XML/CSV bundles from hmdb.ca/downloads.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "JASPAR (transcription factors)",
+  "url": "https://jaspar.elixir.no",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Open-access collection of transcription-factor binding profiles (PWMs) for multiple clades.",
+  "agent_use": "REST API (jaspar.elixir.no/api/v1) plus bulk PFML/JASPAR file downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CellxGene Discover (CZI)",
+  "url": "https://cellxgene.cziscience.com",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Curated single-cell expression atlas of 100M+ cells with standardized annotations and census matrices.",
+  "agent_use": "Pull datasets via the CZI cellxgene Collections API or Census (tiledb) matrix downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Human Cell Atlas Data Portal",
+  "url": "https://humancellatlas.org",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Federated single-cell atlas data with project matrices and standardized metadata across consortia labs.",
+  "agent_use": "Use the DCP data browser API (data.humancellatlas.org) to enumerate and download projects.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "GNPS (Global Natural Products Social Molecular Networking)",
+  "url": "https://gnps.ucsd.edu",
+  "category": "life-sciences",
+  "access": "api+bulk",
+  "discovery_value": "Community mass-spectrometry repository for metabolomics/natural products with molecular networking tools.",
+  "agent_use": "Use GNPS REST API endpoints (gnps.ucsd.edu/ProteoSAFe) to search and download MS/MS datasets.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "WHO International Clinical Trials Registry Platform (ICTRP)",
+  "url": "https://trialsearch.who.int",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "WHO portal aggregating clinical-trial registrations from 20+ national registries into one searchable index.",
+  "agent_use": "Search UI plus downloadable registry export files for cross-registry analysis.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NeuroVault",
+  "url": "https://neurovault.org",
+  "category": "biomedical-clinical",
+  "access": "api",
+  "discovery_value": "Public repository of statistical brain maps (fMRI/VBM group results) in standardized space.",
+  "agent_use": "REST API (neurovault.org/api) to list collections and download NIfTI maps.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CDC WONDER",
+  "url": "https://wonder.cdc.gov",
+  "category": "biomedical-clinical",
+  "access": "browse",
+  "discovery_value": "Online query system for US mortality, birth, disease and environmental health microdata summaries.",
+  "agent_use": "Submit the documented HTTP form requests to WONDER endpoints to retrieve aggregate tables (XML/HTML).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CMS Data (data.cms.gov)",
+  "url": "https://data.cms.gov",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Medicare/Medicaid claims and provider datasets: utilization, payments, hospital quality, market saturation.",
+  "agent_use": "Use the data.cms.gov API (data.cms.gov/api/1/datastore) plus direct CSV downloads.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "ClinVar",
+  "url": "https://www.ncbi.nlm.nih.gov/clinvar",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "Public archive of reported relationships between human variants and phenotypes with clinical significance.",
+  "agent_use": "Download the full XML/VCF release from ncbi.nlm.nih.gov/clinvar FTP.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DepMap (Cancer Dependency Map)",
+  "url": "https://depmap.org",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "CRISPR/RNAi fitness screens across 1,000+ cancer cell lines linking gene dependencies to molecular features.",
+  "agent_use": "Download current release CSVs (gene_effect, expression, mutations) from depmap.org/portal/download.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "cBioPortal",
+  "url": "https://www.cbioportal.org",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Visualization/query interface over 400+ cancer-genomics studies with harmonized clinical+omics data.",
+  "agent_use": "Use the cBioPortal REST API (cbioportal.org/api) for studies, patients and mutation queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CIViC",
+  "url": "https://civicdb.org",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "Community-curated catalog of clinical interpretations of cancer variants (evidence levels, therapies).",
+  "agent_use": "Download the full-nightly TSV dumps or use the GraphQL API.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "COSMIC",
+  "url": "https://cancer.sanger.ac.uk/cosmic",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "Catalogue of somatic mutations in cancer with variant/gene/fusion annotations from the literature and projects.",
+  "agent_use": "Download curated mutation TSVs after free academic registration; web search open.",
+  "origin": "curated",
+  "note": "downloads need free academic registration",
+  "url_status": "200"
+ },
+ {
+  "name": "Open Targets Platform",
+  "url": "https://platform.opentargets.org",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Integrates genomics, literature and pharmacology to prioritize drug targets with evidence scores.",
+  "agent_use": "Use the Open Targets GraphQL API (api.platform.opentargets.org/api/v4/graphql) or download data dumps.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "RxNav / RxNorm (NLM)",
+  "url": "https://rxnav.nlm.nih.gov",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Normalized vocabulary for clinical drugs with ingredient/brand relationships and NDC codes.",
+  "agent_use": "Call the RxNav REST API (rxnav.nlm.nih.gov/REST) or download monthly RxNorm releases.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DailyMed (NLM)",
+  "url": "https://dailymed.nlm.nih.gov",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Official structured product labels for US drugs with SPL XML for every marketed medication.",
+  "agent_use": "Use the DailyMed REST API (dailymed.nlm.nih.gov/dailymed/services) for label retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Nextstrain",
+  "url": "https://nextstrain.org",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Real-time pathogen phylogenomics (SARS-CoV-2, flu, Ebola...) with live trees and sequences.",
+  "agent_use": "Fetch Auspice JSON trees and metadata from nextstrain.org endpoints for downstream analysis.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "outbreak.info",
+  "url": "https://outbreak.info",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Harmonized SARS-CoV-2 (and RSV/flu) genomic and epidemiological data: variants, lineages, prevalence.",
+  "agent_use": "Use the documented REST APIs (api.outbreak.info) for lineage prevalence and mutation queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "FinnGen",
+  "url": "https://finngen.fi",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "Nationwide Finnish biobank GWAS: ~500k participants with open summary statistics for thousands of endpoints.",
+  "agent_use": "Download endpoint summary statistics (gzipped tabular) from the documented R5/R6 release buckets.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenPrescribing",
+  "url": "https://openprescribing.net",
+  "category": "biomedical-clinical",
+  "access": "api+bulk",
+  "discovery_value": "Monthly NHS prescribing data for every GP practice and drug in England, analyzed and downloadable.",
+  "agent_use": "Use its REST API (openprescribing.net/api) or grab raw BNF data exports.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "ADNI (Alzheimer's Disease Neuroimaging Initiative)",
+  "url": "https://adni.loni.usc.edu",
+  "category": "biomedical-clinical",
+  "access": "bulk",
+  "discovery_value": "Longitudinal MRI/PET/genetics/clinical dataset standard for dementia-modeling research.",
+  "agent_use": "Register free, then use the ADNI download portal/API to pull imaging and clinical tables.",
+  "origin": "curated",
+  "note": "free registration + data-use terms",
+  "url_status": "200"
+ },
+ {
+  "name": "ECMWF",
+  "url": "https://www.ecmwf.int",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "European centre for medium-range forecasts; publishes open real-time model output and ERA-family reanalyses.",
+  "agent_use": "Use the ECMWF WebAPI/adsapi or fetch open-data GRIB streams (data.ecmwf.int).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NASA Earthdata",
+  "url": "https://www.earthdata.nasa.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Unified gateway to 100+ PB of NASA EOSDIS data: MODIS, VIIRS, Landsat, GRACE, GPM, ICESat-2.",
+  "agent_use": "Search via CMR API (cmr.earthdata.nasa.gov/search) and download granules with earthaccess/library or direct URLs.",
+  "origin": "curated",
+  "note": "free Earthdata login for some collections",
+  "url_status": "200"
+ },
+ {
+  "name": "Copernicus (ESA programme)",
+  "url": "https://www.copernicus.eu",
+  "category": "earth-climate-weather",
+  "access": "browse",
+  "discovery_value": "EU Earth-observation programme with six Sentinel satellite families covering land, ocean, atmosphere and climate.",
+  "agent_use": "Use as documentation hub; data access flows through the Data Space Ecosystem entry in this registry.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Copernicus Data Space Ecosystem",
+  "url": "https://dataspace.copernicus.eu",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Primary access point for Sentinel-1/2/3/5P products with OData, openEO, STAC and S3 interfaces.",
+  "agent_use": "Register free, then use the OData/STAC APIs or odata Zarr streaming to pull scenes.",
+  "origin": "curated",
+  "note": "free registration for API",
+  "url_status": "200"
+ },
+ {
+  "name": "AirNow",
+  "url": "https://www.airnow.gov",
+  "category": "earth-climate-weather",
+  "access": "api",
+  "discovery_value": "US official real-time air quality (AQI, PM2.5, ozone) with current conditions and historical files.",
+  "agent_use": "Free AirNow API key for JSON current data; hourly/historical files downloadable.",
+  "origin": "curated",
+  "note": "free API key registration",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenAQ",
+  "url": "https://openaq.org",
+  "category": "earth-climate-weather",
+  "access": "api",
+  "discovery_value": "Aggregates ground air-quality measurements from 100,000+ stations worldwide into one open API.",
+  "agent_use": "Use the OpenAQ v3 API (api.openaq.org) with free key for measurements and locations.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Met Office HadOBS (HadCRUT5)",
+  "url": "https://www.metoffice.gov.uk/hadobs/hadcrut5",
+  "category": "earth-climate-weather",
+  "access": "bulk",
+  "discovery_value": "Global surface temperature reconstruction combining land and marine observations from 1850 to present.",
+  "agent_use": "Download HadCRUT5 NetCDF/ASCII series directly from the HadOBS page.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Berkeley Earth",
+  "url": "https://berkeleyearth.org",
+  "category": "earth-climate-weather",
+  "access": "bulk",
+  "discovery_value": "Independent global land temperature dataset from 45,000+ stations with country/city breakdowns.",
+  "agent_use": "Download the merged land-ocean series and per-station data as plain text/CSV.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NOAA Physical Sciences Laboratory (PSL)",
+  "url": "https://psl.noaa.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Large collections of reanalysis, SST, teleconnection indices and model datasets with an easy data portal.",
+  "agent_use": "Use PSL Data Services (psl.noaa.gov/data) for NetCDF subsets and download listings.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NOAA National Data Buoy Center (NDBC)",
+  "url": "https://www.ndbc.noaa.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Real-time and historical ocean buoy measurements: waves, wind, temperature across US and international waters.",
+  "agent_use": "Fetch station files via ndbc.noaa.gov/data/realtime2 and historical archives in simple text formats.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NOAA National Hurricane Center",
+  "url": "https://www.nhc.noaa.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Tropical cyclone advisories, best-track data and seasonal archives for Atlantic and East Pacific storms.",
+  "agent_use": "Parse GIS best-track files (GIS area) or the text product RSS feeds for storm data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NOAA Tides & Currents",
+  "url": "https://tidesandcurrents.noaa.gov",
+  "category": "earth-climate-weather",
+  "access": "api",
+  "discovery_value": "Water levels, tides, currents and harmonic constituents for 300+ US coastal stations with decades of history.",
+  "agent_use": "CO-OPS Data API (api.tidesandcurrents.noaa.gov) returns JSON/CSV for any station/date range.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "US Drought Monitor",
+  "url": "https://droughtmonitor.unl.edu",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Weekly national drought classification maps for the US with GIS exports and time-series archives.",
+  "agent_use": "Pull GeoTIFF/shapefiles and the API (droughtmonitor.unl.edu/DMS/Data) for weekly classifications.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NSIDC (National Snow and Ice Data Center)",
+  "url": "https://nsidc.org",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Cryosphere data: sea-ice concentration, snow cover, glaciers, permafrost, ice cores.",
+  "agent_use": "Use the NSIDC API (nsidc.org/api) or download order links; many products keyless.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Pangeo",
+  "url": "https://pangeo-data.org",
+  "category": "earth-climate-weather",
+  "access": "bulk",
+  "discovery_value": "Community platform hosting cloud-optimized (Zarr) versions of CMIP6, ocean reanalysis and weather datasets.",
+  "agent_use": "Open Zarr stores directly via xarray intake catalogs listed at catalog.pangeo.io.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Microsoft Planetary Computer",
+  "url": "https://planetarycomputer.microsoft.com",
+  "category": "earth-climate-weather",
+  "access": "compute",
+  "discovery_value": "Petabyte-scale Earth-observation datacube (Landsat, Sentinel, NAIP, ERA5, land cover) with free Jupyter compute.",
+  "agent_use": "Use its STAC API (planetarycomputer.microsoft.com/api/stac/v1) and signed blob tokens for direct raster reads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Meteostat",
+  "url": "https://meteostat.net",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Historical weather for tens of thousands of stations worldwide with a clean Python library and JSON API.",
+  "agent_use": "Use the Meteostat JSON API or pip library with the free bulk endpoint (Python lib).",
+  "origin": "curated",
+  "note": "freemium API; bulk data via library is free",
+  "url_status": "200"
+ },
+ {
+  "name": "Iowa Environmental Mesonet (IEM)",
+  "url": "https://mesonet.agron.iastate.edu",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Long-term archive of ASOS/AWOS surface observations, NWS warnings, radar mosaics for the US.",
+  "agent_use": "Query its download/cgi endpoints (mesonet.agron.iastate.edu/request) for CSV observations by network/date.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DWD Open Data (German Weather Service)",
+  "url": "https://opendata.dwd.de",
+  "category": "earth-climate-weather",
+  "access": "bulk",
+  "discovery_value": "German meteorological service raw archive: station observations, radar,ICON model output, fully open FTP/HTTPS trees.",
+  "agent_use": "Walk the directory tree with HTTP requests and grab CSV observations and GRIB model files.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USGS Earthquake Hazards Program",
+  "url": "https://earthquake.usgs.gov",
+  "category": "earth-climate-weather",
+  "access": "api",
+  "discovery_value": "Global catalog of earthquakes with magnitudes, moment tensors, shake maps and historical archives (ComCat).",
+  "agent_use": "Query the FDSN/ComCat API (earthquake.usgs.gov/fdsnws) for event queries in CSV/GeoJSON.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "IRIS Earthquake Science",
+  "url": "https://www.iris.edu",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Seismological facility distributing broadband waveform data (the IRIS DMC) and EarthScope products.",
+  "agent_use": "Use FDSN web services (service.iris.edu/fdsnws) to fetch waveforms and station metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Smithsonian Global Volcanism Program",
+  "url": "https://volcano.si.edu",
+  "category": "earth-climate-weather",
+  "access": "bulk",
+  "discovery_value": "Authoritative database of 1,400+ Holocene volcanoes with eruption histories and weekly activity reports.",
+  "agent_use": "Download the Volcano/Eruption Excel databases from volcano.si.edu/database/.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "NASA PO.DAAC (Physical Oceanography DAAC)",
+  "url": "https://podaac.jpl.nasa.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Ocean satellite data: sea-surface height, salinity, wind, temperature (TOPEX, Jason, SWOT, GHRSSST).",
+  "agent_use": "Search granules via the CMR API and download NetCDFs with podaac-data-subscriber.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ORNL DAAC",
+  "url": "https://daac.ornl.gov",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "Biogeochemical/ecological data archive: flux towers, biomass, soil carbon, remote-sensing products for terrestrial ecosystems.",
+  "agent_use": "Search via the ORNL DAAC search API (daac.ornl.gov/api) and download NetCDF/CSV datasets.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "EMODnet",
+  "url": "https://www.emodnet.eu",
+  "category": "earth-climate-weather",
+  "access": "api+bulk",
+  "discovery_value": "European Marine Observation and Data Network: bathymetry, chemistry, biology, physics and human-activity layers.",
+  "agent_use": "Use EMODnet WFS/WCS/ERDDAP endpoints documented per thematic portal.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "SIMBAD (CDS)",
+  "url": "https://simbad.cds.unistra.fr",
+  "category": "astronomy-space",
+  "access": "api",
+  "discovery_value": "Reference database of astronomical objects outside the solar system with identifiers, cross-IDs and bibliography.",
+  "agent_use": "Query via the TAP service or the simple script interface (sim-query URLs) returning text/VOTable.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "SkyMapper Southern Survey",
+  "url": "https://skymapper.anu.edu.au",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Southern-sky optical survey from ANU: ~1 billion objects, photometry to SDSS-like depth.",
+  "agent_use": "TAP queries (skymapper.anu.edu.au/services) for catalog access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DESI (Dark Energy Spectroscopic Instrument)",
+  "url": "https://www.desi.lbl.gov",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Tens of millions of galaxy/quasar spectra for dark-energy and large-scale-structure research (EDR/DR1 public).",
+  "agent_use": "Download EDR/DR1 via data.desi.lbl.gov files or query with the DESI API docs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "astroquery",
+  "url": "https://astroquery.readthedocs.io",
+  "category": "astronomy-space",
+  "access": "api",
+  "discovery_value": "Python library unifying programmatic access to 100+ astronomy archives (SIMBAD, VizieR, MAST, NED, Gaia...).",
+  "agent_use": "Pip-install and drive dozens of observatory archives from one consistent Python interface.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ESO Science Archive",
+  "url": "https://archive.eso.org",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Archive of the VLT, VISTA and other ESO telescopes: raw and reduced data across optical/IR instruments.",
+  "agent_use": "TAP (archive.eso.org/tap) queries plus the request-handler for bulk data retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NOIRLab Astro Archive",
+  "url": "https://astroarchive.noirlab.edu",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Archive of NOIRLab (Gemini, Blanco/DECam, Kitt Peak) data products and catalogs.",
+  "agent_use": "Use the Data Lab APIs (datalab.noirlab.edu/query) with ADQL/SQL.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Chandra X-ray Center",
+  "url": "https://cxc.cfa.harvard.edu",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Chandra X-ray Observatory archive with event files, source catalogs (ChaMP, ChaSer) and analysis tools.",
+  "agent_use": "Download observations via the Chandra archive interfaces and process with CIAO.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Fermi Gamma-ray Space Telescope",
+  "url": "https://fermi.gsfc.nasa.gov",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "Fermi-LAT all-sky gamma-ray data with weekly/monthly sky maps and source catalogs (4FGL).",
+  "agent_use": "Download LAT data via the fermi data server (fermi.gsfc.nasa.gov/cgi-bin/ssc/LAT/LATDataQuery.cgi) and catalogs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Vera C. Rubin Observatory",
+  "url": "https://rubinobservatory.org",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Future 10-year LSST survey of the southern sky; currently publishes pre-operations data and DP0.2 simulations.",
+  "agent_use": "Access via the Rubin Science Platform APIs (Jupyter+TAP) after free registration.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "IceCube Neutrino Observatory",
+  "url": "https://icecube.wisc.edu",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "Cubic-kilometer neutrino detector at the South Pole with public event data and alerts.",
+  "agent_use": "Download public data releases and GCN alerts from icecube.wisc.edu/data-releases.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "JPL Horizons System",
+  "url": "https://ssd.jpl.nasa.gov/horizons",
+  "category": "astronomy-space",
+  "access": "api",
+  "discovery_value": "Authoritative solar-system ephemerides for planets, moons, asteroids and comets over HTTP/telnet.",
+  "agent_use": "GET the Horizons API (ssd.jpl.nasa.gov/api/horizons.api) for vectors and observer tables in JSON.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "JPL CNEOS (Center for Near-Earth Object Studies)",
+  "url": "https://cneos.jpl.nasa.gov",
+  "category": "astronomy-space",
+  "access": "api",
+  "discovery_value": "NEO orbit catalogs, close-approach tables, impact-risk (Sentry) and Scout anomaly data.",
+  "agent_use": "Use CNEOS APIs (ssd-api.jpl.nasa.gov) for CAD, Sentry and SBDB queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CelesTrak",
+  "url": "https://celestrak.org",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "Canonical source of TLE satellite orbital elements grouped by category, plus GP data and search.",
+  "agent_use": "Download TLE group files (celestrak.org/NORAD/elements/gp.php) as CSV/TLE text for orbit propagation.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Space-Track",
+  "url": "https://www.space-track.org",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Official US catalog of space objects with full TLE history, decay data and conjunction data messages.",
+  "agent_use": "Login with free account, then use the REST API (space-track.org/basicspacedata) with POST queries.",
+  "origin": "curated",
+  "note": "free account required for API",
+  "url_status": "200"
+ },
+ {
+  "name": "Minor Planet Center (MPC)",
+  "url": "https://www.minorplanetcenter.net",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "World clearinghouse for asteroid/comet observations: orbit catalogs, MPCORB files and designation data.",
+  "agent_use": "Download MPCORB.DAT and observation files from minorplanetcenter.net/iau/ECS/MPCArchive.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ESASky",
+  "url": "https://sky.esa.int",
+  "category": "astronomy-space",
+  "access": "api",
+  "discovery_value": "ESA's unified astronomy portal federating Herschel, XMM, Gaia, SOHO and more in one visualization interface.",
+  "agent_use": "Use ESASky's TAP/JSON interfaces (sky.esa.int/esasky) for programmatic cross-mission queries.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "AAVSO",
+  "url": "https://www.aavso.org",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Variable-star observations database (100M+ measurements) from amateur/professional observers worldwide.",
+  "agent_use": "Download VSX catalog and observation files via AID query forms/API.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Transient Name Server (TNS)",
+  "url": "https://www.wis-tns.org",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Official registry of astronomical transients (supernovae, SNe candidates) with classification reports.",
+  "agent_use": "Register for a free API key; then call the TNS REST API for object search and classifications.",
+  "origin": "curated",
+  "note": "free account for API; browsing open | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "NOAA Space Weather Prediction Center",
+  "url": "https://www.swpc.noaa.gov",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Official solar-storm forecasts: solar wind, geomagnetic indices, X-ray flares and alert products.",
+  "agent_use": "Fetch JSON/text products from services.swpc.noaa.gov (products/JSON) keylessly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NASA Planetary Data System (PDS)",
+  "url": "https://pds.nasa.gov",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Archive of all NASA planetary-mission data: Mars rovers, Cassini, New Horizons, asteroid sampling missions.",
+  "agent_use": "Search PDS4 via the API (pds.nasa.gov/api/search/1) and download bundles over HTTPS.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USGS Astrogeology Science Center",
+  "url": "https://astrogeology.usgs.gov",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "Planetary geologic maps, DEMs, image mosaics and coordinates for the Moon, Mars and other bodies.",
+  "agent_use": "Download derived products (USGS planetary maps/DEMs) from the Astrogeology site with HTTPS.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "NRAO Science Site",
+  "url": "https://science.nrao.edu",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "US radio-astronomy facility (VLA, ALMA NA partner, GBT) publishing data archives and analysis tools.",
+  "agent_use": "Query the NRAO Science Data Archive (archive.nrao.edu) via its REST/TAP endpoints.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NASA Image and Video Library",
+  "url": "https://images.nasa.gov",
+  "category": "astronomy-space",
+  "access": "api+bulk",
+  "discovery_value": "Searchable collection of NASA imagery and video from missions, launches and research.",
+  "agent_use": "Use the public API (images-api.nasa.gov/search) keylessly to enumerate assets with direct URLs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Planck Legacy Archive",
+  "url": "https://pla.esac.esa.int",
+  "category": "astronomy-space",
+  "access": "bulk",
+  "discovery_value": "ESA Planck CMB mission archive with maps, component-separated products and lensing data.",
+  "agent_use": "Register free, then fetch FITS/NPY maps through the PLA interfaces.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "CERN Open Data",
+  "url": "https://opendata.cern.ch",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "LHC collision events (ATLAS/CMS/LHCb/ALICE), simulated datasets and software for real particle-physics analysis.",
+  "agent_use": "Download event tuples/root files and prebuilt analysis notebooks directly from the portal.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LIGO/Virgo Gravitational-Wave Open Science Center (GWOSC)",
+  "url": "https://gwosc.org",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Public gravitational-wave strain data from LIGO/Virgo/KAGRA runs with event catalogs (GWTC).",
+  "agent_use": "Download strain frames and event files via gwosc.org datasets, or use the gwosc Python package.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OSTI (DOE Office of Scientific and Technical Information)",
+  "url": "https://www.osti.gov",
+  "category": "physics-energy",
+  "access": "api+bulk",
+  "discovery_value": "US Department of Energy R&D output: technical reports, citations and data from national labs since the 1940s.",
+  "agent_use": "Use the OSTI API (api.osti.gov/v1) with free registration for JSON queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenEI (Open Energy Information)",
+  "url": "https://openei.org",
+  "category": "physics-energy",
+  "access": "api+bulk",
+  "discovery_value": "DOE-backed wiki/registry of energy datasets: utility rates, renewable projects, policies and technology data.",
+  "agent_use": "Query MediaWiki API and dataset pages; rate/utility data via OpenEI API endpoints.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "US Energy Information Administration (EIA)",
+  "url": "https://www.eia.gov",
+  "category": "physics-energy",
+  "access": "api",
+  "discovery_value": "Official US energy statistics: production, consumption, prices, reserves across fuels with detailed state data.",
+  "agent_use": "Use the EIA v2 API (api.eia.gov/v2) with a free key for series queries.",
+  "origin": "curated",
+  "note": "free API key required",
+  "url_status": "200"
+ },
+ {
+  "name": "IRENA Statistics",
+  "url": "https://www.irena.org/Data",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Global renewable-energy statistics: capacity, generation, employment by country and technology.",
+  "agent_use": "Download the renewable-capacity statistics workbook and IRENA datasets directly.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "IAEA PRIS (Power Reactor Information System)",
+  "url": "https://pris.iaea.org",
+  "category": "physics-energy",
+  "access": "api+bulk",
+  "discovery_value": "Global database of nuclear power plants with capacity, generation and outage history per reactor.",
+  "agent_use": "Query PRIS web interfaces/CSV exports for per-reactor operational data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NNDC (National Nuclear Data Center)",
+  "url": "https://www.nndc.bnl.gov",
+  "category": "physics-energy",
+  "access": "api+bulk",
+  "discovery_value": "Nuclear structure and reaction data: nuclide properties, decay schemes, cross sections (ENDF).",
+  "agent_use": "Use NuDat and ENDF retrieval web services (nndc.bnl.gov) for datasets.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Particle Data Group (PDG)",
+  "url": "https://pdg.lbl.gov",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Authoritative compilation of particle properties: masses, lifetimes, couplings in the Review of Particle Physics.",
+  "agent_use": "Download the PDG tables/API (pdg.lbl.gov) CSV files for programmatic use.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NIST Physical Reference Data",
+  "url": "https://physics.nist.gov",
+  "category": "physics-energy",
+  "access": "browse",
+  "discovery_value": "CODATA fundamental constants, atomic spectra (ASD), x-ray and ionization data.",
+  "agent_use": "Query ASD/CODATA endpoints with HTTP requests; constants available as machine-readable text.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NREL (National Renewable Energy Laboratory)",
+  "url": "https://www.nrel.gov",
+  "category": "physics-energy",
+  "access": "api+bulk",
+  "discovery_value": "Renewable-energy datasets: solar/wind resource maps, technology cost models, published research.",
+  "agent_use": "Use NREL developer APIs (developer.nrel.gov) with free key for solar/wind resource queries.",
+  "origin": "curated",
+  "note": "free API key for developer.nrel.gov | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "NSRDB (National Solar Radiation Database)",
+  "url": "https://nsrdb.nrel.gov",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Hourly solar irradiance data for the Americas from 1998-2023 with satellite-derived gridded products.",
+  "agent_use": "Register free for the NSRDB Data API (developer.nrel.gov/docs/solar/nsrdb) to pull time series.",
+  "origin": "curated",
+  "note": "free API key | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Global Solar Atlas",
+  "url": "https://globalsolaratlas.info",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "World Bank/ESMAP solar resource maps and long-term PV output data at country and regional level.",
+  "agent_use": "Download GeoTIFF layers and country reports from its data download section.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Global Wind Atlas",
+  "url": "https://globalwindatlas.info",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "High-resolution global wind-resource maps (mean speed, power density) with downloadable layers.",
+  "agent_use": "Fetch GeoTIFF/JSON layers via its public download endpoints.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Ember",
+  "url": "https://ember-climate.org",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Independent electricity-transition data: country-level generation, capacity and carbon intensity with open datasets.",
+  "agent_use": "Download the yearly/monthly electricity data Excel/CSV files from ember-climate.org/data-catalogue.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "International Energy Agency (IEA)",
+  "url": "https://www.iea.org",
+  "category": "physics-energy",
+  "access": "browse",
+  "discovery_value": "Global energy policy/statistics body publishing country energy balances and technology reports.",
+  "agent_use": "Explore public data pages; full datasets (World Energy Balances) are paid but key series are free.",
+  "origin": "curated",
+  "note": "core datasets paid; selected free data | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "PUDL (Public Utility Data Liberation)",
+  "url": "https://github.com/catalyst-cooperative/pudl",
+  "category": "physics-energy",
+  "access": "bulk",
+  "discovery_value": "Normalized EIA-860/861/923 and FERC Form 1 power-plant data pipeline - US utility data made analysis-ready.",
+  "agent_use": "Install pudl or download Parquet/SQLite outputs from Zenodo releases.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Materials Project",
+  "url": "https://materialsproject.org",
+  "category": "chemistry-materials",
+  "access": "api+bulk",
+  "discovery_value": "DFT-computed properties (formation energy, band gap, elasticity) for 150,000+ inorganic materials.",
+  "agent_use": "Use the Materials Project API (api.materialsproject.org) with a free API key for structured queries.",
+  "origin": "curated",
+  "note": "free API key required | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "AFLOW",
+  "url": "https://aflowlib.org",
+  "category": "chemistry-materials",
+  "access": "api",
+  "discovery_value": "High-throughput DFT repository of 3M+ computed inorganic compounds with thermodynamic/electronic properties.",
+  "agent_use": "Query the AFLOW-CHARGES/REST API (aflowlib.org) for material property retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NIST Chemistry WebBook",
+  "url": "https://webbook.nist.gov",
+  "category": "chemistry-materials",
+  "access": "browse",
+  "discovery_value": "Thermochemical, thermophysical and ion-energetics data for thousands of chemical species.",
+  "agent_use": "Query by CAS/name via URL parameters; SRD files also downloadable.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ChemSpider",
+  "url": "https://www.chemspider.com",
+  "category": "chemistry-materials",
+  "access": "api",
+  "discovery_value": "RSC's chemical-structure database with 100M+ compounds linking to properties and literature.",
+  "agent_use": "Use the ChemSpider API (chemspider.com) with free RSC account key.",
+  "origin": "curated",
+  "note": "API key (free RSC account) | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "ChEBI",
+  "url": "https://www.ebi.ac.uk/chebi",
+  "category": "chemistry-materials",
+  "access": "api+bulk",
+  "discovery_value": "Ontology of molecular entities focused on small chemical compounds of biological interest.",
+  "agent_use": "Use the ChEBI web services (ebi.ac.uk/chebi/webServices) and download SDF/OWL dumps.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Crystallography Open Database (COD)",
+  "url": "https://www.crystallography.net",
+  "category": "chemistry-materials",
+  "access": "bulk",
+  "discovery_value": "Open-access collection of 500,000+ crystal structures (CIF files) from published research.",
+  "agent_use": "Search and download CIF files or bulk SQL dumps from crystallography.net.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ChemRxiv",
+  "url": "https://chemrxiv.org",
+  "category": "chemistry-materials",
+  "access": "api+bulk",
+  "discovery_value": "Open preprint server for chemistry with 15,000+ papers across all subdisciplines.",
+  "agent_use": "Use the Figshare-backed API (chemrxiv.org/engage/chemrxiv/public-api) for metadata harvest.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "ZINC",
+  "url": "https://zinc.docking.org",
+  "category": "chemistry-materials",
+  "access": "bulk",
+  "discovery_value": "Database of commercially available compounds for virtual screening with prepared 3D conformers.",
+  "agent_use": "Download ready-to-dock SMILES/3D files from zinc.docking.org/catalogs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MatWeb",
+  "url": "https://www.matweb.com",
+  "category": "chemistry-materials",
+  "access": "browse",
+  "discovery_value": "Searchable database of engineering material datasheets (polymers, metals, ceramics) from manufacturers.",
+  "agent_use": "No API; scrape datasheet pages respecting robots.txt for property extraction.",
+  "origin": "curated",
+  "note": "freemium; premium features paid | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Open Catalyst Project",
+  "url": "https://opencatalystproject.org",
+  "category": "chemistry-materials",
+  "access": "bulk",
+  "discovery_value": "Meta/MetaFAIR datasets of DFT relaxations on catalytic surfaces (OC20, OC22) for ML model development.",
+  "agent_use": "Download OC20/OC22 LMDB datasets and pretrained models from its downloads page.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OPTIMADE",
+  "url": "https://www.optimade.org",
+  "category": "chemistry-materials",
+  "access": "api",
+  "discovery_value": "Standard API specification unifying queries across Materials Project, AFLOW, OQMD and 30+ providers.",
+  "agent_use": "Point a single OPTIMADE client at multiple providers' REST endpoints for cross-database material queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MassBank",
+  "url": "https://massbank.eu",
+  "category": "chemistry-materials",
+  "access": "bulk",
+  "discovery_value": "Open mass-spectral database with high-quality MS/MS records for metabolite identification.",
+  "agent_use": "Download records via its API (massbank.eu/api) or the MSP bulk files.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "SDBS (Spectral Database for Organic Compounds)",
+  "url": "https://sdbs.db.aist.go.jp",
+  "category": "chemistry-materials",
+  "access": "browse",
+  "discovery_value": "Japanese AIST database with IR, NMR, MS and ESR spectra for ~35,000 organic compounds.",
+  "agent_use": "Query by compound name/CAS via URL; download JCampDX spectra files.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Polymath Project (blog + archive)",
+  "url": "https://polymathprojects.org",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Live home of the Polymath massively-collaborative math projects (Polymath1-16), linking open problems and results; the original wiki (michaelnielsen.org/polymath1) is now offline.",
+  "agent_use": "Scrape WordPress posts/pages for project announcements, open problems and outcomes.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Open Problem Garden",
+  "url": "https://www.openproblemgarden.org",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Community wiki collecting open research problems in mathematics, especially combinatorics and graph theory.",
+  "agent_use": "Scrape MediaWiki pages for problem statements and references.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Stack Overflow",
+  "url": "https://stackoverflow.com",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "23M+ programming Q&A pairs - the canonical corpus for code troubleshooting and API-usage mining.",
+  "agent_use": "Use the Stack Exchange API (api.stackexchange.com/2.3) or the CC BY-SA dumps on archive.org.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Stack Exchange Network",
+  "url": "https://stackexchange.com",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "180+ expert Q&A communities (math, physics, crypto, emacs, dsp...) with search and voting signals.",
+  "agent_use": "Enumerate sites via api.stackexchange.com/2.3/sites and query each via the API.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Stack Exchange API",
+  "url": "https://api.stackexchange.com",
+  "category": "math-computing",
+  "access": "api",
+  "discovery_value": "Programmatic interface for all Stack Exchange sites: questions, answers, users, tags.",
+  "agent_use": "Keyless JSON calls at 300 req/day; free key raises to 10k/day for scripted harvest.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Rosetta Code",
+  "url": "https://rosettacode.org",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Wiki with ~1,000 programming tasks shown side-by-side in 800+ languages - ideal for cross-language reasoning.",
+  "agent_use": "Use the MediaWiki API to harvest tasks and language implementations.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Wolfram Functions Site",
+  "url": "https://functions.wolfram.com",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Reference for 87,000+ mathematical functions with formulas, visualizations and identities.",
+  "agent_use": "Scrape formula pages for identities; NIST DLMF offers a machine-readable alternative.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Wolfram MathWorld",
+  "url": "https://mathworld.wolfram.com",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Extensive mathematics encyclopedia with 13,000+ entries on definitions, theorems and examples.",
+  "agent_use": "Fetch entry pages via documented URL patterns for structured text extraction.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NIST DLMF (Digital Library of Mathematical Functions)",
+  "url": "https://dlmf.nist.gov",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Authoritative reference on special functions with equations, proofs and literature links.",
+  "agent_use": "Use DLMF XML downloads and its stable URL patterns (dlmf.nist.gov/section) for citation-accurate math.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MacTutor History of Mathematics",
+  "url": "https://mathshistory.st-andrews.ac.uk",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Biographies of 2,500+ mathematicians and essays on the history of mathematical topics.",
+  "agent_use": "Scrape biography pages for structured historical facts.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LMFDB (L-functions and Modular Forms Database)",
+  "url": "https://www.lmfdb.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Database of L-functions, elliptic curves, modular forms and number-field data linking computations across fields.",
+  "agent_use": "Use its REST API endpoints (lmfdb.org/api) or download static data files.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Mathematics Genealogy Project",
+  "url": "https://www.genealogy.math.ndsu.nodak.edu",
+  "category": "math-computing",
+  "access": "browse",
+  "discovery_value": "Advisor-student genealogy of 300,000+ mathematicians with degree institutions and years.",
+  "agent_use": "Scrape person pages to build the advisor tree; robots.txt-aware.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Lean mathlib4",
+  "url": "https://github.com/leanprover-community/mathlib4",
+  "category": "math-computing",
+  "access": "bulk",
+  "discovery_value": "The central open-source mathematical library in Lean 4 formalizing tens of thousands of theorems.",
+  "agent_use": "Clone the repo and grep theorems; use its API docs for programmatic lookup of formal statements.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "RFC Editor",
+  "url": "https://www.rfc-editor.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Canonical archive of Internet standards documents (RFCs) covering protocols, formats and best practices.",
+  "agent_use": "Fetch RFC text via info.ietf.org/rfc URLs or the RFC-info API for protocol details.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "W3C",
+  "url": "https://www.w3.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Web standards body: HTML, CSS, accessibility, RDF specs with normative documents and test suites.",
+  "agent_use": "Fetch spec pages via stable URLs; spec documents are machine-parseable (Respec source).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "PyPI (Python Package Index)",
+  "url": "https://pypi.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Registry of 500,000+ Python packages with metadata, releases and distributions.",
+  "agent_use": "Query the JSON API (pypi.org/pypi/<pkg>/json) keylessly for any package's metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "npm Registry",
+  "url": "https://www.npmjs.com",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Largest software package registry with 2M+ JavaScript packages and dependency graphs.",
+  "agent_use": "Query registry.npmjs.org/<pkg> for full metadata JSON keylessly.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "CRAN (Comprehensive R Archive Network)",
+  "url": "https://cran.r-project.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Primary repository of 20,000+ R packages with documentation and task views by topic.",
+  "agent_use": "Harvest package metadata via the CRAN packages.rds/DESCRIPTION files or the CRAN API mirrors.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CTAN (Comprehensive TeX Archive Network)",
+  "url": "https://ctan.org",
+  "category": "math-computing",
+  "access": "api+bulk",
+  "discovery_value": "Central archive of TeX/LaTeX packages with documentation and catalog metadata.",
+  "agent_use": "Use its JSON API (ctan.org/json) for package search and metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Bureau of Economic Analysis (BEA)",
+  "url": "https://www.bea.gov",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Official US GDP, income, trade, industry accounts with detailed regional and state data.",
+  "agent_use": "Use the BEA Data API (api.bea.gov/api) with free key for NIPA and regional series.",
+  "origin": "curated",
+  "note": "free API key",
+  "url_status": "200"
+ },
+ {
+  "name": "Bureau of Labor Statistics (BLS)",
+  "url": "https://www.bls.gov",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "US labor statistics: CPI, employment, wages, productivity with deep historical series.",
+  "agent_use": "Use the BLS Public Data API v2 (api.bls.gov/public/v2) keylessly (with free key for more queries).",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "OECD Data Explorer",
+  "url": "https://data-explorer.oecd.org",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "OECD's unified data portal replacing OECD.Stat: 1,000+ datasets on economy, education, trade, environment.",
+  "agent_use": "Use SDMX JSON/CSV endpoints (sdmx.oecd.org/public/rest) for structured queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "FAOSTAT",
+  "url": "https://www.fao.org/faostat/en",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "UN food and agriculture database: production, trade, prices, land use, food supply for 245 countries since 1961.",
+  "agent_use": "Download full FAOSTAT CSV/ZIP domain dumps from fao.org/faostat/en/#data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UN Data",
+  "url": "https://data.un.org",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Portal aggregating statistical databases from UN agencies (population, trade, energy, crime) in one search.",
+  "agent_use": "Use the UN Data API (data.un.org/Handlers) for JSON/CSV indicator retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DBnomics",
+  "url": "https://db.nomics.world",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Aggregator of 1,000+ economic data providers (national statistical institutes) with unified series IDs.",
+  "agent_use": "Use the DBnomics API (api.db.nomics.world/v22) for JSON series queries keylessly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ECB Data Portal",
+  "url": "https://data.ecb.europa.eu",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "European Central Bank's statistical warehouse: euro-area rates, exchange rates, monetary aggregates.",
+  "agent_use": "Use the ECB Data Portal API (data-api.ecb.europa.eu) with SDMX format.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "BIS Statistics",
+  "url": "https://www.bis.org/statistics",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Bank for International Settlements data on banking, debt securities, FX, credit and derivatives.",
+  "agent_use": "Download BIS long-format CSV/Excel statistical releases directly.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ILOSTAT",
+  "url": "https://ilostat.ilo.org",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "UN labour statistics: employment, unemployment, wages, working hours for 189 countries.",
+  "agent_use": "Download full ILOSTAT databases as CSV/parquet or query the SDMX API.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Penn World Table",
+  "url": "https://www.rug.nl/ggdc/productivity/pwt",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Standardized cross-country macro dataset (real GDP, capital, TFP) for 180+ countries from 1950.",
+  "agent_use": "Download the PWT Excel/STATA files from the GGDC pages.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Maddison Project Database",
+  "url": "https://www.rug.nl/ggdc/historicaldevelopment/maddison",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Historical GDP per capita reconstructions for 169 countries back to year 1 AD.",
+  "agent_use": "Download the Maddison Excel/CSV datasets from GGDC.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "AidData",
+  "url": "https://www.aiddata.org",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Geocoded global development-finance database tracking 500k+ Chinese-government projects and aid flows.",
+  "agent_use": "Download the Global Chinese Development Finance and AidData Core datasets.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Nasdaq Data Link",
+  "url": "https://data.nasdaq.com",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Successor of Quandl: marketplace of financial/economic time series with free core datasets.",
+  "agent_use": "Use the Data Link API (data.nasdaq.com/api/v3) with free key for select free series.",
+  "origin": "curated",
+  "note": "freemium: free key + paid premium datasets",
+  "url_status": "200"
+ },
+ {
+  "name": "Alpha Vantage",
+  "url": "https://www.alphavantage.co",
+  "category": "economics-finance",
+  "access": "api",
+  "discovery_value": "Free-tier stock/forex/crypto APIs with daily/historical time series and technical indicators.",
+  "agent_use": "GET alphavantage.co/query endpoints with a free API key for JSON series.",
+  "origin": "curated",
+  "note": "freemium: free key, limited requests",
+  "url_status": "200"
+ },
+ {
+  "name": "Stooq",
+  "url": "https://stooq.com",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Free historical quotes for stocks, indices, currencies and commodities with plain CSV downloads.",
+  "agent_use": "Fetch daily data as CSV via URL patterns (stooq.com/q/d/l/?s=...) without login.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CoinGecko",
+  "url": "https://www.coingecko.com",
+  "category": "economics-finance",
+  "access": "api",
+  "discovery_value": "Cryptocurrency market data: prices, volumes, market caps across 10k+ coins with history.",
+  "agent_use": "Use the free CoinGecko API v3 (api.coingecko.com/api/v3) with demo key for JSON queries.",
+  "origin": "curated",
+  "note": "freemium API | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "US Treasury Fiscal Data",
+  "url": "https://fiscaldata.treasury.gov",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Treasury's consolidated open-data platform: debt, spending, interest rates, revenue datasets.",
+  "agent_use": "Use the Fiscal Data API (api.fiscaldata.treasury.gov/api/v1) for JSON queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "SEC XBRL Company Facts API",
+  "url": "https://data.sec.gov",
+  "category": "economics-finance",
+  "access": "api",
+  "discovery_value": "Structured XBRL financial facts (revenues, assets, EPS) for every SEC registrant as JSON.",
+  "agent_use": "GET data.sec.gov/api/xbrl/companyfacts/CIK##########.json with a declared User-Agent.",
+  "origin": "curated",
+  "note": "requires declared UA; 403-bot expected for default curl | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Office for National Statistics (UK)",
+  "url": "https://www.ons.gov.uk",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "UK's national statistical institute: inflation, employment, GDP, census with open downloads.",
+  "agent_use": "Use the ONS Time Series API (api.ons.gov.uk) and download datasets as CSV.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Statistics Canada",
+  "url": "https://www.statcan.gc.ca",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Canada's statistics agency: population, trade, CPI, labor with extensive CANSIM table access.",
+  "agent_use": "Use the WDS API (statcan.gc.ca/eng/developers/wds) for table and series retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Australian Bureau of Statistics (ABS)",
+  "url": "https://www.abs.gov.au",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Australia's national statistics on population, economy and society with SDMX data downloads.",
+  "agent_use": "Use the ABS SDMX API (data.api.abs.gov.au) for structured datasets.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Zillow Research Data",
+  "url": "https://www.zillow.com/research/data",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "US housing-market datasets: home values (ZHVI), rents, inventory by metro/ZIP updated monthly.",
+  "agent_use": "Download CSVs from zillow.com/research/data pages for housing analysis.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Economic Policy Uncertainty",
+  "url": "https://www.policyuncertainty.com",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Monthly policy-uncertainty indices for 20+ countries built from news-coverage methodology (Baker/Bloom/Davis).",
+  "agent_use": "Download the country index Excel/CSV files directly from the site.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NBER (National Bureau of Economic Research)",
+  "url": "https://www.nber.org",
+  "category": "economics-finance",
+  "access": "browse",
+  "discovery_value": "Working-paper series and curated data (recession dates, historical macro data) for economic research.",
+  "agent_use": "Browse working papers and download the NBER public-use data files linked per series.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "IDEAS / RePEc",
+  "url": "https://ideas.repec.org",
+  "category": "economics-finance",
+  "access": "browse",
+  "discovery_value": "Largest bibliographic database of economics research with author rankings and working-paper series.",
+  "agent_use": "Scrape series/author pages (robots.txt-aware) or use the RePEc metadata archives.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USDA Economic Research Service",
+  "url": "https://www.ers.usda.gov",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "US agri-food economics: farm income, food prices, county-level ag census products.",
+  "agent_use": "Download the ERS data products (Excel/CSV) from its data products catalog.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "World Bank Microdata Library",
+  "url": "https://microdata.worldbank.org",
+  "category": "economics-finance",
+  "access": "bulk",
+  "discovery_value": "Thousands of household/enterprise survey microdata from developing countries with documentation.",
+  "agent_use": "Download survey microdata (free-registration items) via its catalog.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Observatory of Economic Complexity (OEC)",
+  "url": "https://oec.world",
+  "category": "economics-finance",
+  "access": "api+bulk",
+  "discovery_value": "Visualizes global trade flows by product/country built on BACI/Comtrade with downloadable data.",
+  "agent_use": "Use the OEC API (oec.world/api) for trade-flow queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Congress.gov",
+  "url": "https://www.congress.gov",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Official US federal legislative information: bills, amendments, votes, committee activity back to 1973.",
+  "agent_use": "Use the Congress.gov API (api.congress.gov) with a free key for JSON bill and member data.",
+  "origin": "curated",
+  "note": "free API key | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Caselaw Access Project (case.law)",
+  "url": "https://case.law",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Full-text US case law from Harvard's digitization: 6.7M court opinions up to 2018, fully open.",
+  "agent_use": "Download the full-bulk ZIP (case-law dumps) or use the CAP API (api.case.law/v1).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UN Treaty Collection",
+  "url": "https://treaties.un.org",
+  "category": "law-policy-gov",
+  "access": "browse",
+  "discovery_value": "Status of 2,500+ multilateral treaties with signatories, ratifications and declarations per country.",
+  "agent_use": "Scrape the treaty-status pages or download Chapter V/MTDSG status tables.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "TED (Tenders Electronic Daily)",
+  "url": "https://ted.europa.eu",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "EU public-procurement database with daily tender notices from 50+ countries in 24 languages.",
+  "agent_use": "Use the TED API (ted.europa.eu/api) and download notice data as XML/CSV.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "PatentsView",
+  "url": "https://patentsview.org",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Disambiguated USPTO patent data: inventors, assignees, citations, claims with analytics APIs.",
+  "agent_use": "Use the PatentsView API (search.patentsview.org) with free key for JSON queries.",
+  "origin": "curated",
+  "note": "free API key",
+  "url_status": "200"
+ },
+ {
+  "name": "Google Patents",
+  "url": "https://patents.google.com",
+  "category": "law-policy-gov",
+  "access": "browse",
+  "discovery_value": "Search interface over 120M+ worldwide patent publications with citations and legal status.",
+  "agent_use": "Scrape patent pages (structured HTML) or use BigQuery public patent datasets for bulk work.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Espacenet",
+  "url": "https://worldwide.espacenet.com",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "EPO's worldwide patent search with bibliographic data, claims and legal events for 150M+ documents.",
+  "agent_use": "Use the OPS API (ops.epo.org/3.2) with free EPO account credentials.",
+  "origin": "curated",
+  "note": "free API account required | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "WIPO Patentscope",
+  "url": "https://patentscope.wipo.int",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "WIPO's international PCT patent database plus national collections with translation support.",
+  "agent_use": "Free WIPO account enables the Patentscope Search API for XML results.",
+  "origin": "curated",
+  "note": "free account for API",
+  "url_status": "200"
+ },
+ {
+  "name": "ICIJ Offshore Leaks Database",
+  "url": "https://offshoreleaks.icij.org",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Searchable index of offshore entities/officers from Panama/Paradise/Pandora Papers leaks.",
+  "agent_use": "Query its search endpoints and download the CSV datasets ICIJ publishes.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CRS Reports (crsreports.congress.gov)",
+  "url": "https://crsreports.congress.gov",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "Library of Congress research-service reports: nonpartisan policy analyses on every federal topic.",
+  "agent_use": "Download PDFs from the report list; also mirrored with structured search at everycrsreport.com.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "US Government Accountability Office (GAO)",
+  "url": "https://www.gao.gov",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "Federal watchdog reports and testimonies on program effectiveness, fraud and agency performance.",
+  "agent_use": "Scrape/download report PDFs; offers an RSS/API for latest products.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "Congressional Budget Office (CBO)",
+  "url": "https://www.cbo.gov",
+  "category": "law-policy-gov",
+  "access": "browse",
+  "discovery_value": "Independent cost estimates and economic projections for US legislation with data supplements.",
+  "agent_use": "Download publications and accompanying data files (Excel/CSV) from cbo.gov/publications.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "MIT Election Data + Science Lab",
+  "url": "https://electionlab.mit.edu",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "Election results and administration data: precinct-level returns, turnout, polling-place data for US elections.",
+  "agent_use": "Download the MEDSL datasets (CSV) from electionlab.mit.edu/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenSecrets",
+  "url": "https://www.opensecrets.org",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "Tracks money in US politics: lobbying, PAC contributions, donor demographics from FEC filings.",
+  "agent_use": "Download bulk FEC/OpenSecrets data files; legacy API still documented.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Follow the Money (National Institute on Money in Politics)",
+  "url": "https://www.followthemoney.org",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "State-level campaign-contribution database across all 50 US states with donor/recipient analysis.",
+  "agent_use": "Register free to download contribution datasets as CSV.",
+  "origin": "curated",
+  "note": "free registration",
+  "url_status": "200"
+ },
+ {
+  "name": "eCFR (Electronic Code of Federal Regulations)",
+  "url": "https://www.ecfr.gov",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Current, searchable, updated-daily codification of all US federal regulations.",
+  "agent_use": "Use the eCFR API (ecfr.gov/developers) for XML/JSON retrieval of any title/part.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Supreme Court of the United States",
+  "url": "https://www.supremecourt.gov",
+  "category": "law-policy-gov",
+  "access": "bulk",
+  "discovery_value": "Official opinions, orders, oral-argument audio and dockets from the US Supreme Court.",
+  "agent_use": "Download opinion PDFs and argument audio from its opinions/oral_arguments pages.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Oyez",
+  "url": "https://www.oyez.org",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "US Supreme Court oral-argument audio with synchronized transcripts and case summaries.",
+  "agent_use": "Scrape case pages or use its API endpoints for transcript/audio metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Grants.gov",
+  "url": "https://www.grants.gov",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Federal grant-opportunity listings with full opportunity details and application packages.",
+  "agent_use": "Use the Grants.gov Search2 API (api.grants.gov/v1/api/search) keylessly for opportunity search.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "HUDOC (European Court of Human Rights)",
+  "url": "https://hudoc.echr.coe.int",
+  "category": "law-policy-gov",
+  "access": "api+bulk",
+  "discovery_value": "Full-text database of ECtHR judgments and decisions with citation and keyword metadata.",
+  "agent_use": "Use the HUDOC REST API (hudoc.echr.coe.int/api) for case document retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Ancient World Mapping Center (AWMC)",
+  "url": "https://awmc.unc.edu",
+  "category": "history-humanities-language",
+  "access": "bulk",
+  "discovery_value": "UNC center publishing free shapefiles/GeoJSON of the ancient Mediterranean world (bentley maps, BAAWA).",
+  "agent_use": "Download the AWMC GeoJSON/shapefile layers for ancient-place GIS work.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Internet History Sourcebooks (Fordham)",
+  "url": "https://sourcebooks.fordham.edu",
+  "category": "history-humanities-language",
+  "access": "browse",
+  "discovery_value": "Large public-domain collection of primary historical texts (Ancient, Medieval, Modern, African, Islamic, Jewish, Women).",
+  "agent_use": "Scrape the hierarchical text pages for primary-source corpus building.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Perseus Digital Library",
+  "url": "https://www.perseus.tufts.edu",
+  "category": "history-humanities-language",
+  "access": "browse",
+  "discovery_value": "Classical texts (Greek/Latin) with morphological tools, lexica (LSJ, Lewis & Short) and art/archaeology catalogs.",
+  "agent_use": "Fetch texts via the Perseus Hopper URLs; also mirrored in the Scaife Viewer for structured consumption.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Logeion",
+  "url": "https://logeion.uchicago.edu",
+  "category": "history-humanities-language",
+  "access": "browse",
+  "discovery_value": "Combined lookup of major Latin/Greek dictionaries (LSJ, Lewis & Short, DGE) in one interface.",
+  "agent_use": "Query its JSON lookup endpoints for lemma definitions.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Chronicling America (LoC)",
+  "url": "https://chroniclingamerica.loc.gov",
+  "category": "history-humanities-language",
+  "access": "api+bulk",
+  "discovery_value": "Library of Congress newspaper archive: full OCR text of 20M+ pages from 1770-1963.",
+  "agent_use": "Use its search API (chroniclingamerica.loc.gov/search/pages/results?format=json) for OCR text and page images.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Google Books Ngram Viewer",
+  "url": "https://books.google.com/ngrams",
+  "category": "history-humanities-language",
+  "access": "bulk",
+  "discovery_value": "Word-frequency time series from millions of digitized books (1500-2019) for cultural-trend analysis.",
+  "agent_use": "Download the raw Ngram datasets from storage.googleapis.com/books/ngrams for bulk analysis.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "CDLI (Cuneiform Digital Library Initiative)",
+  "url": "https://cdli.earth",
+  "category": "history-humanities-language",
+  "access": "api+bulk",
+  "discovery_value": "Cuneiform tablets catalog with images, transliterations and metadata for 350,000+ objects (relocated from cdli.ucla.edu).",
+  "agent_use": "Use CDLI APIs/pages at cdli.earth to fetch tablet metadata, images and transliterations.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "TalkBank / CHILDES",
+  "url": "https://talkbank.org",
+  "category": "history-humanities-language",
+  "access": "bulk",
+  "discovery_value": "Consortium of corpora for child-language (CHILDES), aphasia, dementia and conversational interaction transcripts.",
+  "agent_use": "Download TalkBank corpora (CHAT transcripts) from talkbank.org/data/ repositories.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Wellcome Collection",
+  "url": "https://wellcomecollection.org",
+  "category": "history-humanities-language",
+  "access": "api",
+  "discovery_value": "Open archive of medical-history digitized collections with openly licensed images and records.",
+  "agent_use": "Use the Wellcome Collection API (api.wellcomecollection.org/catalogue/v2) for search and image URLs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Wiktionary",
+  "url": "https://www.wiktionary.org",
+  "category": "history-humanities-language",
+  "access": "bulk",
+  "discovery_value": "Collaborative multilingual dictionary with etymology, pronunciation and inflection tables across 180+ editions.",
+  "agent_use": "Download XML dumps (dumps.wikimedia.org) or query the MediaWiki API for entries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "PanLex",
+  "url": "https://www.panlex.org",
+  "category": "history-humanities-language",
+  "access": "bulk",
+  "discovery_value": "Database translating 20M+ expressions across 5,000+ languages - the largest open multilingual lexicon.",
+  "agent_use": "Download the PanLex database dumps (CSV/SQL) or use the PanLex API (api.panlex.org).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenSubtitles",
+  "url": "https://www.opensubtitles.com",
+  "category": "history-humanities-language",
+  "access": "api+bulk",
+  "discovery_value": "Largest subtitle database: millions of subtitle files aligned to films/TV across languages.",
+  "agent_use": "Use the OpenSubtitles REST API with a free key for search/download (quota-limited).",
+  "origin": "curated",
+  "note": "gated API; free key with quota | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Transkribus",
+  "url": "https://transkribus.eu",
+  "category": "history-humanities-language",
+  "access": "compute",
+  "discovery_value": "Platform for HTR/OCR of historical manuscripts with trained models for European scripts.",
+  "agent_use": "Use the Transkribus REST API (transkribus.eu/Tr/write/read) with free account for batch recognition jobs.",
+  "origin": "curated",
+  "note": "freemium credits",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenTopography",
+  "url": "https://www.opentopography.org",
+  "category": "geography-maps",
+  "access": "api+bulk",
+  "discovery_value": "High-resolution LiDAR/DEM archive for earth science with global DEM products and point-cloud access.",
+  "agent_use": "Use the OpenTopography API (portal.opentopography.org) to subset and download point clouds/DEMs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Geofabrik OpenStreetMap extracts",
+  "url": "https://download.geofabrik.de",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Daily-updated regional OSM extracts (continents to cities) in osm/pbf formats.",
+  "agent_use": "Download .osm.pbf files per region for offline map analytics.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Nominatim",
+  "url": "https://nominatim.org",
+  "category": "geography-maps",
+  "access": "api",
+  "discovery_value": "OSM geocoding service for address/place search and reverse geocoding; public instance + self-host.",
+  "agent_use": "GET nominatim.openstreetmap.org/search (1 req/s, custom UA) for geocoding; run own instance at scale.",
+  "origin": "curated",
+  "note": "public instance rate-limited; self-host for scale",
+  "url_status": "200"
+ },
+ {
+  "name": "GADM",
+  "url": "https://gadm.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Administrative-boundary dataset for all countries down to multiple levels with consistent coding.",
+  "agent_use": "Download per-country shapefile/GeoJSON/rds files from gadm.org/download_country.html.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "GeoNames",
+  "url": "https://www.geonames.org",
+  "category": "geography-maps",
+  "access": "api+bulk",
+  "discovery_value": "Gazetteer of 11M+ place names with coordinates, population, elevation and feature codes.",
+  "agent_use": "Download allCountries.zip dump or use the free web services (secure.geonames.org) with free account.",
+  "origin": "curated",
+  "note": "free account for web services",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenAddresses",
+  "url": "https://openaddresses.io",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Open, global collection of address points from municipal/government sources.",
+  "agent_use": "Download regional CSV bundles via openaddresses.io and the batch machine output.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "EPSG.io",
+  "url": "https://epsg.io",
+  "category": "geography-maps",
+  "access": "api+bulk",
+  "discovery_value": "Registry of coordinate reference systems with transformations and WKT/Proj definitions.",
+  "agent_use": "Use epsg.io API endpoints (epsg.io/{code}.json) for CRS definitions; open-source EPSG registry.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Google Earth Engine",
+  "url": "https://earthengine.google.com",
+  "category": "geography-maps",
+  "access": "compute",
+  "discovery_value": "Cloud platform cataloging petabytes of satellite imagery (Landsat, Sentinel, MODIS) with JavaScript/Python analysis compute.",
+  "agent_use": "Register (free for research) and use the Python API to run server-side raster analysis.",
+  "origin": "curated",
+  "note": "free signup; usage limits",
+  "url_status": "200"
+ },
+ {
+  "name": "USGS The National Map",
+  "url": "https://nationalmap.gov",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "US national geospatial program: 3DEP LiDAR, USGS TOPO maps, hydrography, structures, orthoimagery.",
+  "agent_use": "Download via TNM download APIs (thegdal: apps.nationalmap.gov) or USGS TNM Access.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "WorldPop",
+  "url": "https://www.worldpop.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "High-resolution (100m) gridded population distributions, demographics and migration data for the globe.",
+  "agent_use": "Download GeoTIFF/CSV population layers from worldpop.org/geodata listings.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "HydroSHEDS",
+  "url": "https://www.hydrosheds.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Global hydrological data: rivers, basins, drainage direction derived from SRTM at 3-15 arc-sec resolution.",
+  "agent_use": "Download vector/raster hydro layers from hydrosheds.org/data for watershed analysis.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ESA WorldCover",
+  "url": "https://esa-worldcover.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "10m-resolution global land-cover maps (11 classes) from Sentinel-1/2 for 2020/2021.",
+  "agent_use": "Download tiles via its WMS/TAU interface or S3 mirrors documented on the site.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenAerialMap",
+  "url": "https://openaerialmap.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Open repository of licensed drone/orthophoto imagery for humanitarian mapping (HOT OSM ecosystem).",
+  "agent_use": "Query the OAM STAC/TMS endpoints for available imagery footprints.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "geoBoundaries",
+  "url": "https://www.geoboundaries.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Open database of political-administrative boundaries for every country with multiple simplified versions.",
+  "agent_use": "Download simplified/full GeoJSON per country from geoboundaries.org API.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DIVA-GIS Data",
+  "url": "https://www.diva-gis.org",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Free country-level spatial data (roads, railroads, elevation, land cover, population) from multiple sources.",
+  "agent_use": "Download per-country shapefile/elevation packages from diva-gis.org/datadown.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "GEBCO Bathymetry",
+  "url": "https://www.gebco.net",
+  "category": "geography-maps",
+  "access": "bulk",
+  "discovery_value": "Gridded global ocean-floor bathymetry at 15 arc-sec resolution with tracks and coastlines.",
+  "agent_use": "Download GEBCO NetCDF grids from gebco.net/data_and_products/gridded_bathymetry_data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Encyclopedia of Life",
+  "url": "https://eol.org",
+  "category": "environment-biodiversity",
+  "access": "api",
+  "discovery_value": "Aggregated species pages with descriptions, media and taxonomy for millions of taxa.",
+  "agent_use": "Use the EOL API (eol.org/api) with a free key for taxon and media data.",
+  "origin": "curated",
+  "note": "free API key | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "FishBase",
+  "url": "https://fishbase.se",
+  "category": "environment-biodiversity",
+  "access": "browse",
+  "discovery_value": "Global database of 34,000+ fish species with ecology, trophic levels, distribution and life-history data.",
+  "agent_use": "Browse species pages; downloadable relational data via FishBase mirror packages.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "WoRMS (World Register of Marine Species)",
+  "url": "https://www.marinespecies.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Authoritative taxonomic register of 250,000+ marine species names and synonyms.",
+  "agent_use": "Use the WoRMS Aphia REST API (marinespecies.org/rest) for taxon lookups and matches.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Catalogue of Life",
+  "url": "https://www.catalogueoflife.org",
+  "category": "environment-biodiversity",
+  "access": "bulk",
+  "discovery_value": "Global checklist of 2M+ species names assembling taxonomic databases for organisms.",
+  "agent_use": "Download the annual COL checklist (DwC-A) from catalogueoflife.org/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Biodiversity Heritage Library",
+  "url": "https://www.biodiversitylibrary.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Digitized legacy biodiversity literature (250k+ volumes) with OCR text and illustrations.",
+  "agent_use": "Use the BHL API (biodiversitylibrary.org/api) for item/page metadata and OCR retrieval.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Movebank",
+  "url": "https://www.movebank.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Animal-tracking database with GPS/sensor trajectories for thousands of species studies.",
+  "agent_use": "Use the Movebank API (movebank.org/service) to query studies and download tracking CSVs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "IUCN Red List",
+  "url": "https://www.iucnredlist.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Global species extinction-risk assessments with categories, criteria and distributions.",
+  "agent_use": "Apply for a free API token for species data; summary assessments browsable.",
+  "origin": "curated",
+  "note": "API token (free application) for detailed data | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Xeno-canto",
+  "url": "https://xeno-canto.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Crowdsourced bird (and other taxa) sound recordings with 1M+ recordings across 15,000 species.",
+  "agent_use": "Use the xeno-canto API (xeno-canto.org/api) for species recording queries and downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Plants of the World Online (Kew)",
+  "url": "https://powo.science.kew.org",
+  "category": "environment-biodiversity",
+  "access": "api",
+  "discovery_value": "Kew's global plant database with nomenclature, descriptions, images and distribution for 1M+ names.",
+  "agent_use": "Query the POWO API (powo.science.kew.org/api) keylessly for taxon data.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "IPNI (International Plant Names Index)",
+  "url": "https://www.ipni.org",
+  "category": "environment-biodiversity",
+  "access": "api",
+  "discovery_value": "Registry of vascular plant and bryophyte names with publication details.",
+  "agent_use": "Query IPNI's name lookup API (ipni.org/lookup) for nomenclatural records.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "USDA PLANTS Database",
+  "url": "https://plants.usda.gov",
+  "category": "environment-biodiversity",
+  "access": "bulk",
+  "discovery_value": "US plant species profiles: distribution, wetland status, morphology for 40,000+ taxa.",
+  "agent_use": "Download the PLANTS database files (plants.usda.gov/java/downloadData) as CSV.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Protected Planet (WDPA)",
+  "url": "https://www.protectedplanet.net",
+  "category": "environment-biodiversity",
+  "access": "bulk",
+  "discovery_value": "World's most comprehensive database of terrestrial and marine protected areas (WDPA/OECM).",
+  "agent_use": "Register free and download the WDPA point/polygon datasets with country filters.",
+  "origin": "curated",
+  "note": "free registration for downloads",
+  "url_status": "200"
+ },
+ {
+  "name": "Global Forest Watch",
+  "url": "https://www.globalforestwatch.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Near-real-time forest-change monitoring: tree-cover loss, fires, alerts from Hansen/UMD analyses.",
+  "agent_use": "Use the GFW API (api.globalforestwatch.org) and download Hansen tiles for forest analytics.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "NASA FIRMS (Fire Information for Resource Management System)",
+  "url": "https://firms.modaps.eosdis.nasa.gov",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "Near-real-time active fire and thermal anomaly detections from MODIS and VIIRS worldwide.",
+  "agent_use": "Use the FIRMS map API (firms.modaps.eosdis.nasa.gov/api) with free MAP_KEY for CSV fire points.",
+  "origin": "curated",
+  "note": "free MAP_KEY",
+  "url_status": "200"
+ },
+ {
+  "name": "NEON (National Ecological Observatory Network)",
+  "url": "https://www.neonscience.org",
+  "category": "environment-biodiversity",
+  "access": "api+bulk",
+  "discovery_value": "81 US ecological sites with standardized sensor, organismal and remote-sensing data streams.",
+  "agent_use": "Use the NEON data API (data.neonscience.org/api/v0) for products and downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "US LTER (Long Term Ecological Research)",
+  "url": "https://lternet.edu",
+  "category": "environment-biodiversity",
+  "access": "bulk",
+  "discovery_value": "28 US long-term ecological research sites publishing decades of ecological observations and datasets.",
+  "agent_use": "Harvest the LTER data catalog via PASTA API (pasta.lternet.edu/package/search/eml).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "European Environment Agency (EEA)",
+  "url": "https://www.eea.europa.eu",
+  "category": "environment-biodiversity",
+  "access": "bulk",
+  "discovery_value": "EU environmental data hub: air/water quality, biodiversity indicators, land use, climate reporting.",
+  "agent_use": "Download datasets from the EEA datahub (eea.europa.eu/data-and-maps) as CSV/GeoTIFF.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Pew Research Center",
+  "url": "https://www.pewresearch.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "US/global public-opinion and demographic research with downloadable survey datasets for most studies.",
+  "agent_use": "Download survey SPSS/CSV files from published reports' dataset pages.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "World Values Survey",
+  "url": "https://www.worldvaluessurvey.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Wave-based global survey of values/beliefs across 100+ countries since 1981 with rich cross-wave files.",
+  "agent_use": "Register free and download WVS wave datasets (SPSS/SAV) from its data archive.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ICPSR (Inter-university Consortium for Political and Social Research)",
+  "url": "https://www.icpsr.umich.edu",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "World's largest social-science data archive with 25,000+ studies from surveys, elections and censuses.",
+  "agent_use": "Browse and download public-use studies; membership-based items require institutional access.",
+  "origin": "curated",
+  "note": "free registration for some downloads; institutional membership for others | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Guardian Open Platform",
+  "url": "https://open-platform.theguardian.com",
+  "category": "social-data-news-media",
+  "access": "api",
+  "discovery_value": "Full content API for The Guardian archive: articles, tags, editions back to 1999.",
+  "agent_use": "Register for a free developer key, then GET content.guardianapis.com/search endpoints.",
+  "origin": "curated",
+  "note": "free developer key",
+  "url_status": "200"
+ },
+ {
+  "name": "Gapminder",
+  "url": "https://www.gapminder.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Documents and data correcting global misconceptions: per-country health, income and education fact series.",
+  "agent_use": "Download Gapminder indicator spreadsheets (CSV/XLSX) from gapminder.org/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UNDP Human Development Reports",
+  "url": "https://hdr.undp.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "HDI and related indices (inequality, gender, multidimensional poverty) with country time series.",
+  "agent_use": "Download the HDR indicator tables (CSV/XLSX) from hdr.undp.org/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UCDP (Uppsala Conflict Data Program)",
+  "url": "https://ucdp.uu.se",
+  "category": "social-data-news-media",
+  "access": "api+bulk",
+  "discovery_value": "Global conflict database: organized violence events, conflicts, peace agreements since 1946.",
+  "agent_use": "Use the UCDP API (ucdpapi.pcr.uu.se/api) for event queries and downloads.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ACLED (Armed Conflict Location & Event Data)",
+  "url": "https://acleddata.com",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Disaggregated conflict-event data with actors, dates and locations worldwide updated weekly.",
+  "agent_use": "Register for free academic access to download CSV/API conflict events.",
+  "origin": "curated",
+  "note": "free registration required",
+  "url_status": "200"
+ },
+ {
+  "name": "SIPRI",
+  "url": "https://www.sipri.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Stockholm International Peace Research Institute databases: arms transfers, military expenditure, conflicts.",
+  "agent_use": "Download SIPRI databases (arms transfers TIV data, milex) as Excel/CSV.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Global Terrorism Database (GTD)",
+  "url": "https://www.start.umd.edu/gtd",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "200,000+ terrorism incident records with attributes (location, weapons, outcomes) 1970-2020.",
+  "agent_use": "Register free to download GTD CSV files from start.umd.edu.",
+  "origin": "curated",
+  "note": "free registration",
+  "url_status": "200"
+ },
+ {
+  "name": "Hacker News (Algolia API)",
+  "url": "https://hn.algolia.com",
+  "category": "social-data-news-media",
+  "access": "api",
+  "discovery_value": "Tech-community discussion archive: every Hacker News story/comment searchable with full API access.",
+  "agent_use": "Query hn.algolia.com/api/v1/search endpoints keylessly for stories/comments JSON.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Internet Archive TV News Archive",
+  "url": "https://archive.org/details/tvnews",
+  "category": "social-data-news-media",
+  "access": "api+bulk",
+  "discovery_value": "Closed-caption archive of 2M+ US TV news broadcasts searchable by caption text.",
+  "agent_use": "Use the TV News Archive API (archive.org/services/search/v1) or scrape caption clips per query.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Afrobarometer",
+  "url": "https://www.afrobarometer.org",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Pan-African public-attitude survey network with Merged Round datasets across 30+ countries.",
+  "agent_use": "Download merged datasets (SPSS/CSV) from afrobarometer.org/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "V-Dem (Varieties of Democracy)",
+  "url": "https://www.v-dem.net",
+  "category": "social-data-news-media",
+  "access": "bulk",
+  "discovery_value": "Democracy-measurement dataset with 500+ indicators for 180+ countries from expert-coded assessments.",
+  "agent_use": "Register free to download V-Dem country-year/country-month datasets.",
+  "origin": "curated",
+  "note": "free registration",
+  "url_status": "200"
+ },
+ {
+  "name": "Backyard Worlds: Planet 9",
+  "url": "https://backyardworlds.org",
+  "category": "citizen-science-volunteer",
+  "access": "browse",
+  "discovery_value": "Citizen-scientists search WISE moving images for faint brown dwarfs and Planet 9 candidates.",
+  "agent_use": "Browse flipbook search; harvest discovered-object lists from project results pages.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Galaxy Zoo",
+  "url": "https://galaxyzoo.org",
+  "category": "citizen-science-volunteer",
+  "access": "browse",
+  "discovery_value": "Crowdsourced galaxy-morphology classification generating the GZH datasets used in astronomy research.",
+  "agent_use": "Classify images; download the published morphology catalogs via Zooniverse releases.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Planet Hunters TESS",
+  "url": "https://planethunters.org",
+  "category": "citizen-science-volunteer",
+  "access": "browse",
+  "discovery_value": "Volunteers scan TESS light curves for transiting exoplanets the algorithms miss.",
+  "agent_use": "Browse subject pages; published TESS candidate lists available via project data releases.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Rosetta@home",
+  "url": "https://boinc.bakerlab.org/rosetta",
+  "category": "citizen-science-volunteer",
+  "access": "compute",
+  "discovery_value": "Distributed protein-structure prediction (Rosetta) and design computations on volunteer hardware.",
+  "agent_use": "Attach a BOINC client; results feed published structures and the Foldit community.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "GPUGrid",
+  "url": "https://www.gpugrid.net",
+  "category": "citizen-science-volunteer",
+  "access": "compute",
+  "discovery_value": "GPU-accelerated molecular simulations (protein-ligand dynamics) on volunteer NVIDIA GPUs.",
+  "agent_use": "Attach a BOINC client with GPU; results contribute to published MD studies.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LHC@home",
+  "url": "https://lhcathome.cern.ch",
+  "category": "citizen-science-volunteer",
+  "access": "compute",
+  "discovery_value": "CERN's BOINC projects simulating particle collisions and accelerator beam dynamics.",
+  "agent_use": "Attach a BOINC client (SixTrack/Test4Theory projects) to contribute compute.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Stall Catchers",
+  "url": "https://stallcatchers.com",
+  "category": "citizen-science-volunteer",
+  "access": "browse",
+  "discovery_value": "Citizen-scientists analyze blood-flow movies to find stalled brain capillaries for Alzheimer's research.",
+  "agent_use": "Play the game; aggregated crowd results published by the Human Computation Institute.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Old Weather",
+  "url": "https://www.oldweather.org",
+  "category": "citizen-science-volunteer",
+  "access": "browse",
+  "discovery_value": "Volunteers transcribe historic ship logbooks to recover weather data for climate reconstruction.",
+  "agent_use": "Browse transcription projects; recovered data flows into NOAA ICOADS archives.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "BigCodeBench",
+  "url": "https://github.com/bigcode-project/bigcodebench",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "Practical coding benchmark with 1,140 task-oriented problems requiring diverse library calls.",
+  "agent_use": "Run the eval harness (pip install bigcodebench) with sandboxed execution.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "GAIA benchmark",
+  "url": "https://huggingface.co/datasets/gaia-benchmark/GAIA",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "Meta benchmark of 466 real-world questions requiring web browsing, tool use and reasoning for agents.",
+  "agent_use": "Load via datasets lib (gated; accept terms) and evaluate agent answers against the reference files.",
+  "origin": "curated",
+  "note": "gated dataset: accept terms on HF",
+  "url_status": "200"
+ },
+ {
+  "name": "Terminal-Bench",
+  "url": "https://www.tbench.ai",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "Benchmark measuring agents on end-to-end terminal tasks inside Docker with programmatic checkers.",
+  "agent_use": "Run the tb CLI harness with your agent against the task suite containers.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "EvalPlus",
+  "url": "https://github.com/evalplus/evalplus",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "Rigorous code-generation benchmark (HumanEval+, MBPP+) with 80x more tests to catch wrong solutions.",
+  "agent_use": "Run evalplus.evaluate with generated code files for pass@k scoring.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MLPerf",
+  "url": "https://mlcommons.org",
+  "category": "competitions-benchmarks",
+  "access": "browse",
+  "discovery_value": "Industry-standard benchmark suites (Training/Inference/HPC) with published results across hardware.",
+  "agent_use": "Download reference implementations and result tables from mlcommons.org/benchmarks.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MTEB Leaderboard",
+  "url": "https://huggingface.co/spaces/mteb/leaderboard",
+  "category": "competitions-benchmarks",
+  "access": "browse",
+  "discovery_value": "Massive Text Embedding Benchmark leaderboard comparing embedding models across 50+ tasks.",
+  "agent_use": "Pull per-model results from the mteb/results GitHub/HF repos.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ARC Prize",
+  "url": "https://arcprize.org",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "Abstraction-and-reasoning-corpus benchmark/competition for ARC-AGI-2 with public leaderboard and $1M prizes.",
+  "agent_use": "Download ARC task JSONs from the GitHub repos and evaluate solvers locally.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LiveBench",
+  "url": "https://livebench.ai",
+  "category": "competitions-benchmarks",
+  "access": "browse",
+  "discovery_value": "Contamination-free LLM benchmark with monthly refreshed questions across math, coding, reasoning.",
+  "agent_use": "Fetch leaderboard JSONs from livebench.ai or its GitHub results repo.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MLE-bench",
+  "url": "https://github.com/openai/mle-bench",
+  "category": "competitions-benchmarks",
+  "access": "compute",
+  "discovery_value": "OpenAI benchmark evaluating agents on 75 Kaggle ML-engineering competitions end-to-end.",
+  "agent_use": "Run the mle-bench harness (Docker-based) to score agents on Kaggle tasks.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Rosalind",
+  "url": "https://rosalind.info",
+  "category": "competitions-benchmarks",
+  "access": "browse",
+  "discovery_value": "Bioinformatics problem platform: 300+ algorithmic biology puzzles with dataset downloads per problem.",
+  "agent_use": "Fetch problem datasets via its URL endpoints and verify solutions on the site.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Zindi",
+  "url": "https://www.zindi.africa",
+  "category": "competitions-benchmarks",
+  "access": "browse",
+  "discovery_value": "Africa-focused data-science competition platform with regional prediction challenges.",
+  "agent_use": "Register free to access competition datasets and leaderboards.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Codeforces",
+  "url": "https://codeforces.com",
+  "category": "competitions-benchmarks",
+  "access": "api+bulk",
+  "discovery_value": "Large competitive-programming site with problem archives, ratings and contest history.",
+  "agent_use": "Use the public Codeforces API (codeforces.com/api) for problems, submissions and ratings.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "CTFtime (CTF events)",
+  "url": "https://ctftime.org",
+  "category": "competitions-benchmarks",
+  "access": "api+bulk",
+  "discovery_value": "Global calendar/rankings of capture-the-flag security competitions with writeup links.",
+  "agent_use": "Use the CTFtime API (ctftime.org/api/v1) for events and team rankings.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Hugging Face Hub",
+  "url": "https://huggingface.co",
+  "category": "ml-ai-resources",
+  "access": "api+bulk",
+  "discovery_value": "Central hub for 1.5M+ models, 500k+ datasets and spaces with per-file download and discussion history.",
+  "agent_use": "Use the HF Hub Python library / REST API (huggingface.co/api) to search, download and upload artifacts.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Hugging Face Spaces",
+  "url": "https://huggingface.co/spaces",
+  "category": "ml-ai-resources",
+  "access": "browse",
+  "discovery_value": "Community-hosted ML demos/apps (Gradio, Streamlit, Docker) usable as live tools and reference implementations.",
+  "agent_use": "Interact with Gradio/Streamlit Spaces via their REST APIs or embed them as agent tools.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenML",
+  "url": "https://www.openml.org",
+  "category": "ml-ai-resources",
+  "access": "api+bulk",
+  "discovery_value": "Open platform of 5,000+ datasets and millions of ML tasks/runs with results for reproducibility.",
+  "agent_use": "Use the OpenML REST API (openml.org/api/v1) or python openml client for task search.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "UC Irvine Machine Learning Repository",
+  "url": "https://archive.ics.uci.edu",
+  "category": "ml-ai-resources",
+  "access": "browse",
+  "discovery_value": "Classic ML dataset repository (600+ datasets) used for benchmarks since the 1980s.",
+  "agent_use": "Download datasets via dataset-ID URL patterns (archive.ics.uci.edu/dataset/N).",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "EleutherAI lm-evaluation-harness",
+  "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+  "category": "ml-ai-resources",
+  "access": "compute",
+  "discovery_value": "Standard framework evaluating LLMs on 300+ tasks with standardized prompts and metrics.",
+  "agent_use": "Run lm_eval CLI against HuggingFace or API-backed models for reproducible scores.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "AI2 OLMo",
+  "url": "https://github.com/allenai/OLMo",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "Fully open LLM family (7B/13B/32B) releasing weights, data, code and training logs.",
+  "agent_use": "Download checkpoints and training data from HF allenai org for open-model experiments.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Dolma (AI2 pretraining corpus)",
+  "url": "https://huggingface.co/datasets/allenai/dolma",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "3-trillion-token open pretraining corpus with source-tagged subsets (C4, Wikipedia, PeS2o...).",
+  "agent_use": "Download token/stream shards from HF for pretraining or filtering experiments.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "FineWeb (HF)",
+  "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "15-trillion-token clean web corpus from CommonCrawl with dedup and filtering benchmarks.",
+  "agent_use": "Pull parquet shards via HF hub for LLM pretraining data pipelines.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LAION-5B",
+  "url": "https://huggingface.co/datasets/laion/laion2B-en",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "5.85B CLIP-filtered image-text links for training text-to-image models (Laion aesthetic subsets).",
+  "agent_use": "Download the metadata parquet shards; fetch images from original URLs as needed.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LlamaIndex Docs",
+  "url": "https://docs.llamaindex.ai",
+  "category": "ml-ai-resources",
+  "access": "browse",
+  "discovery_value": "Framework docs for building RAG/LLM applications with connectors to 100+ data sources.",
+  "agent_use": "Scrape the docs (also mirrored on GitHub) for integration recipes when building pipelines.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Epoch AI",
+  "url": "https://epoch.ai",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "Research org tracking AI compute, model performance trends and benchmark data with open databases.",
+  "agent_use": "Download their machine-learning-benchmark and frontier-model databases (CSV) from epoch.ai/data.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Roboflow Universe",
+  "url": "https://universe.roboflow.com",
+  "category": "ml-ai-resources",
+  "access": "browse",
+  "discovery_value": "Community CV dataset hub: 200k+ annotated object-detection/segmentation datasets.",
+  "agent_use": "Register free and pull datasets via the Roboflow SDK/REST API.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "ONNX Model Zoo",
+  "url": "https://github.com/onnx/models",
+  "category": "ml-ai-resources",
+  "access": "bulk",
+  "discovery_value": "Collection of ready-to-run pretrained models in ONNX format (vision, text, speech).",
+  "agent_use": "Download .onnx weights directly for local inference experiments.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "DSPy (Stanford NLP)",
+  "url": "https://github.com/stanfordnlp/dspy",
+  "category": "ml-ai-resources",
+  "access": "compute",
+  "discovery_value": "Programming framework optimizing LM prompts/pipelines declaratively with teleprompters.",
+  "agent_use": "Pip-install dspy and compile programs against any LM API for tuned pipelines.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MCP Servers (official repo)",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "category": "agent-infrastructure",
+  "access": "browse",
+  "discovery_value": "Reference implementations of MCP servers (filesystem, GitHub, Git, Slack, browser...).",
+  "agent_use": "Run any reference server via npx/uvx to give an agent standardized tool access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "MCP Registry (official)",
+  "url": "https://registry.modelcontextprotocol.io",
+  "category": "agent-infrastructure",
+  "access": "api",
+  "discovery_value": "Official registry of published MCP servers with discovery API.",
+  "agent_use": "Query the registry REST API to enumerate available MCP servers.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Awesome Public Datasets",
+  "url": "https://github.com/awesomedata/awesome-public-datasets",
+  "category": "agent-infrastructure",
+  "access": "browse",
+  "discovery_value": "Community-maintained catalog of 800+ high-quality public datasets by domain.",
+  "agent_use": "Parse the README as a source-discovery seed list for any research domain.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "PulseMCP",
+  "url": "https://www.pulsemcp.com",
+  "category": "agent-infrastructure",
+  "access": "browse",
+  "discovery_value": "Live index of 5,000+ MCP servers with categorized search and usage trends.",
+  "agent_use": "Query its server index pages/API for MCP server discovery.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "AutoGen (Microsoft)",
+  "url": "https://github.com/microsoft/autogen",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Framework for multi-agent conversations and orchestration with event-driven runtime.",
+  "agent_use": "Pip-install autogen-agentchat to run multi-agent applications.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "browser-use",
+  "url": "https://github.com/browser-use/browser-use",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Library letting LLM agents control a real browser (navigate, click, extract) via Playwright.",
+  "agent_use": "Pip-install browser-use and drive browsing tasks from any LLM.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Playwright MCP",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Microsoft's MCP server exposing browser automation (accessibility-tree based) to agents.",
+  "agent_use": "Add the npx @playwright/mcp server to any MCP client for structured web control.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "SWE-agent",
+  "url": "https://github.com/SWE-agent/SWE-agent",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Research agent that autonomously edits and tests code in real repositories (Princeton).",
+  "agent_use": "Clone and run sweagent against GitHub issues with configured LM.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "AutoGPT",
+  "url": "https://github.com/Significant-Gravitas/AutoGPT",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Foundational open-source autonomous agent platform with loops, tools and memory.",
+  "agent_use": "Clone and run the platform for goal-driven autonomous task execution.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Open Interpreter",
+  "url": "https://github.com/openinterpreter/open-interpreter",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Lets LLMs run Python/JS/shell code locally with safety sandboxing.",
+  "agent_use": "Pip-install open-interpreter for local code-execution agent loops.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Gymnasium (Farama)",
+  "url": "https://github.com/Farama-Foundation/Gymnasium",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Standard RL environment API with hundreds of classical/control/Atari environments.",
+  "agent_use": "Pip-install gymnasium for RL agent training/evaluation loops.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "GitHub",
+  "url": "https://github.com",
+  "category": "agent-infrastructure",
+  "access": "api+bulk",
+  "discovery_value": "World's largest code host: 400M+ repos with code search, issues, PRs and Actions.",
+  "agent_use": "Use the GitHub REST/GraphQL APIs and code search for repo enumeration and automation.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Docker Hub",
+  "url": "https://hub.docker.com",
+  "category": "agent-infrastructure",
+  "access": "api",
+  "discovery_value": "Default container registry with millions of images for reproducible environments.",
+  "agent_use": "Use the Docker Hub API (hub.docker.com/v2) to search and pull images for sandboxed runs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LiteLLM",
+  "url": "https://github.com/BerriAI/litellm",
+  "category": "agent-infrastructure",
+  "access": "compute",
+  "discovery_value": "Proxy/SDK unifying 100+ LLM provider APIs behind the OpenAI format with load balancing.",
+  "agent_use": "Pip-install litellm or run the proxy for provider-agnostic LLM calls.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Just Solve It (File Format Wiki)",
+  "url": "https://justsolve.archiving.it",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "ArchiveTeam-hosted wiki cataloging thousands of file formats with identification and extraction hints.",
+  "agent_use": "Scrape MediaWiki API (api.php) for format pages and extension mappings.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "textfiles.com",
+  "url": "https://www.textfiles.com",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "Jason Scott's classic BBS-era text-file archive (magazines, hacker docs, art packs) plus upload history.",
+  "agent_use": "Scrape directory listings for bulk corpus of early-digital ephemera.",
+  "origin": "curated",
+  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
+  "url_status": "error"
+ },
+ {
+  "name": "PRONOM (TNA file format registry)",
+  "url": "https://www.nationalarchives.gov.uk/PRONOM",
+  "category": "format-re-targets",
+  "access": "api",
+  "discovery_value": "UK National Archives' technical registry of file formats (PUIDs) with signatures and version info.",
+  "agent_use": "Query the PRONOM web services (REST/SOAP) for format PUIDs and signatures.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "LoC Sustainability of Digital Formats",
+  "url": "https://www.loc.gov/preservation/digital/formats",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "Library of Congress format descriptions (FDD) with identification, encoding and sustainability notes.",
+  "agent_use": "Scrape the format-description pages for canonical format metadata.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Open Preservation Foundation",
+  "url": "https://www.openpreservation.org",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "Non-profit maintaining open preservation tools (veraPDF, JHOVE, Tika fork) and format knowledge.",
+  "agent_use": "Fetch their open-source tooling releases for file validation pipelines.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "digipres.org",
+  "url": "https://digipres.org",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "Aggregated view of digital-preservation data: PRONOM, format registries and tool registries in one place.",
+  "agent_use": "Scrape its aggregated registries for cross-registry format comparisons.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "Gary Kessler file signature table",
+  "url": "https://www.garykessler.net/library/file_sigs.html",
+  "category": "format-re-targets",
+  "access": "browse",
+  "discovery_value": "Widely-referenced hex-signature table mapping file headers to formats for forensics and identification.",
+  "agent_use": "Scrape the HTML table into a magic-bytes lookup for file triage.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Ghidra",
+  "url": "https://ghidra-sre.org",
+  "category": "format-re-targets",
+  "access": "compute",
+  "discovery_value": "NSA's open-source reverse-engineering framework with disassembly, decompilation and scripting for 50+ formats.",
+  "agent_use": "Run headless analysis (analyzeHeadless) to decompile binaries programmatically.",
+  "origin": "curated",
+  "url_status": "redirect-ok"
+ },
+ {
+  "name": "radare2",
+  "url": "https://github.com/radareorg/radare2",
+  "category": "format-re-targets",
+  "access": "compute",
+  "discovery_value": "Scriptable RE framework for disassembly, binary analysis and forensics across architectures.",
+  "agent_use": "Drive r2 via r2pipe JSON commands for automated binary analysis.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "YARA",
+  "url": "https://github.com/VirusTotal/yara",
+  "category": "format-re-targets",
+  "access": "compute",
+  "discovery_value": "Pattern-matching engine for classifying files by rules - standard tool for malware and format triage.",
+  "agent_use": "Write YARA rules and run yarac/yara CLI over sample corpora for detection tasks.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ImHex",
+  "url": "https://github.com/WerWolv/ImHex",
+  "category": "format-re-targets",
+  "access": "compute",
+  "discovery_value": "Hex editor with a pattern-language for structurally parsing binary formats and data visualization.",
+  "agent_use": "Use .hexpat pattern files to parse unknown binary structures; headless scripting available.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "file / libmagic (magic number database)",
+  "url": "https://github.com/file/file",
+  "category": "format-re-targets",
+  "access": "compute",
+  "discovery_value": "The classic file(1) utility source with the magic-number database used system-wide for format identification.",
+  "agent_use": "Compile/inspect the magic database to map signatures to formats programmatically.",
+  "origin": "curated",
+  "note": "libmagic file(1) source repository",
+  "url_status": "200"
+ },
+ {
+  "name": "Wayback Machine",
+  "url": "https://web.archive.org",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Archive of 800B+ web captures with URL timelines - essential for resurrecting dead pages.",
+  "agent_use": "Use the CDX API (web.archive.org/cdx/search/cdx) and Save Page Now endpoints for programmatic access.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Wikimedia Commons",
+  "url": "https://commons.wikimedia.org",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Free-media repository with 100M+ images, audio and video under open licenses.",
+  "agent_use": "Use the MediaWiki API and Commons dumps for media search and bulk retrieval.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Standard Ebooks",
+  "url": "https://standardebooks.org",
+  "category": "archives-libraries-dumps",
+  "access": "bulk",
+  "discovery_value": "Beautifully typeset public-domain ebooks with clean semantic markup (XHTML).",
+  "agent_use": "Download EPUB/XHTML sources from standardebooks.org/ebooks or GitHub.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "LibriVox",
+  "url": "https://librivox.org",
+  "category": "archives-libraries-dumps",
+  "access": "bulk",
+  "discovery_value": "Free public-domain audiobook recordings (20k+ titles) read by volunteers.",
+  "agent_use": "Download MP3s per project via its catalog pages/API.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Library of Congress",
+  "url": "https://www.loc.gov",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "US national library with digitized collections (photos, maps, sound) and open API access.",
+  "agent_use": "Use the LoC JSON API (loc.gov/search/?fo=json) for collection search and item URLs.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "National Archives (US, NARA)",
+  "url": "https://www.archives.gov",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "US federal archive with millions of digitized records and the Catalog API.",
+  "agent_use": "Query the NARA Catalog API (catalog.archives.gov/api/v2) for records and media.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "The National Archives (UK)",
+  "url": "https://www.nationalarchives.gov.uk",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "UK government archive with Discovery catalog of 32M+ records and digitized collections.",
+  "agent_use": "Use the Discovery search API (discovery.nationalarchives.gov.uk/API) for record queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Gallica (Bibliotheque nationale de France)",
+  "url": "https://gallica.bnf.fr",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "BnF digital library with millions of digitized books, manuscripts, newspapers and images.",
+  "agent_use": "Use the Gallica OAI-PMH/IIIF APIs (gallica.bnf.fr/services) for record and image access.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "Trove (National Library of Australia)",
+  "url": "https://trove.nla.gov.au",
+  "category": "archives-libraries-dumps",
+  "access": "api",
+  "discovery_value": "Australian aggregator of newspapers, books, images and archives with deep newspaper OCR search.",
+  "agent_use": "Use the Trove API v3 (api.trove.nla.gov.au/v3) with free key.",
+  "origin": "curated",
+  "note": "free API key",
+  "url_status": "200"
+ },
+ {
+  "name": "NYPL Digital Collections",
+  "url": "https://digitalcollections.nypl.org",
+  "category": "archives-libraries-dumps",
+  "access": "api",
+  "discovery_value": "New York Public Library's digitized collections with 900k+ openly licensed items.",
+  "agent_use": "Use the NYPL Digital Collections API (api.nypl.org) with free key for item metadata.",
+  "origin": "curated",
+  "note": "free API key",
+  "url_status": "200"
+ },
+ {
+  "name": "Smithsonian Open Access",
+  "url": "https://www.si.edu/openaccess",
+  "category": "archives-libraries-dumps",
+  "access": "api",
+  "discovery_value": "4.5M+ Smithsonian collection images and records under CC0 with bulk download.",
+  "agent_use": "Use the Open Access API (api.si.edu) with free key for metadata and media URLs.",
+  "origin": "curated",
+  "note": "free API key | site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "The Met Open Access (API)",
+  "url": "https://metmuseum.github.io",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Metropolitan Museum's CC0 collection (490k+ objects, 400k+ images) with open API.",
+  "agent_use": "Query collection.metmuseum.org/api endpoints keylessly for objects and images.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "Art Institute of Chicago API",
+  "url": "https://api.artic.edu",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Full API over the AIC collection with CC0 images and IIIF image services.",
+  "agent_use": "Query api.artic.edu/api/v1/artworks endpoints for metadata and IIIF image URLs.",
+  "origin": "curated",
+  "note": "site blocks automated requests without browser User-Agent (HTTP 403); canonical live site",
+  "url_status": "403-bot"
+ },
+ {
+  "name": "DataCite",
+  "url": "https://datacite.org",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Registry of DOIs for datasets and non-traditional research outputs across 2,000+ repositories.",
+  "agent_use": "Query api.datacite.org/graphql or REST for dataset DOI metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "ORCID",
+  "url": "https://orcid.org",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Registry of unique researcher identifiers with public profiles linking works and affiliations.",
+  "agent_use": "Use the ORCID Public API (pub.orcid.org/v3.0) for researcher metadata.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "OpenAIRE",
+  "url": "https://www.openaire.eu",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "European open-science aggregator linking publications, datasets, software and funders.",
+  "agent_use": "Use the OpenAIRE Graph API (api.openaire.eu) for linked-research queries.",
+  "origin": "curated",
+  "url_status": "200"
+ },
+ {
+  "name": "BASE (Bielefeld Academic Search Engine)",
+  "url": "https://www.base-search.net",
+  "category": "archives-libraries-dumps",
+  "access": "api",
+  "discovery_value": "Search engine over 400M+ documents from 11,000+ content providers (OA repositories).",
+  "agent_use": "Apply for the free BASE API (OAIPMH/API access) for repository metadata harvest.",
+  "origin": "curated",
+  "note": "free API access on application",
+  "url_status": "200"
+ },
+ {
+  "name": "Scholar.archive.org (Fatcat)",
+  "url": "https://scholar.archive.org",
+  "category": "archives-libraries-dumps",
+  "access": "api+bulk",
+  "discovery_value": "Open scholarly archive preserving 50M+ papers with full-text web archives.",
+  "agent_use": "Query the scholar.archive.org search API and Fatcat REST endpoints.",
+  "origin": "curated",
+  "url_status": "200"
  }
 ]
