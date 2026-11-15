@@ -1,0 +1,22 @@
+timestamp,route,status,bytes,outcome
+2026-11-15T10:09:22Z,dc.g-vo.org TAP TAP_SCHEMA.tables LIKE %695%/Karpov,200,24,"connected; 0 rows - no table match, probing further"
+2026-11-15T10:09:29Z,dc.g-vo.org TAP direct metaviz.'J/A+A/695/A195/main',500,695,"ADQL parse error on quoted table name; schema list fetched"
+2026-11-15T10:09:58Z,dc.g-vo.org TAP desc ILIKE unTimely/Karpov,200,24,"0 rows; G-VO hosts curated schemas only (no metaviz), no Karpov table - route exhausted"
+2026-11-15T10:13:37Z,vizier.cfa.harvard.edu asu-tsv -out.all default table,200,499168,"delivered 260 rows (suspicious ~258); schema has NO epoch/MJD and NO Gaia-id column; arXiv e-print has no machine-readable tables"
+2026-11-15T10:24:00Z,vizier.cfa.harvard.edu votable -out.max=0 metadata,200,6576,"catalog has exactly ONE table: /table2 'New high-proper-motion objects' 258 rows; RA_ICRS/DE_ICRS documented at Ep=J2016.0; PM units arcsec/yr; no epoch/MJD, no Gaia id, no unpublished-flag column (whole table IS the 258-unpublished set); full 21885 list NOT in VizieR deposit"
+2026-11-15T10:27:21Z,epoch check: RA_ICRS vs CWISE-desig residuals,-,-,"median dt fit 0.47yr~0.5 (2015.5->2016.0) but ~1in scatter from CatWISE assoc noise (paper warns); adopting ReadMe Ep=J2016.0 + paper's own Gaia J2016.0 2in matching as basis"
+2026-11-15T10:27:41Z,vizier.cfa.harvard.edu asu-tsv /table1 probe,200,-,"definitive error: Table 'table1' does not exist in catalog J/A+A/695/A195 - deposit contains ONLY table2 (258 rows)"
+2026-11-15T10:28:24Z,arxiv main.tex data-availability scan,-,-,"paper publishes ONLY the 258-object table: Zenodo doi 10.5281/zenodo.14651236 (redirects to record 14651237); full 21885 list not published as a table (SIMBAD-checked, 515 w/o assoc; Gaia-checked, 20555+104 assoc); VizieR deposit = 258-row table2 only"
+2026-11-15T10:32:46Z,cache /tmp/astro_e/gaia621.csv,hit,121699,621 Gaia DR3 rows reused
+2026-11-15T10:32:46Z,cache /tmp/astro_e/karpov258.csv,hit,93698,258 Karpov rows reused
+2026-11-15T10:35:35Z,cache /tmp/astro_e/gaia621.csv,hit,121699,621 Gaia DR3 rows reused
+2026-11-15T10:35:35Z,cache /tmp/astro_e/karpov258.csv,hit,93698,258 Karpov rows reused
+2026-11-15T10:36:30Z,BACKFILL manual: vizier.cfa.harvard.edu /TAP and /tap/sync,404,236,"CFA TAP endpoints 404 (post-outage state unchanged for TAP; asu-tsv CGI works)"
+2026-11-15T10:36:31Z,BACKFILL manual: cdsarc.cds.unistra.fr ncat-Cat J/A+A/695/A195,000,0,"connection failed (curl exit 000) - CDS Strasbourg unreachable as expected"
+2026-11-15T10:36:32Z,BACKFILL manual: vizier.cfa.harvard.edu /viz-bin/cat and /viz-bin/ReadMe,-,-,"both time out at 120-500s (readme 302-redirects to unreachable CDS)"
+2026-11-15T10:36:33Z,BACKFILL manual: arxiv.org e-print 2408.15067,200,1070077,"LaTeX source tarball; NO machine-readable data tables (figures+tex only); tex cites Zenodo doi 10.5281/zenodo.14651236 for the complete table"
+2026-11-15T10:36:34Z,BACKFILL manual: www.aanda.org article HTML,403,769,"bot-blocked"
+2026-11-15T10:36:35Z,BACKFILL manual: zenodo.org/api/records/14651236->14651237,200,494457,"record 'New moving objects detected in unTimely WISE W2 band data as of 2025-01-15'; single file new_moving_final.vot; 258 rows; raj2016/dej2016 field names confirm J2016.0 epoch"
+2026-11-15T10:36:36Z,BACKFILL manual: gaia.aip.de sync TAP POST x2 chunks,200,215831,"VOTable; 621/621 candidate rows retrieved (ra,dec,pmra,pmdec,pm errors,parallax,G,bp_rp,ruwe)"
+2026-11-15T10:36:37Z,BACKFILL verification: zenodo vs vizier copies,-,-,"candid sets identical; max position diff 0.0000in; max PM diff 0.000 mas/yr - bit-identical data"
+2026-11-15T10:36:38Z,BACKFILL verification: crossmatch selftest,-,-,"synthetic twin of karpov row 0 recovered at sep 0.0000in dp_z 0.00 - matcher verified"

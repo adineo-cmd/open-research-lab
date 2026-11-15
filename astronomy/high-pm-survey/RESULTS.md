@@ -96,3 +96,20 @@ Status: first full-sky high-PM harvest complete (2026-11-09/10 session).
    astrometry but no Gaia ids).
 3. Colour-magnitude refine: use M_G vs bp_rp with the 100-200pc L-dwarf locus;
    the top-H tail currently mixes cool subdwarfs (SD*).
+
+## v4 (2026-11-15): Karpov cross-check (B-4) + SDSS blink (B-2)
+
+- **Karpov 2025 overlap cross-check: zero overlap, complementarity proven**
+  — 0/621 candidates (0/35 priority) in the 258 previously-unpublished
+  objects of Karpov+ (A&A 695, A195); the cohort's 160–250 mas/yr sits
+  below that survey's ~0.3″/yr detection floor. The full 21,885-row list
+  is published nowhere (VizieR deposit = the 258-row table2 only; Zenodo
+  record 14651237 bit-identical). See `results/karpov_crosscheck.md`,
+  `results/karpov_crossmatch.csv`, `scripts/karpov_crossmatch.py`.
+- **SDSS third-epoch blink: ran** (2026-11-11 unreachable endpoints solved:
+  SQL POST /dr18/SearchTools.sql-style form + ImgCutout getjpeg + Data Lab
+  TAP) — 18/35 v3 survivors corroborated (z ≤ 0.52, red g−r), 17 no
+  DR18 footprint (coverage, not depth), 0 contradictions. Same session:
+  the compact CSV's stale confidence counts fixed to the authoritative
+  A 39 / B 555 / C 27. See `results/sdss_blink.md`, `results/sdss_blink.csv`,
+  `scripts/sdss_probe.py`.

@@ -1,0 +1,224 @@
+ts,phase,sid,ra,dec,svc,n,s,err
+2026-11-15T10:19:56Z,probe,,167.41774,43.81838,skyserver-dr18-imgcutout,-1,1.38,HTTP 404
+2026-11-15T10:19:57Z,probe,,167.41774,43.81838,skyserver-dr19-imgcutout,-1,1.41,HTTP 404
+2026-11-15T10:20:03Z,probe,,,,skyserver-dr18-docs,-1,6.16,HTTP 404
+2026-11-15T10:20:04Z,probe,,167.41774,43.81838,skyserver-dr18-crossid-POST-raw,-1,1.01,HTTP 404
+2026-11-15T10:20:05Z,probe,,167.41774,43.81838,skyserver-dr18-crossid-POST-form,-1,0.95,HTTP 404
+2026-11-15T10:20:06Z,probe,,167.41774,43.81838,skyserver-dr18-crossid-GET,-1,0.98,HTTP 404
+2026-11-15T10:20:07Z,probe,,167.41774,43.81838,skyserver-dr18-sql-post,19,1.01,
+2026-11-15T10:20:08Z,probe,,167.41774,43.81838,skyserver-dr19-crossid-POST-raw,-1,1.14,HTTP 404
+2026-11-15T10:20:10Z,probe,,167.41774,43.81838,skyserver-dr19-crossid-POST-form,-1,1.1,HTTP 404
+2026-11-15T10:20:11Z,probe,,167.41774,43.81838,skyserver-dr19-crossid-GET,-1,1.17,HTTP 404
+2026-11-15T10:20:12Z,probe,,167.41774,43.81838,skyserver-dr19-sql-post,19,1.01,
+2026-11-15T10:20:24Z,probe,,,,datalab-datalab.noirlab.edu-tap-lsdr9,1,12.4,
+2026-11-15T10:20:37Z,probe,,,,datalab-datalab.noao.edu-tap-lsdr9,-1,12.51,URLError: <urlopen error [Errno -2] Name or service not known>
+2026-11-15T10:20:38Z,probe,,,,legacysurvey-decamals,-1,1.6,HTTP 404
+2026-11-15T10:20:40Z,probe,778994474926961152,,,gaia-aip-tap,-1,1.94,parse: TAP returned XML (error page?)
+2026-11-15T10:21:52Z,probe,778994474926961152,,,gaia-esa-tap,-1,72.3,URLError: <urlopen error timed out>
+2026-11-15T10:23:56Z,probe,,167.41774,43.81838,skyserver-dr18-ImgCutout-getjpg,-1,1.07,HTTP 404
+2026-11-15T10:23:57Z,probe,,167.41774,43.81838,skyserver-dr18-SkyServerWS/imgcutout-getjpg,-1,1.18,HTTP 404
+2026-11-15T10:23:58Z,probe,,167.41774,43.81838,skyserver-dr19-SkyServerWS/imgcutout-getjpg,-1,1.16,HTTP 404
+2026-11-15T10:24:12Z,probe,,,,docs-help-host,-1,13.26,URLError: <urlopen error [Errno -2] Name or service not known>
+2026-11-15T10:24:13Z,probe,,,,docs-en-help,-1,1.04,HTTP 404
+2026-11-15T10:24:14Z,probe,,167.41774,43.81838,skyserver-dr18-crossid-POST-raw,-1,0.95,HTTP 404
+2026-11-15T10:24:15Z,probe,,167.41774,43.81838,skyserver-dr18-crossid-POST-form,-1,1.2,HTTP 404
+2026-11-15T10:24:16Z,probe,,167.41774,43.81838,skyserver-dr18-en/tools/crossid-POST-raw,-1,1.0,HTTP 404
+2026-11-15T10:24:18Z,probe,,167.41774,43.81838,skyserver-dr18-en/tools/crossid-POST-form,-1,2.15,HTTP 404
+2026-11-15T10:24:19Z,probe,,167.41774,43.81838,skyserver-dr18-sql-simple-nojoin,-1,1.27,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:20Z,probe,,167.41774,43.81838,skyserver-dr18-sql-join-field,-1,1.06,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:21Z,probe,,167.41774,43.81838,skyserver-dr18-sql-fGetNearbyObjEq,-1,0.99,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:22Z,probe,,167.41774,43.81838,skyserver-dr19-sql-simple-nojoin,-1,1.12,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:24Z,probe,,167.41774,43.81838,skyserver-dr19-sql-join-field,-1,1.1,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:24Z,probe,,167.41774,43.81838,skyserver-dr19-sql-fGetNearbyObjEq,-1,0.95,"html-error-page(nt=""width=device-width, initial-scale=1"" />     <title>Error - SkyServer SDSS</title>     <style>         body { font-fa)"
+2026-11-15T10:24:36Z,probe,,,,datalab-datalab.noirlab.edu-tap-lsdr9,1,11.09,
+2026-11-15T10:24:46Z,probe,,,,datalab-datalab.noirlab.edu-tap-sdss_dr17-photoobj,5,10.16,
+2026-11-15T10:24:54Z,probe,,,,datalab-datalab.noirlab.edu-tap-sdss_dr18-photoobj,5,8.35,
+2026-11-15T10:25:06Z,probe,,,,datalab-datalab.noirlab.edu-tap-gaia_dr3,1,11.43,
+2026-11-15T10:25:18Z,probe,,,,datalab-datalab.noao.edu-tap-lsdr9,-1,12.25,URLError: <urlopen error [Errno -2] Name or service not known>
+2026-11-15T10:25:20Z,probe,,,,legacysurvey-decamals,-1,1.82,HTTP 404
+2026-11-15T10:25:21Z,probe,778994474926961152,,,gaia-aip-tap,-1,1.92,parse: TAP returned XML (error page?)
+2026-11-15T10:26:34Z,probe,778994474926961152,,,gaia-esa-tap,-1,72.22,URLError: <urlopen error timed out>
+2026-11-15T10:27:54Z,probe2,,,,datalab-dl-tap-schema-sdss,30,11.59,
+2026-11-15T10:28:05Z,probe2,,,,datalab-dl-tap-schema-photoobj,0,10.96,
+2026-11-15T10:28:18Z,probe2,,,,datalab-dl-gaia-real-id,1,12.27,
+2026-11-15T10:28:28Z,probe2,,,,datalab-dl-gaia-real-id2,1,9.97,
+2026-11-15T10:28:29Z,probe2,,,,skyserver-dr18-sql-minimal,-1,0.99,html
+2026-11-15T10:28:35Z,probe2,,167.41774,43.81838,imgcutout-sky-sdss-org-ws,-1,6.51,URLError: <urlopen error [Errno -2] Name or service not known>
+2026-11-15T10:28:37Z,probe2,,167.41774,43.81838,imgcutout-skyserver-http-imgcutout,-1,2.32,HTTP 404
+2026-11-15T10:28:39Z,probe2,,167.41774,43.81838,imgcutout-imgcutout-nooptquery,-1,1.65,HTTP 404
+2026-11-15T10:28:40Z,probe2,778994474926961152,,,gaia-aip-tap-post,1,,
+2026-11-15T10:29:15Z,probe3,,,,datalab-tables-sdss17,63,9.05,
+2026-11-15T10:29:24Z,probe3,,,,datalab-tables-sdss16,21,8.61,
+2026-11-15T10:29:35Z,probe3,,,,datalab-tables-ivoa-sdss9,4,11.44,
+2026-11-15T10:29:42Z,probe3,,,,datalab-tables-sdss8,4,7.45,
+2026-11-15T10:30:34Z,probe4,,,,datalab-dl-sdss17-photo-like,13,10.23,
+2026-11-15T10:30:49Z,probe4,,,,datalab-dl-tables-sdss-anywhere,196,14.34,
+2026-11-15T10:30:50Z,probe4,,,,skyserver-dr18-home,-1,1.08,HTTP 404
+2026-11-15T10:30:52Z,probe4,,,,skyserver-sql-form-page,106354,2.31,
+2026-11-15T10:31:17Z,probe5,,167.41774,43.81838,skyserver-dr18-SearchTools-sql,-1,1.15,
+2026-11-15T10:32:02Z,probe6,,,,sql-tool-page,106354,26.51,
+2026-11-15T10:32:07Z,probe6,,,,crossid-tool-page,30620,4.7,
+2026-11-15T10:32:09Z,probe6,,,,radial-tool-page,29691,2.04,
+2026-11-15T10:32:12Z,probe6,,,,IQS-page,172646,3.05,
+2026-11-15T10:32:46Z,probe7,,,,skyserver-sql-form-get,106352,,
+2026-11-15T10:32:48Z,probe7,,167.41774,43.81838,skyserver-dr18-sql-token-post,3,1.43,
+2026-11-15T10:33:24Z,probe8,,167.41774,43.81838,skyserver-dr18-sql,4,1.33,
+2026-11-15T10:33:25Z,probe8,,167.41774,43.81838,skyserver-dr18-sql,-1,1.09,
+2026-11-15T10:34:00Z,probe9,,167.41774,43.81838,skyserver-dr18-sql-field-star,2,1.33,
+2026-11-15T10:34:01Z,probe9,,167.41774,43.81838,skyserver-dr18-sql-join-mjd,-1,0.99,
+2026-11-15T10:34:03Z,probe9,,167.41774,43.81838,skyserver-dr18-sql-specobj-join,-1,1.09,
+2026-11-15T10:34:04Z,probe9,,167.41774,43.81838,skyserver-dr18-SkyServerWS-ImgCutout-getjpeg,3818,1.1,
+2026-11-15T10:34:05Z,probe9,,167.41774,43.81838,skyserver-dr18-SkyServerWS-ImgCutout-getjpg,-1,1.06,HTTP 404
+2026-11-15T10:34:06Z,probe9,,167.41774,43.81838,skyserver-dr15-SkyServerWS-ImgCutout-getjpeg,3818,1.26,
+2026-11-15T10:34:07Z,probe9,,167.41774,43.81838,skyserver-dr15-SkyServerWS-ImgCutout-getjpg,-1,1.06,HTTP 404
+2026-11-15T10:34:52Z,probe10,,167.41774,43.81838,skyserver-dr18-crossid-multipart-data,-1,1.11,
+2026-11-15T10:34:53Z,probe10,,167.41774,43.81838,skyserver-dr18-crossid-multipart-photoUpload,-1,1.01,
+2026-11-15T10:34:55Z,probe10,,167.41774,43.81838,skyserver-dr18-crossid-multipart-coords,-1,1.03,
+2026-11-15T10:34:56Z,probe10,,167.41774,43.81838,skyserver-dr18-crossid-multipart-photoData,-1,1.13,
+2026-11-15T10:34:59Z,probe10,,167.41774,43.81838,skyserver-dr18-sql-specobj-join,1,,
+2026-11-15T10:35:21Z,probe11,,167.41774,43.81838,skyserver-dr18-crossid-file-upload,19,1.02,
+2026-11-15T10:37:57Z,sdss-sql,2813361564957760896,352.03519,14.1108,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:37:58Z,sdss-cutout,2813361564957760896,352.03519,14.1108,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4393b)
+2026-11-15T10:38:00Z,sdss-sql,5390732032963218560,166.40427,-39.29245,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:01Z,sdss-cutout,5390732032963218560,166.40427,-39.29245,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:04Z,sdss-sql,324266972833697920,33.7111,30.24801,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:05Z,sdss-cutout,324266972833697920,33.7111,30.24801,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(5424b)
+2026-11-15T10:38:10Z,sdss-sql,778994474926961152,167.41818,43.81944,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:11Z,sdss-cutout,778994474926961152,167.41818,43.81944,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3861b)
+2026-11-15T10:38:14Z,sdss-sql,6333056821300966272,226.61232,-6.92632,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:15Z,sdss-cutout,6333056821300966272,226.61232,-6.92632,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:17Z,sdss-sql,4585911133706711680,274.3015,27.00146,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:18Z,sdss-cutout,4585911133706711680,274.3015,27.00146,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:21Z,sdss-sql,914350468044697600,126.70812,39.85852,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:22Z,sdss-cutout,914350468044697600,126.70812,39.85852,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(5900b)
+2026-11-15T10:38:24Z,sdss-sql,3717399923897977984,200.13551,6.14911,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:25Z,sdss-cutout,3717399923897977984,200.13551,6.14911,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4581b)
+2026-11-15T10:38:28Z,sdss-sql,1296928326363004416,224.85243,40.84307,skyserver-dr18-photoobj-cone,3,,
+2026-11-15T10:38:29Z,sdss-cutout,1296928326363004416,224.85243,40.84307,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4822b)
+2026-11-15T10:38:31Z,sdss-sql,3485388058311031552,174.82471,-26.20456,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:32Z,sdss-cutout,3485388058311031552,174.82471,-26.20456,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:35Z,sdss-sql,6196682920934083328,202.04625,-21.10621,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:36Z,sdss-cutout,6196682920934083328,202.04625,-21.10621,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:38Z,sdss-sql,6444364648283689984,303.56282,-58.33263,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:39Z,sdss-cutout,6444364648283689984,303.56282,-58.33263,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:42Z,sdss-sql,3151381813350665472,119.21936,12.91912,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:43Z,sdss-cutout,3151381813350665472,119.21936,12.91912,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4842b)
+2026-11-15T10:38:45Z,sdss-sql,3502334246914338432,193.26622,-22.04276,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:46Z,sdss-cutout,3502334246914338432,193.26622,-22.04276,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4795b)
+2026-11-15T10:38:49Z,sdss-sql,3421414069467005696,79.1964,27.35614,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:50Z,sdss-cutout,3421414069467005696,79.1964,27.35614,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4951b)
+2026-11-15T10:38:53Z,sdss-sql,3764064640489783424,162.71248,-7.32647,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:38:54Z,sdss-cutout,3764064640489783424,162.71248,-7.32647,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:38:56Z,sdss-sql,1173260339417897344,221.9142,7.57389,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:38:57Z,sdss-cutout,1173260339417897344,221.9142,7.57389,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3983b)
+2026-11-15T10:39:00Z,sdss-sql,5125419911539221760,39.00596,-23.44833,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:01Z,sdss-cutout,5125419911539221760,39.00596,-23.44833,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:03Z,sdss-sql,2468119419256161024,17.49931,-13.68493,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:04Z,sdss-cutout,2468119419256161024,17.49931,-13.68493,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:07Z,sdss-sql,401818418452566528,17.7189,48.60175,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:08Z,sdss-cutout,401818418452566528,17.7189,48.60175,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4908b)
+2026-11-15T10:39:10Z,sdss-sql,6857242878104953472,311.73402,-20.16763,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:11Z,sdss-cutout,6857242878104953472,311.73402,-20.16763,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:14Z,sdss-sql,2356451987547034624,15.25539,-18.85152,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:15Z,sdss-cutout,2356451987547034624,15.25539,-18.85152,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:18Z,sdss-sql,635546381171304704,138.06922,19.09533,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:19Z,sdss-cutout,635546381171304704,138.06922,19.09533,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4289b)
+2026-11-15T10:39:21Z,sdss-sql,5008076354130872704,22.29941,-41.18594,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:22Z,sdss-cutout,5008076354130872704,22.29941,-41.18594,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:25Z,sdss-sql,4750308012051385472,46.70676,-48.24688,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:26Z,sdss-cutout,4750308012051385472,46.70676,-48.24688,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:33Z,sdss-sql,6524223380403161216,359.54919,-48.15269,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:34Z,sdss-cutout,6524223380403161216,359.54919,-48.15269,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:37Z,sdss-sql,1422465410061938816,264.41641,57.95359,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:38Z,sdss-cutout,1422465410061938816,264.41641,57.95359,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4791b)
+2026-11-15T10:39:40Z,sdss-sql,1472427974342097152,204.46252,37.00807,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:41Z,sdss-cutout,1472427974342097152,204.46252,37.00807,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4179b)
+2026-11-15T10:39:44Z,sdss-sql,5895741949871112320,213.64695,-54.98761,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:45Z,sdss-cutout,5895741949871112320,213.64695,-54.98761,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:48Z,sdss-sql,901648948375442304,124.21847,32.81774,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:51Z,sdss-cutout,901648948375442304,124.21847,32.81774,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4195b)
+2026-11-15T10:39:53Z,sdss-sql,6882834217400083968,314.50012,-16.80713,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:39:54Z,sdss-cutout,6882834217400083968,314.50012,-16.80713,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:39:57Z,sdss-sql,301092566253730176,29.79681,30.64322,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:39:58Z,sdss-cutout,301092566253730176,29.79681,30.64322,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4926b)
+2026-11-15T10:40:00Z,sdss-sql,754205087630663808,153.99619,37.65475,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:40:01Z,sdss-cutout,754205087630663808,153.99619,37.65475,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3770b)
+2026-11-15T10:40:04Z,sdss-sql,1552157548201668352,203.88523,47.62456,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:40:06Z,sdss-cutout,1552157548201668352,203.88523,47.62456,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4065b)
+2026-11-15T10:40:09Z,sdss-sql,343753621705610368,25.75665,38.43063,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:40:10Z,sdss-cutout,343753621705610368,25.75665,38.43063,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:41:48Z,sdss-sql,2813361564957760896,352.03519,14.1108,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:41:50Z,sdss-cutout,2813361564957760896,352.03519,14.1108,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4393b)
+2026-11-15T10:41:52Z,sdss-sql,5390732032963218560,166.40427,-39.29245,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:41:59Z,sdss-cutout,5390732032963218560,166.40427,-39.29245,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:01Z,sdss-sql,324266972833697920,33.7111,30.24801,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:02Z,sdss-cutout,324266972833697920,33.7111,30.24801,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(5424b)
+2026-11-15T10:42:05Z,sdss-sql,778994474926961152,167.41818,43.81944,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:06Z,sdss-cutout,778994474926961152,167.41818,43.81944,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3861b)
+2026-11-15T10:42:08Z,sdss-sql,6333056821300966272,226.61232,-6.92632,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:09Z,sdss-cutout,6333056821300966272,226.61232,-6.92632,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:12Z,sdss-sql,4585911133706711680,274.3015,27.00146,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:13Z,sdss-cutout,4585911133706711680,274.3015,27.00146,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:16Z,sdss-sql,914350468044697600,126.70812,39.85852,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:20Z,sdss-cutout,914350468044697600,126.70812,39.85852,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(5900b)
+2026-11-15T10:42:22Z,sdss-sql,3717399923897977984,200.13551,6.14911,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:23Z,sdss-cutout,3717399923897977984,200.13551,6.14911,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4581b)
+2026-11-15T10:42:26Z,sdss-sql,1296928326363004416,224.85243,40.84307,skyserver-dr18-photoobj-cone,3,,
+2026-11-15T10:42:27Z,sdss-cutout,1296928326363004416,224.85243,40.84307,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4822b)
+2026-11-15T10:42:29Z,sdss-sql,3485388058311031552,174.82471,-26.20456,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:30Z,sdss-cutout,3485388058311031552,174.82471,-26.20456,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:33Z,sdss-sql,6196682920934083328,202.04625,-21.10621,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:34Z,sdss-cutout,6196682920934083328,202.04625,-21.10621,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:36Z,sdss-sql,6444364648283689984,303.56282,-58.33263,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:37Z,sdss-cutout,6444364648283689984,303.56282,-58.33263,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:40Z,sdss-sql,3151381813350665472,119.21936,12.91912,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:41Z,sdss-cutout,3151381813350665472,119.21936,12.91912,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4842b)
+2026-11-15T10:42:43Z,sdss-sql,3502334246914338432,193.26622,-22.04276,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:44Z,sdss-cutout,3502334246914338432,193.26622,-22.04276,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4795b)
+2026-11-15T10:42:47Z,sdss-sql,3421414069467005696,79.1964,27.35614,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:48Z,sdss-cutout,3421414069467005696,79.1964,27.35614,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4951b)
+2026-11-15T10:42:50Z,sdss-sql,3764064640489783424,162.71248,-7.32647,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:51Z,sdss-cutout,3764064640489783424,162.71248,-7.32647,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:42:54Z,sdss-sql,1173260339417897344,221.9142,7.57389,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:42:55Z,sdss-cutout,1173260339417897344,221.9142,7.57389,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3983b)
+2026-11-15T10:42:57Z,sdss-sql,5125419911539221760,39.00596,-23.44833,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:42:58Z,sdss-cutout,5125419911539221760,39.00596,-23.44833,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:01Z,sdss-sql,2468119419256161024,17.49931,-13.68493,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:02Z,sdss-cutout,2468119419256161024,17.49931,-13.68493,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:04Z,sdss-sql,401818418452566528,17.7189,48.60175,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:05Z,sdss-cutout,401818418452566528,17.7189,48.60175,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4908b)
+2026-11-15T10:43:12Z,sdss-sql,6857242878104953472,311.73402,-20.16763,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:14Z,sdss-cutout,6857242878104953472,311.73402,-20.16763,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:16Z,sdss-sql,2356451987547034624,15.25539,-18.85152,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:17Z,sdss-cutout,2356451987547034624,15.25539,-18.85152,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:22Z,sdss-sql,635546381171304704,138.06922,19.09533,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:24Z,sdss-cutout,635546381171304704,138.06922,19.09533,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4289b)
+2026-11-15T10:43:26Z,sdss-sql,5008076354130872704,22.29941,-41.18594,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:28Z,sdss-cutout,5008076354130872704,22.29941,-41.18594,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:30Z,sdss-sql,4750308012051385472,46.70676,-48.24688,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:31Z,sdss-cutout,4750308012051385472,46.70676,-48.24688,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:34Z,sdss-sql,6524223380403161216,359.54919,-48.15269,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:35Z,sdss-cutout,6524223380403161216,359.54919,-48.15269,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:37Z,sdss-sql,1422465410061938816,264.41641,57.95359,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:39Z,sdss-cutout,1422465410061938816,264.41641,57.95359,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4791b)
+2026-11-15T10:43:41Z,sdss-sql,1472427974342097152,204.46252,37.00807,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:42Z,sdss-cutout,1472427974342097152,204.46252,37.00807,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4179b)
+2026-11-15T10:43:44Z,sdss-sql,5895741949871112320,213.64695,-54.98761,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:45Z,sdss-cutout,5895741949871112320,213.64695,-54.98761,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:48Z,sdss-sql,901648948375442304,124.21847,32.81774,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:49Z,sdss-cutout,901648948375442304,124.21847,32.81774,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4195b)
+2026-11-15T10:43:51Z,sdss-sql,6882834217400083968,314.50012,-16.80713,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:43:52Z,sdss-cutout,6882834217400083968,314.50012,-16.80713,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:43:55Z,sdss-sql,301092566253730176,29.79681,30.64322,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:43:56Z,sdss-cutout,301092566253730176,29.79681,30.64322,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4926b)
+2026-11-15T10:43:58Z,sdss-sql,754205087630663808,153.99619,37.65475,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:44:00Z,sdss-cutout,754205087630663808,153.99619,37.65475,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(3770b)
+2026-11-15T10:44:02Z,sdss-sql,1552157548201668352,203.88523,47.62456,skyserver-dr18-photoobj-cone,1,,
+2026-11-15T10:44:03Z,sdss-cutout,1552157548201668352,203.88523,47.62456,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,1,,ok(4065b)
+2026-11-15T10:44:05Z,sdss-sql,343753621705610368,25.75665,38.43063,skyserver-dr18-photoobj-cone,0,,
+2026-11-15T10:44:07Z,sdss-cutout,343753621705610368,25.75665,38.43063,skyserver-dr18-SkyServerWS-imgcutout-getjpeg,0,,no-coverage
+2026-11-15T10:44:45Z,gaiaplx,batch0,,,datalab-gaia_dr3-gaia_source,125,12.56,
+2026-11-15T10:44:59Z,gaiaplx,batch1,,,datalab-gaia_dr3-gaia_source,125,12.21,
+2026-11-15T10:45:13Z,gaiaplx,batch2,,,datalab-gaia_dr3-gaia_source,125,13.64,
+2026-11-15T10:45:30Z,gaiaplx,batch3,,,datalab-gaia_dr3-gaia_source,125,15.89,
+2026-11-15T10:45:46Z,gaiaplx,batch4,,,datalab-gaia_dr3-gaia_source,121,14.4,
