@@ -1,4 +1,4 @@
-# biomedical-clinical — 28 sources
+# biomedical-clinical — 38 sources
 
 | source | what you can do there | agent access | tier | url check |
 |---|---|---|---|---|
@@ -15,12 +15,19 @@
 | [DailyMed (NLM)](https://dailymed.nlm.nih.gov) | Official structured product labels for US drugs with SPL XML for every marketed medication. | Use the DailyMed REST API (dailymed.nlm.nih.gov/dailymed/services) for label retrieval. | curated | 200 |
 | [DepMap (Cancer Dependency Map)](https://depmap.org) | CRISPR/RNAi fitness screens across 1,000+ cancer cell lines linking gene dependencies to molecular features. | Download current release CSVs (gene_effect, expression, mutations) from depmap.org/portal/download. | curated | 200 |
 | [DrugBank (open)](https://go.drugbank.com/releases/latest#open-data) | Drug targets, structures, interactions (open subset). | XML bulk (attribution). | curated | ok |
+| [EU Clinical Trials Register](https://www.clinicaltrialsregister.eu) | EU CTR portal: 40k+ trials conducted in the EU/EEA with protocols and results (EudraCT/EudraCT-CTIS migration ongoing). | Per-trial result pages; XML downloads available per trial record. | curated | ok |
 | [Europe PMC](https://europepmc.org) | Full-text Enriching Europe PMC incl. open full texts + citation network. | REST API + FTP full-text corpus. | curated | 403-bot |
 | [FinnGen](https://finngen.fi) | Nationwide Finnish biobank GWAS: ~500k participants with open summary statistics for thousands of endpoints. | Download endpoint summary statistics (gzipped tabular) from the documented R5/R6 release buckets. | curated | 200 |
 | [HealthData.gov](https://healthdata.gov) | US health datasets (claims, COVID, hospital capacity). | CKAN API/Socrata. | curated | ok |
+| [HL7 FHIR](https://www.hl7.org/fhir) | The modern clinical-data exchange standard (resources like Patient, Observation) with REST conventions - essential vocabulary for health-data agents. | Full specification online with machine-readable artifact bundles (profiles, examples) per release. | curated | ok |
+| [IARC Global Cancer Observatory](https://gco.iarc.fr) | WHO/IARC's cancer statistics hub: GLOBOCAN incidence/mortality/prevalence estimates for 185+ countries with projections. | Data tools expose CSV/XLSX downloads per country/cancer; API endpoints for some series. | curated | error |
+| [ICD-11 (WHO)](https://icd.who.int) | WHO's International Classification of Diseases 11th revision browser with mortality/morbidity linearizations - the world's diagnostic standard. | The WHO provides an OAuth-based ICD API (id.who.int) for coding terms and entities. | curated | ok |
 | [IHME GBD Results](https://ghdx.healthdata.org/gbd-results-tool) | Global Burden of Disease: 369 diseases, 88 risk factors, all countries. | Bulk CSV via query tool. | curated | ok |
+| [LOINC](https://loinc.org) | Regenstrief's standard for laboratory/clinical observations (100k+ terms) - universal codes for lab tests and clinical measures. | LOINC table downloadable after free registration; FHIR endpoints for some services. | curated | 403-bot |
+| [NCHS (National Center for Health Statistics)](https://www.cdc.gov/nchs/index.htm) | CDC's vital-statistics arm: NHANES, mortality files, natality, national hospital surveys - the authoritative US health microdata source. | Public-use data files (SAS/CSV/XPT) downloadable per survey with codebooks. | curated | 403-bot |
 | [NeuroVault](https://neurovault.org) | Public repository of statistical brain maps (fMRI/VBM group results) in standardized space. | REST API (neurovault.org/api) to list collections and download NIfTI maps. | curated | 200 |
 | [Nextstrain](https://nextstrain.org) | Real-time pathogen phylogenomics (SARS-CoV-2, flu, Ebola...) with live trees and sequences. | Fetch Auspice JSON trees and metadata from nextstrain.org endpoints for downstream analysis. | curated | 200 |
+| [OHDSI / OMOP CDM](https://www.ohdsi.org) | Observational Health Data Sciences network: the OMOP common data model and open tools (Atlas, Hades) enabling federated multi-country evidence generation. | Open-source tools on GitHub (OHDSI org); OMOP vocabularies distributed via Athena (free license). | curated | ok |
 | [Open FDA](https://open.fda.gov) | FAERS adverse events, recalls, device data. | REST API, no key for low volume. | curated | ok |
 | [Open Targets Platform](https://platform.opentargets.org) | Integrates genomics, literature and pharmacology to prioritize drug targets with evidence scores. | Use the Open Targets GraphQL API (api.platform.opentargets.org/api/v4/graphql) or download data dumps. | curated | ok (fixed via fix_url) |
 | [OpenPrescribing](https://openprescribing.net) | Monthly NHS prescribing data for every GP practice and drug in England, analyzed and downloadable. | Use its REST API (openprescribing.net/api) or grab raw BNF data exports. | curated | 403-bot |
@@ -28,5 +35,8 @@
 | [PubMed / MEDLINE](https://pubmed.ncbi.nlm.nih.gov) | 36M+ biomedical citations. | E-utilities API + annual baseline bulk XML. | curated | ok |
 | [RxNav / RxNorm (NLM)](https://rxnav.nlm.nih.gov) | Normalized vocabulary for clinical drugs with ingredient/brand relationships and NDC codes. | Call the RxNav REST API (rxnav.nlm.nih.gov/REST) or download monthly RxNorm releases. | curated | 200 |
 | [SEER](https://seer.cancer.gov) | US cancer registry statistics. | Research data (signed DUA) + public stats. | curated | ok |
+| [Synthea](https://synthetichealth.github.io/synthea) | Open-source synthetic patient generator producing realistic FHIR/CSV records - safe stand-in for protected health data in agent testing. | Java tool generates FHIR bundles; pre-generated 1M-patient exports downloadable. | curated | ok |
+| [UMLS (NLM)](https://www.nlm.nih.gov/research/umls/index.html) | Unified Medical Language System integrating 200+ biomedical vocabularies (SNOMED, MeSH, RxNorm, LOINC) via the Metathesaurus. | Metathesaurus/RxNorm/SNOMED-Core subsets downloadable after (free) UMLS license signature. | curated | ok |
 | [WHO Global Health Observatory](https://www.who.int/data/gho) | Global health indicators per country. | OData API. | curated | ok |
+| [WHO ICTRP](https://www.who.int/clinical-trials-registry-platform) | WHO's International Clinical Trials Registry Platform: aggregates 20+ national registries into one searchable index of prospective registrations. | ICTRP search portal plus data-provider feeds; the WHO ICTRP data API available for research partners. | curated | ok |
 | [WHO International Clinical Trials Registry Platform (ICTRP)](https://trialsearch.who.int) | WHO portal aggregating clinical-trial registrations from 20+ national registries into one searchable index. | Search UI plus downloadable registry export files for cross-registry analysis. | curated | 200 |

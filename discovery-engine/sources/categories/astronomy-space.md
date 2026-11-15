@@ -1,9 +1,11 @@
-# astronomy-space — 42 sources
+# astronomy-space — 52 sources
 
 | source | what you can do there | agent access | tier | url check |
 |---|---|---|---|---|
 | [AAVSO](https://www.aavso.org) | Variable-star observations database (100M+ measurements) from amateur/professional observers worldwide. | Download VSX catalog and observation files via AID query forms/API. | curated | 403-bot |
 | [ALMA Science Archive](https://almascience.eso.org) | Raw+reduced mm/sub-mm interferometry. | TAP API. | curated | ok |
+| [Astrometry.net](https://astrometry.net) | Automatic plate solving (blind astrometry) service and open engine - uploads any sky image and returns its exact coordinates and scale. | REST API for image submission/job polling; open-source index files downloadable for local solving. | curated | ok |
+| [Astropy](https://www.astropy.org) | Community Python library for astronomy (coordinates, FITS I/O, units) - the ecosystem standard referenced by 10k+ papers. | pip installable; coordinated packages registry; docs per release. | curated | ok |
 | [astroquery](https://astroquery.readthedocs.io) | Python library unifying programmatic access to 100+ astronomy archives (SIMBAD, VizieR, MAST, NED, Gaia...). | Pip-install and drive dozens of observatory archives from one consistent Python interface. | curated | 200 |
 | [Backyard Worlds: Planet 9](https://www.zooniverse.org/projects/marckuchner/backyard-worlds-planet-9) | Citizen search of WISE images for cold brown dwarfs/Planet 9 — volunteers co-author discoveries. | Human task queue; Zooniverse API for project data. | curated | ok |
 | [CelesTrak](https://celestrak.org) | Canonical source of TLE satellite orbital elements grouped by category, plus GP data and search. | Download TLE group files (celestrak.org/NORAD/elements/gp.php) as CSV/TLE text for orbit propagation. | curated | 200 |
@@ -12,17 +14,24 @@
 | [DESI (Dark Energy Spectroscopic Instrument)](https://www.desi.lbl.gov) | Tens of millions of galaxy/quasar spectra for dark-energy and large-scale-structure research (EDR/DR1 public). | Download EDR/DR1 via data.desi.lbl.gov files or query with the DESI API docs. | curated | 200 |
 | [ESASky](https://sky.esa.int) | ESA's unified astronomy portal federating Herschel, XMM, Gaia, SOHO and more in one visualization interface. | Use ESASky's TAP/JSON interfaces (sky.esa.int/esasky) for programmatic cross-mission queries. | curated | error (kept+flagged) |
 | [ESO Science Archive](https://archive.eso.org) | Archive of the VLT, VISTA and other ESO telescopes: raw and reduced data across optical/IR instruments. | TAP (archive.eso.org/tap) queries plus the request-handler for bulk data retrieval. | curated | 200 |
+| [Exoplanet.eu Catalog](https://exoplanet.eu) | The Extrasolar Planets Encyclopaedia (Paris Observatory): parameter tables for 6,000+ confirmed exoplanets with detection-method metadata. | CSV/VOtable downloads of the full catalog plus nightly-updated parameter files. | curated | ok |
 | [Fermi Gamma-ray Space Telescope](https://fermi.gsfc.nasa.gov) | Fermi-LAT all-sky gamma-ray data with weekly/monthly sky maps and source catalogs (4FGL). | Download LAT data via the fermi data server (fermi.gsfc.nasa.gov/cgi-bin/ssc/LAT/LATDataQuery.cgi) and catalogs. | curated | 200 |
 | [Gaia DR3 archive](https://gea.esac.esa.int/archive) | 1.8B stars with astrometry/photometry — uncatalogued-object hunting. | ADQL TAP queries; the lab's own high-PM survey runs here. | curated | error (kept+flagged) |
 | [Galaxy Zoo](https://www.zooniverse.org/projects/zookeeper/galaxy-zoo) | Citizen morphology classifications fueling published morphology catalogs. | Human task queue. | curated | ok |
+| [Global Meteor Network](https://globalmeteornetwork.org) | Open network of low-cost video meteor stations producing daily orbit/flux data and fireball trajectories worldwide. | Daily CSV/JSON data releases with trajectories, orbits and station metadata. | curated | ok |
 | [GWOSC](https://www.gwosc.org) | Open gravitational-wave strain data (GW150914 onward). | Bulk HDF5 + GWpy. | curated | ok |
 | [HEASARC](https://heasarc.gsfc.nasa.gov) | High-energy astrophysics: X-ray/gamma archives. | AstroQuery + bulk FITS. | curated | ok |
+| [Heavens-Above](https://heavens-above.com) | Classic satellite visibility predictor: ISS/Tiangong passes, iridium-era flares and star charts by location - widely used by observers and educators. | Location-parameterized GET URLs return pass tables parseable from HTML. | curated | ok |
+| [Helioviewer](https://helioviewer.org) | Virtual solar observatory combining SDO/SOHO/STEREO imagery with cutout, movie and screenshot APIs - primary tool for solar-event browsing. | Public REST API (api.helioviewer.org) returns JPEG/XML/movies with documented parameters. | curated | ok |
 | [IceCube Neutrino Observatory](https://icecube.wisc.edu) | Cubic-kilometer neutrino detector at the South Pole with public event data and alerts. | Download public data releases and GCN alerts from icecube.wisc.edu/data-releases. | curated | 200 |
+| [International Meteor Organization](https://www.imo.net) | Global meteor observation network: visual/radio/video meteor fluxes and radiant data (per shower, per year) from volunteer observers. | Per-shower data tables and annual reports downloadable; video meteor database queryable. | curated | ok |
 | [IRSA](https://irsa.ipac.caltech.edu) | NASA IPAC archives: WISE, 2MASS, Spitzer, ZTF. | TAP API + bulk. | curated | ok |
 | [JPL CNEOS (Center for Near-Earth Object Studies)](https://cneos.jpl.nasa.gov) | NEO orbit catalogs, close-approach tables, impact-risk (Sentry) and Scout anomaly data. | Use CNEOS APIs (ssd-api.jpl.nasa.gov) for CAD, Sentry and SBDB queries. | curated | 200 |
 | [JPL Horizons System](https://ssd.jpl.nasa.gov/horizons) | Authoritative solar-system ephemerides for planets, moons, asteroids and comets over HTTP/telnet. | GET the Horizons API (ssd.jpl.nasa.gov/api/horizons.api) for vectors and observer tables in JSON. | curated | 200 |
 | [LAMOST DR11](https://www.lamost.org) | 11M+ spectra of Milky Way stars. | Web/FITS bulk. | curated | ok |
+| [Legacy Survey](https://www.legacysurvey.org) | Deep optical imaging of 14,000 deg2 (DECam/BASS/MzLS) with catalogs of 2B+ objects - the base data for DESI targeting. | FITS cutout service (API), tractor catalogs and coadd images downloadable per brick. | curated | ok |
 | [Minor Planet Center (MPC)](https://www.minorplanetcenter.net) | World clearinghouse for asteroid/comet observations: orbit catalogs, MPCORB files and designation data. | Download MPCORB.DAT and observation files from minorplanetcenter.net/iau/ECS/MPCArchive. | curated | 200 |
+| [N2YO](https://www.n2yo.com) | Real-time satellite tracking with pass predictions and visualizations over a clean REST API - handy for spotting/planning applications. | REST JSON endpoints (key required) for positions, passes and TLE lookups; free tier limited. | curated | ok |
 | [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu) | Confirmed/roman-candidate planets + light curves. | TAP/REST API. | curated | ok |
 | [NASA Image and Video Library](https://images.nasa.gov) | Searchable collection of NASA imagery and video from missions, launches and research. | Use the public API (images-api.nasa.gov/search) keylessly to enumerate assets with direct URLs. | curated | 200 |
 | [NASA MAST](https://mast.stsci.edu) | Hubble/JWST/TESS/Kepler/PS1 archives — discovery-grade time series and images. | MAST API + bulk; astroquery module. | curated | ok |
@@ -34,6 +43,7 @@
 | [Pan-STARRS DR2](https://panstarrs.stsci.edu) | 1.6B object 3π survey with 5-band photometry. | MAST TAP/CasJobs. | curated | ok |
 | [Planck Legacy Archive](https://pla.esac.esa.int) | ESA Planck CMB mission archive with maps, component-separated products and lensing data. | Register free, then fetch FITS/NPY maps through the PLA interfaces. | curated | error (kept+flagged) |
 | [SAO/NASA ADS](https://ui.adsabs.harvard.edu) | 33M+ astronomy/physics bibliographic records with citation graphs. | Public API (token). | curated | ok (202 probe) |
+| [SatNOGS](https://satnogs.org) | Open satellite ground-station network (LibreSpace): volunteers host stations, observations and decoded signals are shared openly. | REST API (db.satnogs.org) for observations, telemetry and station data; waterfalls downloadable. | curated | ok |
 | [SDSS](https://www.sdss.org) | Sloan sky survey: imaging + spectra (DR18). | SkyServer SQL + SAS bulk. | curated | ok |
 | [SIMBAD](https://simbad.cds.unistra.fr/simbad) | Object identification/cross-ID service. | TAP + script API (simbad.cds.unistra.fr/simbad/sim-script). | curated | 404 |
 | [SIMBAD (CDS)](https://simbad.cds.unistra.fr) | Reference database of astronomical objects outside the solar system with identifiers, cross-IDs and bibliography. | Query via the TAP service or the simple script interface (sim-query URLs) returning text/VOTable. | curated | 200 |

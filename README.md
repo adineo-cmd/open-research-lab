@@ -45,7 +45,7 @@ A scored queue of unique research targets (novelty × feasibility × value)
 harvested from open-problem registries and famous GitHub projects used as
 instruments — the systematic version of "find something unique to work on".
 Its fuel: [`discovery-engine/sources/`](discovery-engine/sources/README.md) —
-**7,538 public sources of open research/work/discovery** (curated tier with
+**8,000 public sources of open research/work/discovery** (curated tier with
 per-source discovery-value and agent-access annotations + four attributed
 aggregated registries), mirrored from the canonical registry in
 [open-discovery-lab](https://github.com/adineo-cmd/open-discovery-lab)'s
