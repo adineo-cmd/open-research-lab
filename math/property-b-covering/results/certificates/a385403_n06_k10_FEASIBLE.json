@@ -1,0 +1,75 @@
+{
+ "n": 6,
+ "k": 10,
+ "status": "FEASIBLE",
+ "wall_s": 0.01,
+ "workers": 8,
+ "seed": 42,
+ "model_form": "full",
+ "claim": "a(6) <= 10: witness covering 10-triple-system (published a(6)=10)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "phase": "validation",
+ "conjecture_bound": null,
+ "expected": "FEASIBLE",
+ "matches_conjecture": null,
+ "verified": true,
+ "verify_msg": "ok",
+ "n_vars": 20,
+ "n_coloring_constraints": 64,
+ "build_s": 0.0,
+ "solve_s": 0.01,
+ "retries": [],
+ "witness_edges": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   2,
+   6
+  ],
+  [
+   1,
+   3,
+   4
+  ],
+  [
+   1,
+   3,
+   6
+  ],
+  [
+   1,
+   4,
+   5
+  ],
+  [
+   1,
+   4,
+   6
+  ],
+  [
+   2,
+   3,
+   4
+  ],
+  [
+   2,
+   4,
+   6
+  ],
+  [
+   3,
+   4,
+   6
+  ],
+  [
+   3,
+   5,
+   6
+  ]
+ ]
+}

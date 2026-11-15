@@ -1,0 +1,24 @@
+{
+ "claim": "no covering 9-triple system of {1..5} forces a monochromatic triple (CP-SAT INFEASIBLE cert a385403_n05_k09_INFEASIBLE.json); together with the k=10 witness this proves a(5)=10",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_infeasible_below_cert": "a385403_n05_k09_INFEASIBLE.json",
+  "covering_systems": 10,
+  "forcing_system_edges": [],
+  "forcing_systems_found": 0,
+  "k": 9,
+  "mode": "exhaustive",
+  "n": 5,
+  "non_covering_systems": 0,
+  "systems_scanned": 10,
+  "systems_total": 10,
+  "systems_total_C_T_k": 10,
+  "wall_s": 0.0
+ },
+ "k": 9,
+ "kind": "exhaustive-lower-bound",
+ "n": 5,
+ "result": "CONSISTENT",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

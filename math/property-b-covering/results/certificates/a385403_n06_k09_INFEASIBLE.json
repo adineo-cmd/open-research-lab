@@ -1,0 +1,23 @@
+{
+ "n": 6,
+ "k": 9,
+ "status": "INFEASIBLE",
+ "wall_s": 0.01,
+ "workers": 8,
+ "seed": 42,
+ "model_form": "full",
+ "claim": "a(6) >= 10: no covering 9-triple-system of {1..6} forces a mono triple (published a(6)=10)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "phase": "validation",
+ "conjecture_bound": null,
+ "expected": "INFEASIBLE",
+ "matches_conjecture": null,
+ "verified": null,
+ "verify_msg": null,
+ "n_vars": 20,
+ "n_coloring_constraints": 64,
+ "build_s": 0.0,
+ "solve_s": 0.0,
+ "retries": []
+}

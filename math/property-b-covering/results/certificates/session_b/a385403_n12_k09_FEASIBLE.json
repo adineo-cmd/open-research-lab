@@ -1,0 +1,72 @@
+{
+ "n": 12,
+ "k": 9,
+ "status": "FEASIBLE",
+ "wall_s": 6.64,
+ "workers": 8,
+ "model_form": "full",
+ "claim": "a(12) <= 9: witness covering 9-triple-system (conjecture upper bound 9)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "seed": 42,
+ "phase": "new",
+ "conjecture_bound": 9,
+ "expected": "FEASIBLE",
+ "n_vars": 220,
+ "n_coloring_constraints": 4096,
+ "build_s": 5.07,
+ "solve_s": 1.57,
+ "linearization_level": 1,
+ "hint_used": true,
+ "model_note": null,
+ "verified": true,
+ "verify_msg": "ok",
+ "attempts": [],
+ "witness_edges": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   4,
+   5
+  ],
+  [
+   1,
+   6,
+   7
+  ],
+  [
+   1,
+   11,
+   12
+  ],
+  [
+   2,
+   4,
+   6
+  ],
+  [
+   2,
+   5,
+   7
+  ],
+  [
+   3,
+   4,
+   7
+  ],
+  [
+   3,
+   5,
+   6
+  ],
+  [
+   8,
+   9,
+   10
+  ]
+ ]
+}

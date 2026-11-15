@@ -1,0 +1,68 @@
+{
+ "claim": "a(10) <= 8 witness (forcing covering 8-triple system on {1..10}); matches OEIS a(10)=8",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_k": 8,
+  "colorings_checked": 1024,
+  "coverage_msg": "all 10 vertices covered",
+  "coverage_ok": true,
+  "edges_sha256": "40223ea51340e60d68623c35c7a3bbee04396d199bee5d8c4f3f0a4d7f3d4932",
+  "edges_valid": true,
+  "edges_valid_msg": "all 8 edges are distinct 3-subsets of {1..10}",
+  "fano_subfamily": [
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    4,
+    5
+   ],
+   [
+    1,
+    6,
+    7
+   ],
+   [
+    2,
+    4,
+    6
+   ],
+   [
+    2,
+    5,
+    7
+   ],
+   [
+    3,
+    4,
+    7
+   ],
+   [
+    3,
+    5,
+    6
+   ]
+  ],
+  "fano_subfamily_present": true,
+  "forcing": true,
+  "is_fano_plane": false,
+  "k_equals_ub_bound": true,
+  "matches_oeis_known": true,
+  "n": 10,
+  "num_edges": 8,
+  "oeis_known_value": 8,
+  "pass_msg": "|E|=k, covering, and ALL 1024 colorings of {{1..10}} make some edge monochromatic",
+  "size_ok": true,
+  "source": "prior-session certs a385403_n10_k07_INFEASIBLE.json + a385403_n10_k08_FEASIBLE.json",
+  "ub_bound_7_ceil": 8
+ },
+ "k": 8,
+ "kind": "witness-pass",
+ "n": 10,
+ "result": "PASS",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

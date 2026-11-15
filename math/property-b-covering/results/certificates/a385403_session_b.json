@@ -1,0 +1,175 @@
+{
+ "task": "OEIS A385403 - min triples covering {1..n} forcing a mono triple under every 2-coloring",
+ "session": "B (continuation; prior session same day produced a385403_session.json + certs n=5..12 at top level)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "model": "exact CP-SAT primal model: s_t binary per 3-subset; sum s_t = k; coverage per vertex; hitting constraint sum_{t mono under c} s_t >= 1 per coloring. Forms: full (2^n), halved (2^(n-1), exact by complement symmetry), lazy cutting-plane (exact; see model_note). Values settled by INFEASIBLE at k-1 + FEASIBLE at k with brute-force witness verification.",
+ "validation": [
+  {
+   "n": 5,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.01,
+   "certs": [
+    "a385403_n05_k09_INFEASIBLE.json",
+    "a385403_n05_k10_FEASIBLE.json"
+   ]
+  },
+  {
+   "n": 6,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.02,
+   "certs": [
+    "a385403_n06_k09_INFEASIBLE.json",
+    "a385403_n06_k10_FEASIBLE.json"
+   ]
+  },
+  {
+   "n": 7,
+   "known_a": 7,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.04,
+   "wall_s_hi": 0.07,
+   "certs": [
+    "a385403_n07_k06_INFEASIBLE.json",
+    "a385403_n07_k07_FEASIBLE.json"
+   ]
+  },
+  {
+   "n": 8,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.87,
+   "wall_s_hi": 0.14,
+   "certs": [
+    "a385403_n08_k07_INFEASIBLE.json",
+    "a385403_n08_k08_FEASIBLE.json"
+   ]
+  },
+  {
+   "n": 9,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 10.74,
+   "wall_s_hi": 0.16,
+   "certs": [
+    "a385403_n09_k07_INFEASIBLE.json",
+    "a385403_n09_k08_FEASIBLE.json"
+   ]
+  },
+  {
+   "n": 10,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 16.47,
+   "wall_s_hi": 1.29,
+   "certs": [
+    "a385403_n10_k07_INFEASIBLE.json",
+    "a385403_n10_k08_FEASIBLE.json"
+   ]
+  }
+ ],
+ "results": [
+  {
+   "n": 12,
+   "a_n": 9,
+   "conjecture": 9,
+   "matches_conjecture": true,
+   "how": "proved (INFEASIBLE at value-1 [adopted prior session] + FEASIBLE at value [session B])",
+   "lower_cert": "prior-session cert a385403_n12_k08_INFEASIBLE.json (adopted)",
+   "upper_cert": "session_b/a385403_n12_k09_FEASIBLE.json"
+  }
+ ],
+ "runs": [
+  {
+   "n": 11,
+   "k": 9,
+   "status": "FEASIBLE",
+   "wall_s": 2.03,
+   "model_form": "full",
+   "seed": 42,
+   "workers": 8,
+   "lin2": false,
+   "claim": "a(11) <= 9: witness covering 9-triple-system (conjecture upper bound 9)",
+   "cert": "session_b/a385403_n11_k09_FEASIBLE.json",
+   "published_top": null,
+   "verified": true,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 12,
+   "k": 9,
+   "status": "FEASIBLE",
+   "wall_s": 6.64,
+   "model_form": "full",
+   "seed": 42,
+   "workers": 8,
+   "lin2": false,
+   "claim": "a(12) <= 9: witness covering 9-triple-system (conjecture upper bound 9)",
+   "cert": "session_b/a385403_n12_k09_FEASIBLE.json",
+   "published_top": null,
+   "verified": true,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 13,
+   "k": 9,
+   "status": "FEASIBLE",
+   "wall_s": 23.54,
+   "model_form": "full",
+   "seed": 42,
+   "workers": 8,
+   "lin2": false,
+   "claim": "a(13) <= 9: witness covering 9-triple-system (conjecture upper bound 9)",
+   "cert": "session_b/a385403_n13_k09_FEASIBLE.json",
+   "published_top": "a385403_n13_k09_FEASIBLE.json",
+   "verified": true,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 11,
+   "k": 8,
+   "status": "UNKNOWN",
+   "wall_s": 301.0,
+   "model_form": "full",
+   "seed": 42,
+   "workers": 8,
+   "lin2": false,
+   "claim": "a(11) >= 9: no covering 8-triple-system of {1..11} forces a mono triple (conjecture lower bound probe at bound-1=8)",
+   "cert": "session_b/a385403_n11_k08_UNKNOWN_seed42.json",
+   "published_top": "a385403_n11_k08_UNKNOWN_seed42.json",
+   "verified": null,
+   "date": "2026-11-15"
+  },
+  {
+   "n": 11,
+   "k": 8,
+   "status": "UNKNOWN",
+   "wall_s": 600.99,
+   "model_form": "full",
+   "seed": 142,
+   "workers": 8,
+   "lin2": false,
+   "claim": "a(11) >= 9: no covering 8-triple-system of {1..11} forces a mono triple (conjecture lower bound probe at bound-1=8)",
+   "cert": "session_b/a385403_n11_k08_UNKNOWN_seed142.json",
+   "published_top": "a385403_n11_k08_UNKNOWN_seed142.json",
+   "verified": null,
+   "date": "2026-11-15"
+  }
+ ]
+}

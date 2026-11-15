@@ -1,0 +1,24 @@
+{
+ "claim": "no covering 6-triple system of {1..7} forces a monochromatic triple (CP-SAT INFEASIBLE cert a385403_n07_k06_INFEASIBLE.json); together with the k=7 witness this proves a(7)=7",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_infeasible_below_cert": "a385403_n07_k06_INFEASIBLE.json",
+  "covering_systems": 1356250,
+  "forcing_system_edges": [],
+  "forcing_systems_found": 0,
+  "k": 6,
+  "mode": "exhaustive",
+  "n": 7,
+  "non_covering_systems": 266910,
+  "systems_scanned": 1623160,
+  "systems_total": 1623160,
+  "systems_total_C_T_k": 1623160,
+  "wall_s": 2.62
+ },
+ "k": 6,
+ "kind": "exhaustive-lower-bound",
+ "n": 7,
+ "result": "CONSISTENT",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

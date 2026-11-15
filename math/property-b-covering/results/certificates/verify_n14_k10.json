@@ -1,0 +1,29 @@
+{
+ "claim": "a(14) <= 10 witness (forcing covering 10-triple system; bracket only \u2014 k=9 unresolved)",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_k": 10,
+  "colorings_checked": 16384,
+  "coverage_msg": "all 14 vertices covered",
+  "coverage_ok": true,
+  "edges_sha256": "968e23d835bce9847d4ec37098902048a92ff1d001c940a5111d2d636471e2a0",
+  "edges_valid": true,
+  "edges_valid_msg": "all 10 edges are distinct 3-subsets of {1..14}",
+  "fano_subfamily_present": false,
+  "forcing": true,
+  "is_fano_plane": false,
+  "k_equals_ub_bound": true,
+  "n": 14,
+  "num_edges": 10,
+  "pass_msg": "|E|=k, covering, and ALL 16384 colorings of {{1..14}} make some edge monochromatic",
+  "size_ok": true,
+  "source": "probe a385403_n14_k10_FEASIBLE.json (k=9 probe UNKNOWN at 900s \u2014 no lower-bound claim)",
+  "ub_bound_7_ceil": 10
+ },
+ "k": 10,
+ "kind": "witness-pass",
+ "n": 14,
+ "result": "PASS",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

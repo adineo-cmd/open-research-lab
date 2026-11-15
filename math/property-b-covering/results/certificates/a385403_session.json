@@ -1,0 +1,271 @@
+{
+ "task": "OEIS A385403 - min triples covering {1..n} forcing a mono triple under every 2-coloring (non-2-colorable covering 3-graphs)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "model": "CP-SAT: s_t binary for each 3-subset t; sum s_t = k; coverage per vertex; hitting constraint sum_{t mono under c} s_t >= 1 for every 2-coloring c (full 2^n for n<=13, halved 2^(n-1) with vertex 1 fixed red for n>=14 - exact by complement symmetry). a(n) = min feasible k, settled by INFEASIBLE at k-1 + FEASIBLE at k.",
+ "validation": [
+  {
+   "n": 5,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.0,
+   "wall_s_hi": 0.01
+  },
+  {
+   "n": 6,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.01
+  },
+  {
+   "n": 7,
+   "known_a": 7,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.01
+  },
+  {
+   "n": 8,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.32,
+   "wall_s_hi": 0.03
+  },
+  {
+   "n": 9,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 4.17,
+   "wall_s_hi": 0.07
+  },
+  {
+   "n": 10,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 8.01,
+   "wall_s_hi": 0.21
+  }
+ ],
+ "results": [
+  {
+   "n": 11,
+   "a_n": 9,
+   "conjecture": 9,
+   "matches_conjecture": true,
+   "how": "proved (INFEASIBLE at value-1 + FEASIBLE at value)",
+   "wall_s_lower_probe": 201.98
+  },
+  {
+   "n": 12,
+   "a_n": 9,
+   "conjecture": 9,
+   "matches_conjecture": true,
+   "how": "proved (INFEASIBLE at value-1 + FEASIBLE at value)",
+   "wall_s_lower_probe": 426.29
+  }
+ ],
+ "runs": [
+  {
+   "n": 5,
+   "k": 9,
+   "status": "INFEASIBLE",
+   "wall_s": 0.02,
+   "model_form": "full",
+   "claim": "adhoc probe n=5 k=9",
+   "verified": null
+  },
+  {
+   "n": 5,
+   "k": 9,
+   "status": "INFEASIBLE",
+   "wall_s": 0.0,
+   "model_form": "full",
+   "claim": "a(5) >= 10: no covering 9-triple-system of {1..5} forces a mono triple (published a(5)=10)",
+   "verified": null
+  },
+  {
+   "n": 5,
+   "k": 10,
+   "status": "FEASIBLE",
+   "wall_s": 0.01,
+   "model_form": "full",
+   "claim": "a(5) <= 10: witness covering 10-triple-system (published a(5)=10)",
+   "verified": true
+  },
+  {
+   "n": 6,
+   "k": 9,
+   "status": "INFEASIBLE",
+   "wall_s": 0.01,
+   "model_form": "full",
+   "claim": "a(6) >= 10: no covering 9-triple-system of {1..6} forces a mono triple (published a(6)=10)",
+   "verified": null
+  },
+  {
+   "n": 6,
+   "k": 10,
+   "status": "FEASIBLE",
+   "wall_s": 0.01,
+   "model_form": "full",
+   "claim": "a(6) <= 10: witness covering 10-triple-system (published a(6)=10)",
+   "verified": true
+  },
+  {
+   "n": 7,
+   "k": 6,
+   "status": "INFEASIBLE",
+   "wall_s": 0.01,
+   "model_form": "full",
+   "claim": "a(7) >= 7: no covering 6-triple-system of {1..7} forces a mono triple (published a(7)=7)",
+   "verified": null
+  },
+  {
+   "n": 7,
+   "k": 7,
+   "status": "FEASIBLE",
+   "wall_s": 0.01,
+   "model_form": "full",
+   "claim": "a(7) <= 7: witness covering 7-triple-system (published a(7)=7)",
+   "verified": true
+  },
+  {
+   "n": 8,
+   "k": 7,
+   "status": "INFEASIBLE",
+   "wall_s": 0.32,
+   "model_form": "full",
+   "claim": "a(8) >= 8: no covering 7-triple-system of {1..8} forces a mono triple (published a(8)=8)",
+   "verified": null
+  },
+  {
+   "n": 8,
+   "k": 8,
+   "status": "FEASIBLE",
+   "wall_s": 0.03,
+   "model_form": "full",
+   "claim": "a(8) <= 8: witness covering 8-triple-system (published a(8)=8)",
+   "verified": true
+  },
+  {
+   "n": 9,
+   "k": 7,
+   "status": "INFEASIBLE",
+   "wall_s": 4.17,
+   "model_form": "full",
+   "claim": "a(9) >= 8: no covering 7-triple-system of {1..9} forces a mono triple (published a(9)=8)",
+   "verified": null
+  },
+  {
+   "n": 9,
+   "k": 8,
+   "status": "FEASIBLE",
+   "wall_s": 0.07,
+   "model_form": "full",
+   "claim": "a(9) <= 8: witness covering 8-triple-system (published a(9)=8)",
+   "verified": true
+  },
+  {
+   "n": 10,
+   "k": 7,
+   "status": "INFEASIBLE",
+   "wall_s": 8.01,
+   "model_form": "full",
+   "claim": "a(10) >= 8: no covering 7-triple-system of {1..10} forces a mono triple (published a(10)=8)",
+   "verified": null
+  },
+  {
+   "n": 10,
+   "k": 8,
+   "status": "FEASIBLE",
+   "wall_s": 0.21,
+   "model_form": "full",
+   "claim": "a(10) <= 8: witness covering 8-triple-system (published a(10)=8)",
+   "verified": true
+  },
+  {
+   "n": 11,
+   "k": 8,
+   "status": "INFEASIBLE",
+   "wall_s": 201.98,
+   "model_form": "full",
+   "claim": "a(11) >= 9: no covering 8-triple-system of {1..11} forces a mono triple (conjecture lower bound)",
+   "verified": null
+  },
+  {
+   "n": 11,
+   "k": 9,
+   "status": "FEASIBLE",
+   "wall_s": 0.56,
+   "model_form": "full",
+   "claim": "a(11) <= 9: witness covering 9-triple-system; together with INFEASIBLE at 8 this proves a(11) = 9",
+   "verified": true
+  },
+  {
+   "n": 12,
+   "k": 8,
+   "status": "INFEASIBLE",
+   "wall_s": 426.29,
+   "model_form": "full",
+   "claim": "a(12) >= 9: no covering 8-triple-system of {1..12} forces a mono triple (conjecture lower bound)",
+   "verified": null
+  },
+  {
+   "n": 12,
+   "k": 9,
+   "status": "FEASIBLE",
+   "wall_s": 1.67,
+   "model_form": "full",
+   "claim": "a(12) <= 9: witness covering 9-triple-system; together with INFEASIBLE at 8 this proves a(12) = 9",
+   "verified": true
+  },
+  {
+   "n": 13,
+   "k": 8,
+   "status": "UNKNOWN",
+   "wall_s": 602.82,
+   "model_form": "full",
+   "claim": "a(13) >= 9: no covering 8-triple-system of {1..13} forces a mono triple (conjecture lower bound)",
+   "verified": null
+  },
+  {
+   "n": 13,
+   "k": 8,
+   "status": "UNKNOWN",
+   "wall_s": 902.73,
+   "model_form": "full",
+   "claim": "adhoc probe n=13 k=8",
+   "verified": null
+  },
+  {
+   "n": 14,
+   "k": 10,
+   "status": "FEASIBLE",
+   "wall_s": 7.91,
+   "model_form": "halved",
+   "claim": "adhoc probe n=14 k=10",
+   "verified": true
+  },
+  {
+   "n": 14,
+   "k": 9,
+   "status": "UNKNOWN",
+   "wall_s": 903.64,
+   "model_form": "halved",
+   "claim": "adhoc probe n=14 k=9",
+   "verified": null
+  }
+ ]
+}

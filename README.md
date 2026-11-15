@@ -7,6 +7,15 @@ lab notebook (owner directive, 2026-11-10).
 
 ## Results
 
+### Mathematics — property-B covering triples (`math/property-b-covering/`)
+
+OEIS A385403 (minimum triples covering {1..n} forcing a monochromatic
+triple under every 2-coloring) extended: **a(11)=9 and a(12)=9 exact**
+(CP-SAT lower-bound proofs + all-2ⁿ independent verification; 17
+certificates, zero contradictions), brackets 8≤a(13)≤9, 9≤a(14)≤10; the
+7+⌈(n−7)/3⌉ bound is exact at n=7..12. OEIS filing draft ready
+(owner-gated). Picked from OEIS's own `keyword:more` queue.
+
 ### Mathematics — grid Ramsey minima (`math/grid-ramsey/`)
 
 The minimum number of monochromatic rectangles over 2-colorings of grids

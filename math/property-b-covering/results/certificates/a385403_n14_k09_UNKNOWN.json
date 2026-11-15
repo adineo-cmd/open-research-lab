@@ -1,0 +1,31 @@
+{
+ "n": 14,
+ "k": 9,
+ "status": "UNKNOWN",
+ "wall_s": 903.64,
+ "workers": 12,
+ "seed": 242,
+ "model_form": "halved",
+ "claim": "adhoc probe n=14 k=9",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "phase": "adhoc",
+ "conjecture_bound": null,
+ "expected": null,
+ "matches_conjecture": null,
+ "verified": null,
+ "verify_msg": null,
+ "n_vars": 364,
+ "n_coloring_constraints": 8192,
+ "build_s": 3.52,
+ "solve_s": 900.12,
+ "retries": [
+  {
+   "model_form": "halved",
+   "tl": 900.0,
+   "seed": 42,
+   "status": "UNKNOWN",
+   "wall_s": 903.5
+  }
+ ]
+}

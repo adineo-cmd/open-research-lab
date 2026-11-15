@@ -1,0 +1,68 @@
+{
+ "claim": "a(12) <= 9 witness (forcing covering 9-triple system on {1..12})",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_k": 9,
+  "colorings_checked": 4096,
+  "coverage_msg": "all 12 vertices covered",
+  "coverage_ok": true,
+  "edges_sha256": "cafbb7ea2b457c35aad731f319a99619208ef7a1da5b12cd781f4568293ac226",
+  "edges_valid": true,
+  "edges_valid_msg": "all 9 edges are distinct 3-subsets of {1..12}",
+  "fano_subfamily": [
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    1,
+    4,
+    5
+   ],
+   [
+    1,
+    6,
+    7
+   ],
+   [
+    2,
+    4,
+    6
+   ],
+   [
+    2,
+    5,
+    7
+   ],
+   [
+    3,
+    4,
+    7
+   ],
+   [
+    3,
+    5,
+    6
+   ]
+  ],
+  "fano_subfamily_present": true,
+  "forcing": true,
+  "is_fano_plane": false,
+  "k_equals_ub_bound": true,
+  "matches_oeis_known": true,
+  "n": 12,
+  "num_edges": 9,
+  "oeis_known_value": null,
+  "pass_msg": "|E|=k, covering, and ALL 4096 colorings of {{1..12}} make some edge monochromatic",
+  "size_ok": true,
+  "source": "upper witness: session_b/a385403_n12_k09_FEASIBLE.json; lower: prior-session cert a385403_n12_k08_INFEASIBLE.json (adopted)",
+  "ub_bound_7_ceil": 9
+ },
+ "k": 9,
+ "kind": "witness-pass",
+ "n": 12,
+ "result": "PASS",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

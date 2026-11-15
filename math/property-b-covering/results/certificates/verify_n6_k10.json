@@ -1,0 +1,31 @@
+{
+ "claim": "a(6) <= 10 witness (forcing covering 10-triple system on {1..6}); matches OEIS a(6)=10",
+ "date": "2026-11-15",
+ "details": {
+  "claimed_k": 10,
+  "colorings_checked": 64,
+  "coverage_msg": "all 6 vertices covered",
+  "coverage_ok": true,
+  "edges_sha256": "4496fb24900afe590037ef959f4d438ad86a070a4a46135364ef6bff3233dd8b",
+  "edges_valid": true,
+  "edges_valid_msg": "all 10 edges are distinct 3-subsets of {1..6}",
+  "fano_subfamily_present": false,
+  "forcing": true,
+  "is_fano_plane": false,
+  "k_equals_ub_bound": false,
+  "matches_oeis_known": true,
+  "n": 6,
+  "num_edges": 10,
+  "oeis_known_value": 10,
+  "pass_msg": "|E|=k, covering, and ALL 64 colorings of {{1..6}} make some edge monochromatic",
+  "size_ok": true,
+  "source": "prior-session certs a385403_n06_k09_INFEASIBLE.json + a385403_n06_k10_FEASIBLE.json",
+  "ub_bound_7_ceil": null
+ },
+ "k": 10,
+ "kind": "witness-pass",
+ "n": 6,
+ "result": "PASS",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}

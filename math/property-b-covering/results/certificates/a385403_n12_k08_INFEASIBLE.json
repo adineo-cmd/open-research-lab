@@ -1,0 +1,31 @@
+{
+ "n": 12,
+ "k": 8,
+ "status": "INFEASIBLE",
+ "wall_s": 426.29,
+ "workers": 8,
+ "seed": 142,
+ "model_form": "full",
+ "claim": "a(12) >= 9: no covering 8-triple-system of {1..12} forces a mono triple (conjecture lower bound)",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "phase": "new",
+ "conjecture_bound": 9,
+ "expected": "INFEASIBLE",
+ "matches_conjecture": true,
+ "verified": null,
+ "verify_msg": null,
+ "n_vars": 220,
+ "n_coloring_constraints": 4096,
+ "build_s": 0.93,
+ "solve_s": 425.36,
+ "retries": [
+  {
+   "model_form": "full",
+   "tl": 300.0,
+   "seed": 42,
+   "status": "UNKNOWN",
+   "wall_s": 301.06
+  }
+ ]
+}

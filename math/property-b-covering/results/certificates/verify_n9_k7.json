@@ -1,0 +1,81 @@
+{
+ "claim": "no covering 7-triple system of {1..9} forces a monochromatic triple (CP-SAT INFEASIBLE cert a385403_n09_k07_INFEASIBLE.json); together with the k=8 witness this proves a(9)=8",
+ "date": "2026-11-15",
+ "details": {
+  "all_admit_avoiding_coloring": true,
+  "claimed_infeasible_below_cert": "a385403_n09_k07_INFEASIBLE.json",
+  "covering_systems_sampled": 100000,
+  "draws": 100000,
+  "example_avoiding": {
+   "avoiding_coloring": {
+    "blue": [
+     4,
+     6,
+     7,
+     8,
+     9
+    ],
+    "mask": 23,
+    "red": [
+     1,
+     2,
+     3,
+     5
+    ]
+   },
+   "draw": 0,
+   "edges": [
+    [
+     1,
+     2,
+     6
+    ],
+    [
+     1,
+     5,
+     8
+    ],
+    [
+     1,
+     6,
+     7
+    ],
+    [
+     2,
+     4,
+     9
+    ],
+    [
+     2,
+     6,
+     9
+    ],
+    [
+     3,
+     6,
+     9
+    ],
+    [
+     5,
+     7,
+     8
+    ]
+   ]
+  },
+  "forcing_system_edges": [],
+  "forcing_systems_found": 0,
+  "k": 7,
+  "mode": "random",
+  "n": 9,
+  "repair_failures": 0,
+  "seed": 20261115,
+  "systems_total_C_T_k": 4529365776,
+  "wall_s": 0.93
+ },
+ "k": 7,
+ "kind": "contradiction-search",
+ "n": 9,
+ "result": "CONSISTENT",
+ "sequence": "A385403",
+ "verifier": "math/property-b-covering/scripts/verify_a385403.py (pure Python stdlib, no CP-SAT)"
+}
