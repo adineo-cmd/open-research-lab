@@ -1,0 +1,80 @@
+{
+ "n": 15,
+ "k": 10,
+ "status": "FEASIBLE",
+ "form": "halved",
+ "tag": "halved_w2_s42",
+ "engine": "ortools CP-SAT 9.9.3963 (python)",
+ "max_mono_size": null,
+ "claim": "a(15) <= 10: witness covering 10-triple-system (conjecture bound 10)",
+ "phase": "new",
+ "expected": "FEASIBLE",
+ "proof_scope": "full model: INFEASIBLE is a direct proof that no covering 10-triple system of {1..15} forces a mono triple",
+ "wall_s": 42.04,
+ "build_s": 20.57,
+ "solve_s": 21.46,
+ "tl": 300.0,
+ "workers": 2,
+ "seed": 42,
+ "lin2": false,
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "conjecture_bound": 10,
+ "n_vars": 455,
+ "n_coloring_constraints": 16384,
+ "n_fano_nogoods": 0,
+ "verified": true,
+ "verify_msg": "ok",
+ "witness_edges": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   4,
+   5
+  ],
+  [
+   1,
+   6,
+   7
+  ],
+  [
+   1,
+   14,
+   15
+  ],
+  [
+   2,
+   4,
+   6
+  ],
+  [
+   2,
+   5,
+   7
+  ],
+  [
+   3,
+   4,
+   7
+  ],
+  [
+   3,
+   5,
+   6
+  ],
+  [
+   8,
+   9,
+   10
+  ],
+  [
+   11,
+   12,
+   13
+  ]
+ ]
+}

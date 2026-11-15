@@ -1,0 +1,212 @@
+{
+ "task": "OEIS A385403 session C - improved encodings for the open (13,8) and (14,9) lower-bound proofs (and n=15/16 push); conjecture a(n) = 7 + ceil((n-7)/3).",
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "runs": [
+  {
+   "n": 14,
+   "k": 9,
+   "status": "UNKNOWN",
+   "form": "sizes",
+   "max_mono_size": 70,
+   "fano_free": false,
+   "wall_s": 1201.55,
+   "tl": 1200.0,
+   "workers": 6,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 1716,
+   "n_fano_nogoods": 0,
+   "claim_kind": "lower",
+   "cert": "a385403b_n14_k09_UNKNOWN_sizes_m70_w6_s42.json",
+   "verified": null,
+   "date": "2026-11-15",
+   "claim": "a(14) >= 10: no covering 9-triple-system of {1..14} forces a mono triple (conjecture bound 10 -> INFEASIBLE expected at k=9)"
+  },
+  {
+   "n": 13,
+   "k": 8,
+   "status": "UNKNOWN",
+   "form": "fano",
+   "max_mono_size": null,
+   "fano_free": false,
+   "wall_s": 2409.09,
+   "tl": 2400.0,
+   "workers": 12,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 4096,
+   "n_fano_nogoods": 51480,
+   "claim_kind": "lower",
+   "cert": "a385403b_n13_k08_UNKNOWN_fano_w12_s42.json",
+   "verified": null,
+   "date": "2026-11-15",
+   "claim": "a(13) >= 9: no covering 8-triple-system of {1..13} forces a mono triple (conjecture bound 9 -> INFEASIBLE expected at k=8)"
+  },
+  {
+   "n": 9,
+   "k": 7,
+   "status": "INFEASIBLE",
+   "form": "scip",
+   "engine": "SCIP MIP via ortools pywraplp",
+   "max_mono_size": null,
+   "fano_free": false,
+   "wall_s": 14.61,
+   "tl": 300.0,
+   "workers": 12,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 256,
+   "n_fano_nogoods": 0,
+   "claim_kind": "lower",
+   "cert": "a385403b_n09_k07_INFEASIBLE_scip_halved_w12_s42.json",
+   "verified": null,
+   "date": "2026-11-15",
+   "claim": "a(9) >= 8: no covering 7-triple-system of {1..9} forces a mono triple (conjecture bound 8 -> INFEASIBLE expected at k=7)"
+  },
+  {
+   "n": 15,
+   "k": 10,
+   "status": "FEASIBLE",
+   "form": "halved",
+   "engine": "ortools CP-SAT 9.9.3963 (python)",
+   "max_mono_size": null,
+   "fano_free": false,
+   "wall_s": 42.04,
+   "tl": 300.0,
+   "workers": 2,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 16384,
+   "n_fano_nogoods": 0,
+   "claim_kind": "upper",
+   "cert": "a385403b_n15_k10_FEASIBLE_halved_w2_s42.json",
+   "verified": true,
+   "date": "2026-11-15",
+   "claim": "a(15) <= 10: witness covering 10-triple-system (conjecture bound 10)"
+  },
+  {
+   "n": 16,
+   "k": 10,
+   "status": "FEASIBLE",
+   "form": "halved",
+   "engine": "ortools CP-SAT 9.9.3963 (python)",
+   "max_mono_size": null,
+   "fano_free": false,
+   "wall_s": 89.46,
+   "tl": 300.0,
+   "workers": 2,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 32768,
+   "n_fano_nogoods": 0,
+   "claim_kind": "upper",
+   "cert": "a385403b_n16_k10_FEASIBLE_halved_w2_s42.json",
+   "verified": true,
+   "date": "2026-11-15",
+   "claim": "a(16) <= 10: witness covering 10-triple-system (conjecture bound 10)"
+  },
+  {
+   "n": 13,
+   "k": 8,
+   "status": "UNKNOWN",
+   "form": "halved",
+   "engine": "ortools CP-SAT 9.9.3963 (python)",
+   "max_mono_size": null,
+   "fano_free": false,
+   "wall_s": 3001.67,
+   "tl": 3000.0,
+   "workers": 6,
+   "seed": 42,
+   "lin2": false,
+   "n_coloring_constraints": 4096,
+   "n_fano_nogoods": 0,
+   "claim_kind": "lower",
+   "cert": "a385403b_n13_k08_UNKNOWN_halved_w6_s42.json",
+   "verified": null,
+   "date": "2026-11-16",
+   "claim": "a(13) >= 9: no covering 8-triple-system of {1..13} forces a mono triple (conjecture bound 9 -> INFEASIBLE expected at k=8)"
+  }
+ ],
+ "results": [],
+ "validation": [
+  {
+   "n": 5,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.01,
+   "certs": [
+    "a385403b_n05_k09_INFEASIBLE_halved_s42.json",
+    "a385403b_n05_k10_FEASIBLE_halved_s42.json"
+   ]
+  },
+  {
+   "n": 6,
+   "known_a": 10,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.01,
+   "wall_s_hi": 0.01,
+   "certs": [
+    "a385403b_n06_k09_INFEASIBLE_halved_s42.json",
+    "a385403b_n06_k10_FEASIBLE_halved_s42.json"
+   ]
+  },
+  {
+   "n": 7,
+   "known_a": 7,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.03,
+   "wall_s_hi": 0.02,
+   "certs": [
+    "a385403b_n07_k06_INFEASIBLE_halved_s42.json",
+    "a385403b_n07_k07_FEASIBLE_halved_s42.json"
+   ]
+  },
+  {
+   "n": 8,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 0.22,
+   "wall_s_hi": 0.04,
+   "certs": [
+    "a385403b_n08_k07_INFEASIBLE_halved_s42.json",
+    "a385403b_n08_k08_FEASIBLE_halved_s42.json"
+   ]
+  },
+  {
+   "n": 9,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 3.19,
+   "wall_s_hi": 0.1,
+   "certs": [
+    "a385403b_n09_k07_INFEASIBLE_halved_s42.json",
+    "a385403b_n09_k08_FEASIBLE_halved_s42.json"
+   ]
+  },
+  {
+   "n": 10,
+   "known_a": 8,
+   "k=a-1": "INFEASIBLE",
+   "k=a": "FEASIBLE",
+   "ok": true,
+   "wall_s_lo": 24.88,
+   "wall_s_hi": 0.25,
+   "certs": [
+    "a385403b_n10_k07_INFEASIBLE_halved_s42.json",
+    "a385403b_n10_k08_FEASIBLE_halved_s42.json"
+   ]
+  }
+ ]
+}

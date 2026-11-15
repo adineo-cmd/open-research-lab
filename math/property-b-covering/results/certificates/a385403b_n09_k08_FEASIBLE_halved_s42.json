@@ -1,0 +1,69 @@
+{
+ "n": 9,
+ "k": 8,
+ "status": "FEASIBLE",
+ "form": "halved",
+ "tag": "halved_s42",
+ "max_mono_size": null,
+ "claim": "a(9) <= 8: witness covering 8-triple-system (published a(9)=8)",
+ "phase": "validation",
+ "expected": "FEASIBLE",
+ "proof_scope": "full model: INFEASIBLE is a direct proof that no covering 8-triple system of {1..9} forces a mono triple",
+ "wall_s": 0.1,
+ "build_s": 0.06,
+ "solve_s": 0.04,
+ "tl": 240.0,
+ "workers": 12,
+ "seed": 42,
+ "lin2": false,
+ "date": "2026-11-15",
+ "tool": "ortools CP-SAT 9.9.3963 (python)",
+ "conjecture_bound": 8,
+ "n_vars": 84,
+ "n_coloring_constraints": 256,
+ "n_fano_nogoods": 0,
+ "verified": true,
+ "verify_msg": "ok",
+ "witness_edges": [
+  [
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   4,
+   5
+  ],
+  [
+   1,
+   6,
+   7
+  ],
+  [
+   1,
+   8,
+   9
+  ],
+  [
+   2,
+   4,
+   6
+  ],
+  [
+   2,
+   5,
+   7
+  ],
+  [
+   3,
+   4,
+   7
+  ],
+  [
+   3,
+   5,
+   6
+  ]
+ ]
+}

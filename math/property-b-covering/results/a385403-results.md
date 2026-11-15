@@ -103,6 +103,26 @@ anywhere public. The session's delta — first exact values beyond a(10) —
 is unique. Related sequences checked: A111384 (max triples avoiding mono
 under some coloring — contrasting direction), A383181 (per the OEIS Cf.).
 
+## Continuation attack (2026-11-16) — the n=13 k=8 instance is documented HARD
+
+A dedicated follow-up session attacked the two open lower-bound proofs
+with a systematic encoding ladder (21 certificates `a385403b_*.json`):
+halved-model revalidations of all six known values (all reproduce exactly
+— the re-encoding is sound), constraint deduplication to minimal
+mono-sets (m=55 at n=13, m=70 at n=14), 25 lazy cutting-plane iterations
+(196 cuts separated; master oscillates FEASIBLE/UNKNOWN with growing
+cut count), the Fano case-split with 51,480 nogood constraints
+(2409 s, UNKNOWN), and a SCIP/MILP angle — **all attempts return
+UNKNOWN on (n=13, k=8)**; (n=14, k=9) likewise (1200 s, deduped).
+The brackets 8 ≤ a(13) ≤ 9 and 9 ≤ a(14) ≤ 10 therefore stand as the
+honest state, the instance is established as genuinely hard for
+CP-SAT/MILP at every tried formulation, and the lazy-constraint
+trajectory (which colorings escape at each iteration) is recorded in
+`/tmp/propertyb2/logs/` snapshots as the next session's starting point.
+Next levers named: a dedicated SAT-solver attack (portfolio, not CP-SAT),
+or an analytic classification of 8-edge non-2-colorable 3-graphs on 13
+vertices (literature-first: the Fano-uniqueness case analysis).
+
 ## Reproduce
 
 ```bash
