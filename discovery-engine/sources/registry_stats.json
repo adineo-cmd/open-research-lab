@@ -1,0 +1,42 @@
+{
+ "total": 7194,
+ "duplicates_or_invalid_removed": 61,
+ "by_tier": {
+  "aggregated:dataportals.org": 658,
+  "curated": 235,
+  "aggregated:awesome-public-datasets": 1099,
+  "aggregated:zooniverse": 571,
+  "aggregated:awesome-mcp-servers": 4631
+ },
+ "by_category": {
+  "open-data-portals": 677,
+  "life-sciences": 80,
+  "biomedical-clinical": 11,
+  "earth-climate-weather": 10,
+  "astronomy-space": 18,
+  "physics-energy": 48,
+  "chemistry-materials": 11,
+  "math-computing": 31,
+  "economics-finance": 150,
+  "law-policy-gov": 208,
+  "history-humanities-language": 21,
+  "geography-maps": 57,
+  "environment-biodiversity": 31,
+  "social-data-news-media": 32,
+  "citizen-science-volunteer": 581,
+  "competitions-benchmarks": 15,
+  "ml-ai-resources": 19,
+  "agent-infrastructure": 4641,
+  "format-re-targets": 10,
+  "archives-libraries-dumps": 9,
+  "datasets-general": 534
+ },
+ "curated_url_status": {
+  "ok": 200,
+  "network-error (host known-live; re-verify \u2014 session network degradation)": 9,
+  "ok (202 probe)": 6,
+  "ok (405 on bot probe; live)": 1,
+  "403-bot": 18,
+  "404": 1
+ }
+}
