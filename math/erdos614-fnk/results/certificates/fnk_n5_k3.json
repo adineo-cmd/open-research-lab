@@ -1,0 +1,22 @@
+{
+ "n": 5,
+ "k": 3,
+ "status": "OPTIMAL",
+ "value": 3,
+ "witness_edges": [
+  [
+   1,
+   3
+  ],
+  [
+   1,
+   4
+  ],
+  [
+   1,
+   5
+  ]
+ ],
+ "wall_s": 0.02,
+ "subsets": 1
+}

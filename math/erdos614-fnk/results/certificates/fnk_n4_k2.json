@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "k": 2,
+ "status": "OPTIMAL",
+ "value": 2,
+ "witness_edges": [
+  [
+   1,
+   4
+  ],
+  [
+   2,
+   4
+  ]
+ ],
+ "wall_s": 0.01,
+ "subsets": 1
+}
