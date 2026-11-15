@@ -1,0 +1,8 @@
+{
+ "n": 10,
+ "k": 4,
+ "status": "FEASIBLE",
+ "best": 21,
+ "wall_s": 240.24,
+ "subsets": 210
+}
