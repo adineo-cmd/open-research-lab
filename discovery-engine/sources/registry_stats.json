@@ -1,15 +1,15 @@
 {
- "total": 7540,
+ "total": 7538,
  "duplicates_or_invalid_removed": 107,
  "by_tier": {
   "aggregated:dataportals.org": 635,
-  "curated": 628,
+  "curated": 626,
   "aggregated:awesome-public-datasets": 1076,
   "aggregated:zooniverse": 571,
   "aggregated:awesome-mcp-servers": 4630
  },
  "by_category": {
-  "open-data-portals": 711,
+  "open-data-portals": 710,
   "life-sciences": 112,
   "biomedical-clinical": 28,
   "earth-climate-weather": 35,
@@ -27,19 +27,22 @@
   "competitions-benchmarks": 28,
   "ml-ai-resources": 33,
   "agent-infrastructure": 4654,
-  "format-re-targets": 22,
+  "format-re-targets": 21,
   "archives-libraries-dumps": 27,
   "datasets-general": 524
  },
  "curated_url_status": {
-  "200": 311,
-  "403-bot": 70,
-  "ok": 200,
-  "error": 15,
-  "network-error (host known-live; re-verify \u2014 session network degradation)": 9,
+  "200": 310,
+  "403-bot": 72,
+  "ok": 204,
+  "error (kept+flagged)": 6,
   "redirect-ok": 15,
   "ok (202 probe)": 6,
+  "error": 7,
   "ok (405 on bot probe; live)": 1,
-  "404": 1
+  "network-error (host known-live; re-verify \u2014 session network degradation)": 2,
+  "ok (fixed via fix_url)": 1,
+  "404": 1,
+  "dead": 1
  }
 }

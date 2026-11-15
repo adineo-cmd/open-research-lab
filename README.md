@@ -23,7 +23,8 @@ for more terms).
 - LB(10,10)=130. Method: exact aggregation relaxation + CP-SAT construction
   search with symmetry breaking. OEIS submission package drafted.
 - **First quantitative counts for 3+ colors anywhere** (2026-11-12/15):
-  new exact values **T₃(12,13)=T₃(13,12)=36 and T₃(13,13)=52**;
+  **13 exact values** incl. **T₃(12,13)=T₃(13,12)=36, T₃(13,13)=52,
+  T₃(11,13)=30, T₃(11,14)=45, T₃(12,14)=54, T₃(13,14)=74**;
   **the first exact 4-color values: T₄(41,5)=1, T₄(31,6)=2, T₄(29,7)=3,
   T₄(25,9)=6**; frontier lower bounds 15/30/45/54/74/91 at 11×12…14×14
   (all proven CP-SAT optima, orientation-symmetric, witnesses double-recounted).
@@ -44,7 +45,7 @@ A scored queue of unique research targets (novelty × feasibility × value)
 harvested from open-problem registries and famous GitHub projects used as
 instruments — the systematic version of "find something unique to work on".
 Its fuel: [`discovery-engine/sources/`](discovery-engine/sources/README.md) —
-**7,540 public sources of open research/work/discovery** (curated tier with
+**7,538 public sources of open research/work/discovery** (curated tier with
 per-source discovery-value and agent-access annotations + four attributed
 aggregated registries), mirrored from the canonical registry in
 [open-discovery-lab](https://github.com/adineo-cmd/open-discovery-lab)'s

@@ -10,10 +10,10 @@
 | [Chandra X-ray Center](https://cxc.cfa.harvard.edu) | Chandra X-ray Observatory archive with event files, source catalogs (ChaMP, ChaSer) and analysis tools. | Download observations via the Chandra archive interfaces and process with CIAO. | curated | 200 |
 | [DESI](https://data.desi.lbl.gov) | 40M+ spectra — largest public galaxy/survey redshift collection. | EDR+DR1 public API/files. | curated | ok |
 | [DESI (Dark Energy Spectroscopic Instrument)](https://www.desi.lbl.gov) | Tens of millions of galaxy/quasar spectra for dark-energy and large-scale-structure research (EDR/DR1 public). | Download EDR/DR1 via data.desi.lbl.gov files or query with the DESI API docs. | curated | 200 |
-| [ESASky](https://sky.esa.int) | ESA's unified astronomy portal federating Herschel, XMM, Gaia, SOHO and more in one visualization interface. | Use ESASky's TAP/JSON interfaces (sky.esa.int/esasky) for programmatic cross-mission queries. | curated | error |
+| [ESASky](https://sky.esa.int) | ESA's unified astronomy portal federating Herschel, XMM, Gaia, SOHO and more in one visualization interface. | Use ESASky's TAP/JSON interfaces (sky.esa.int/esasky) for programmatic cross-mission queries. | curated | error (kept+flagged) |
 | [ESO Science Archive](https://archive.eso.org) | Archive of the VLT, VISTA and other ESO telescopes: raw and reduced data across optical/IR instruments. | TAP (archive.eso.org/tap) queries plus the request-handler for bulk data retrieval. | curated | 200 |
 | [Fermi Gamma-ray Space Telescope](https://fermi.gsfc.nasa.gov) | Fermi-LAT all-sky gamma-ray data with weekly/monthly sky maps and source catalogs (4FGL). | Download LAT data via the fermi data server (fermi.gsfc.nasa.gov/cgi-bin/ssc/LAT/LATDataQuery.cgi) and catalogs. | curated | 200 |
-| [Gaia DR3 archive](https://gea.esac.esa.int/archive) | 1.8B stars with astrometry/photometry — uncatalogued-object hunting. | ADQL TAP queries; the lab's own high-PM survey runs here. | curated | network-error (host known-live; re-verify — session network degradation) |
+| [Gaia DR3 archive](https://gea.esac.esa.int/archive) | 1.8B stars with astrometry/photometry — uncatalogued-object hunting. | ADQL TAP queries; the lab's own high-PM survey runs here. | curated | error (kept+flagged) |
 | [Galaxy Zoo](https://www.zooniverse.org/projects/zookeeper/galaxy-zoo) | Citizen morphology classifications fueling published morphology catalogs. | Human task queue. | curated | ok |
 | [GWOSC](https://www.gwosc.org) | Open gravitational-wave strain data (GW150914 onward). | Bulk HDF5 + GWpy. | curated | ok |
 | [HEASARC](https://heasarc.gsfc.nasa.gov) | High-energy astrophysics: X-ray/gamma archives. | AstroQuery + bulk FITS. | curated | ok |
@@ -32,7 +32,7 @@
 | [NOIRLab Astro Archive](https://astroarchive.noirlab.edu) | Archive of NOIRLab (Gemini, Blanco/DECam, Kitt Peak) data products and catalogs. | Use the Data Lab APIs (datalab.noirlab.edu/query) with ADQL/SQL. | curated | 200 |
 | [NRAO Science Site](https://science.nrao.edu) | US radio-astronomy facility (VLA, ALMA NA partner, GBT) publishing data archives and analysis tools. | Query the NRAO Science Data Archive (archive.nrao.edu) via its REST/TAP endpoints. | curated | 200 |
 | [Pan-STARRS DR2](https://panstarrs.stsci.edu) | 1.6B object 3π survey with 5-band photometry. | MAST TAP/CasJobs. | curated | ok |
-| [Planck Legacy Archive](https://pla.esac.esa.int) | ESA Planck CMB mission archive with maps, component-separated products and lensing data. | Register free, then fetch FITS/NPY maps through the PLA interfaces. | curated | error |
+| [Planck Legacy Archive](https://pla.esac.esa.int) | ESA Planck CMB mission archive with maps, component-separated products and lensing data. | Register free, then fetch FITS/NPY maps through the PLA interfaces. | curated | error (kept+flagged) |
 | [SAO/NASA ADS](https://ui.adsabs.harvard.edu) | 33M+ astronomy/physics bibliographic records with citation graphs. | Public API (token). | curated | ok (202 probe) |
 | [SDSS](https://www.sdss.org) | Sloan sky survey: imaging + spectra (DR18). | SkyServer SQL + SAS bulk. | curated | ok |
 | [SIMBAD](https://simbad.cds.unistra.fr/simbad) | Object identification/cross-ID service. | TAP + script API (simbad.cds.unistra.fr/simbad/sim-script). | curated | 404 |

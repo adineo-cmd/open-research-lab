@@ -65,11 +65,13 @@ First quantitative grid Ramsey counts anywhere for 3+ colors
 `results/c3-frontier2.md`, `results/c4-first-bounds.md`; FGGP
 arXiv:1005.3750 is existence-only):
 
-- **New exact 3-color values:** T₃(12,7)=0, T₃(13,7)=2,
-  **T₃(12,13)=T₃(13,12)=36, T₃(13,13)=52** (all LB-proven + double-recounted
-  witnesses).
-- **Brackets:** 18 ≤ T₃(12,12) ≤ 22; 2 ≤ T₃(11,11) ≤ 10; frontier LBs
-  15/30/45/54/74/91 at 11×12…14×14.
+- **New exact 3-color values (13 total):** T₃(12,7)=0, T₃(13,7)=2,
+  T₃(12,13)=T₃(13,12)=36, T₃(13,13)=52, **T₃(11,13)=30, T₃(11,14)=45,
+  T₃(12,14)=54, T₃(13,14)=74** (all LB-proven + double-recounted
+  witnesses; `results/c3-frontier3.md`).
+- **Brackets:** 18 ≤ T₃(12,12) ≤ 22; 2 ≤ T₃(11,11) ≤ 10; 15 ≤ T₃(11,12) ≤ 17;
+  91 ≤ T₃(14,14) ≤ 93; the 11-row +15/column pattern is exact at n=13,14
+  (conjecture: T₃(11,n)=15(n−11), open at n=12).
 - **First exact 4-color values:** **T₄(41,5)=1, T₄(31,6)=2, T₄(29,7)=3,
   T₄(25,9)=6**; T₄(23,10) ∈ [4,5]; honest negatives: joint relaxation blind
   at 19×17 (parallel to c=3's 11×10).

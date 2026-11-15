@@ -6,7 +6,7 @@
 | [CDLI (Cuneiform Digital Library Initiative)](https://cdli.earth) | Cuneiform tablets catalog with images, transliterations and metadata for 350,000+ objects (relocated from cdli.ucla.edu). | Use CDLI APIs/pages at cdli.earth to fetch tablet metadata, images and transliterations. | curated | 200 |
 | [Chronicling America (LoC)](https://chroniclingamerica.loc.gov) | Library of Congress newspaper archive: full OCR text of 20M+ pages from 1770-1963. | Use its search API (chroniclingamerica.loc.gov/search/pages/results?format=json) for OCR text and page images. | curated | redirect-ok |
 | [CLDR](https://cldr.unicode.org) | Unicode locale data (dates, names, plurals). | GitHub/Unicode bulk. | curated | ok |
-| [DPLA](https://dp.la) | Digital Public Library of America: 45M+ items. | API (free key). | curated | network-error (host known-live; re-verify — session network degradation) |
+| [DPLA](https://dp.la) | Digital Public Library of America: 45M+ items. | API (free key). | curated | 403-bot |
 | [Europeana](https://www.europeana.eu) | 50M+ European cultural heritage items. | REST API (free key). | curated | 403-bot |
 | [Glottolog](https://glottolog.org) | Reference catalog of 8k+ world languages (lineage/classification). | API + CLDF dumps. | curated | ok |
 | [Google Books Ngram Viewer](https://books.google.com/ngrams) | Word-frequency time series from millions of digitized books (1500-2019) for cultural-trend analysis. | Download the raw Ngram datasets from storage.googleapis.com/books/ngrams for bulk analysis. | curated | 200 |

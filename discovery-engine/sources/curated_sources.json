@@ -90,16 +90,6 @@
   "url_status": "ok"
  },
  {
-  "name": "data.go.jp",
-  "url": "https://data.go.jp",
-  "category": "open-data-portals",
-  "access": "browse",
-  "discovery_value": "Japan's open-data portal.",
-  "agent_use": "Dataset landing pages; some CSV/API resources.",
-  "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
- },
- {
   "name": "dados.gov.br",
   "url": "https://dados.gov.br",
   "category": "open-data-portals",
@@ -605,8 +595,8 @@
   "discovery_value": "1.8B stars with astrometry/photometry — uncatalogued-object hunting.",
   "agent_use": "ADQL TAP queries; the lab's own high-PM survey runs here.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)",
-  "note": " | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
+  "url_status": "error (kept+flagged)",
+  "note": "DNS fine (193.147.152.106; local and 1.1.1.1 agree). 4/4 rounds TCP connect timeout from box; hosted external fetcher also times out. Gaia archive itself appears canonical (no successor found). Keep; re-verify from another network."
  },
  {
   "name": "VizieR",
@@ -1020,8 +1010,8 @@
   "discovery_value": "800k+ US/international economic time series.",
   "agent_use": "REST API (free key) + bulk.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)",
-  "note": " | free API key"
+  "url_status": "ok",
+  "note": "URL is canonical and live, but never returned an HTTP status from this box: 4/4 rounds HTTP/2 'stream not closed cleanly INTERNAL_ERROR' (reproduced even with IP pinned to the Akamai edge) and 0-byte timeout on --http1.1. Independent hosted fetcher retrieved the live page ('Federal Reserve Economic Data | FRED | St. Louis Fed', releases updated within ~1 day). Failures are box-egress/HTTP-stack sp"
  },
  {
   "name": "World Bank Open Data",
@@ -1272,8 +1262,8 @@
   "discovery_value": "Digital Public Library of America: 45M+ items.",
   "agent_use": "API (free key).",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)",
-  "note": " | free API key | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
+  "url_status": "403-bot",
+  "note": "Local resolver timed out 4/4 rounds, but dp.la resolves on all public resolvers (13.224.163.x) and a pinned-IP probe received HTTP 403 (bot block). bot-blocked; canonical live site - keep."
  },
  {
   "name": "Perseus Digital Library",
@@ -1550,7 +1540,8 @@
   "discovery_value": "Platform for citizen-science projects with open data tools.",
   "agent_use": "API + project data.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
+  "url_status": "ok",
+  "note": "HTTP 200 on round 1; no retries needed."
  },
  {
   "name": "NASA Citizen Science",
@@ -2204,16 +2195,6 @@
   "url_status": "ok"
  },
  {
-  "name": "Just Solve It wiki",
-  "url": "http://justsolve.archiving.it",
-  "category": "format-re-targets",
-  "access": "browse",
-  "discovery_value": "Registry of file formats incl. many UNDOCUMENTED ones with samples — the lab's Track C queue source.",
-  "agent_use": "MediaWiki; per-format pages with sample links.",
-  "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)"
- },
- {
   "name": "dexvert samples",
   "url": "https://github.com/Sembiance/dexvert",
   "category": "format-re-targets",
@@ -2282,8 +2263,8 @@
   "discovery_value": "Universal source-code archive (graph of all known VCS history).",
   "agent_use": "API + graph dataset.",
   "origin": "curated",
-  "url_status": "network-error (host known-live; re-verify — session network degradation)",
-  "note": " | unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged"
+  "url_status": "ok",
+  "note": "4/4 rounds curl exit 60 'unable to get local issuer certificate'. Diagnosis: the server serves a COMPLETE chain (leaf <- Let's Encrypt 'YR2' <- ISRG Root YR); the verification box's /etc/ssl/certs/ca-certificates.crt does not contain the new ISRG Root YR (Gen-Y hierarchy introduced Nov 2025) - the hosted fetcher fails identically, so it is a trust-store lag, not a site fault. Verified rigorously w"
  },
  {
   "name": "GitHub Archive",
@@ -2566,8 +2547,8 @@
   "discovery_value": "Japan's national open-data catalog with datasets from ministries, census and disaster-response data.",
   "agent_use": "CKAN API (data.go.jp/api/3) supports search and metadata harvest.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "Host up and reachable: TLS handshake completes, but the certificate EXPIRED 2026-11-12 14:59:59 GMT (SECOM Passport for Web OV RSA CA 2024, notBefore 2026-05-12) - three days before this re-check; curl exit 60 on 4/4 rounds. DNS fine (CloudFront 18.66.63.x). Canonical host unchanged (cert CN=www.data.go.jp); expect renewal, re-verify in a few days.",
+  "url_status": "error (kept+flagged)"
  },
  {
   "name": "data.gv.at (Austria)",
@@ -2659,8 +2640,8 @@
   "discovery_value": "Poland's open-data portal with government datasets and a full API for catalog access.",
   "agent_use": "REST API (api.dane.gov.pl) exposes dataset and resource search in JSON.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "4/4 rounds: TCP connect timeout (curl exit 28, 25s max-time). DNS is correct: 185.41.93.178 returned by BOTH the local resolver and 1.1.1.1. Hosted external fetcher also times out on 443. Web search confirms dane.gov.pl is still the canonical Polish open-data portal (API at api.dane.gov.pl). Not verifiable from any available vantage point on 2026-11-15; keep URL and re-verify from another network.",
+  "url_status": "error (kept+flagged)"
  },
  {
   "name": "opendata.gov.cz",
@@ -3427,7 +3408,8 @@
   "discovery_value": "Integrates genomics, literature and pharmacology to prioritize drug targets with evidence scores.",
   "agent_use": "Use the Open Targets GraphQL API (api.platform.opentargets.org/api/v4/graphql) or download data dumps.",
   "origin": "curated",
-  "url_status": "200"
+  "url_status": "ok (fixed via fix_url)",
+  "note": "www.targetvalidation.org NXDOMAIN (1.1.1.1, 8.8.8.8, 9.9.9.9, dns.google). Verified 200: https://platform.opentargets.org (the target-disease association platform; matches this entry's GraphQL/REST agent_use) and https://opentargets.org (org homepage, also 200). fix_url set to the platform URL."
  },
  {
   "name": "RxNav / RxNorm (NLM)",
@@ -3916,8 +3898,8 @@
   "discovery_value": "ESA's unified astronomy portal federating Herschel, XMM, Gaia, SOHO and more in one visualization interface.",
   "agent_use": "Use ESASky's TAP/JSON interfaces (sky.esa.int/esasky) for programmatic cross-mission queries.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "DNS fine (CNAME sky.esac.esa.int -> 193.147.153.113; local resolver and 1.1.1.1 agree). 4/4 rounds TCP connect timeout from this box; hosted external fetcher also times out on 443. Web search confirms sky.esa.int is still ESASky's official URL. Same ESA/ESDC reachability pattern as gea/pla.esac.esa.int. Keep; re-verify from another vantage point.",
+  "url_status": "error (kept+flagged)"
  },
  {
   "name": "AAVSO",
@@ -4000,8 +3982,8 @@
   "discovery_value": "ESA Planck CMB mission archive with maps, component-separated products and lensing data.",
   "agent_use": "Register free, then fetch FITS/NPY maps through the PLA interfaces.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "DNS fine (193.147.153.153; local and 1.1.1.1 agree). 4/4 rounds TCP connect timeout from box; hosted external fetcher also times out. Keep; re-verify from another network.",
+  "url_status": "error (kept+flagged)"
  },
  {
   "name": "CERN Open Data",
@@ -4083,8 +4065,8 @@
   "discovery_value": "Nuclear structure and reaction data: nuclide properties, decay schemes, cross sections (ENDF).",
   "agent_use": "Use NuDat and ENDF retrieval web services (nndc.bnl.gov) for datasets.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "Local resolver (systemd stub 10.127.55.119) timed out for this host on 4/4 rounds, but www.nndc.bnl.gov resolves on 1.1.1.1/8.8.8.8/9.9.9.9 (130.199.3.23) and a curl probe pinned to that IP returned HTTP 200. Site live; the failure was verification-box DNS. URL unchanged.",
+  "url_status": "ok"
  },
  {
   "name": "Particle Data Group (PDG)",
@@ -4907,8 +4889,8 @@
   "discovery_value": "Federal watchdog reports and testimonies on program effectiveness, fraud and agency performance.",
   "agent_use": "Scrape/download report PDFs; offers an RSS/API for latest products.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "Local resolver timed out 4/4 rounds, but www.gao.gov resolves on public resolvers (Akamai edgesuite) and a pinned-IP probe received a real HTTP 403 from the edge (bot block); the hosted fetcher is also refused/tar-pitted. Site is live and blocking non-browser clients. bot-blocked; canonical live site - keep.",
+  "url_status": "403-bot"
  },
  {
   "name": "Congressional Budget Office (CBO)",
@@ -6124,8 +6106,8 @@
   "discovery_value": "ArchiveTeam-hosted wiki cataloging thousands of file formats with identification and extraction hints.",
   "agent_use": "Scrape MediaWiki API (api.php) for format pages and extension mappings.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "Domain justsolve.archiving.it NXDOMAIN (1.1.1.1, 8.8.8.8, dns.google) - gone from DNS entirely. Successor per ArchiveTeam's own domains page: fileformats.archiveteam.org (justsolve.archiveteam.org redirects there), but BOTH resolve to 208.86.226.169 and TCP connect times out from this box AND from the hosted fetcher, so the successor could NOT be verified 200. fix_url is intentionally null (fix_ur",
+  "url_status": "dead"
  },
  {
   "name": "textfiles.com",
@@ -6135,8 +6117,8 @@
   "discovery_value": "Jason Scott's classic BBS-era text-file archive (magazines, hacker docs, art packs) plus upload history.",
   "agent_use": "Scrape directory listings for bulk corpus of early-digital ephemera.",
   "origin": "curated",
-  "note": "unreachable from verification network (DNS failure/timeouts) despite 4 retries with 60s timeout; canonical well-known URL kept and flagged",
-  "url_status": "error"
+  "note": "DNS correct (208.86.224.90; local resolver and 1.1.1.1 agree). 4/4 rounds TCP connect timeout from this box; the hosted external fetcher also times out on 443. Web search (Wikipedia, Jason Scott's 2026 blog posts) indicates textfiles.com is alive and well. NOTE: 208.86.x also hosts the ArchiveTeam fileformats wiki (the justsolve successor), which times out identically - possible hosting-provider r",
+  "url_status": "error (kept+flagged)"
  },
  {
   "name": "PRONOM (TNA file format registry)",

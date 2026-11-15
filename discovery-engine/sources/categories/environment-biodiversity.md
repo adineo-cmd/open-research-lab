@@ -6,7 +6,7 @@
 | [Biodiversity Heritage Library](https://www.biodiversitylibrary.org) | Digitized legacy biodiversity literature (250k+ volumes) with OCR text and illustrations. | Use the BHL API (biodiversitylibrary.org/api) for item/page metadata and OCR retrieval. | curated | 403-bot |
 | [Catalogue of Life](https://www.catalogueoflife.org) | Global checklist of 2M+ species names assembling taxonomic databases for organisms. | Download the annual COL checklist (DwC-A) from catalogueoflife.org/data. | curated | 200 |
 | [Chinese Tea Dataset](https://chinatea.house/dataset) | A curated, open dataset of 100+ Chinese teas covering type, origin, [...] | Bulk/API dataset per its landing page; load, analyze, mine. | aggregated | sampled (aggregated tier; per-source license/provenance in ATTRIBUTION.md) |
-| [CitSci.org](https://citsci.org) | Platform for citizen-science projects with open data tools. | API + project data. | curated | network-error (host known-live; re-verify — session network degradation) |
+| [CitSci.org](https://citsci.org) | Platform for citizen-science projects with open data tools. | API + project data. | curated | ok |
 | [CoCoRaHS](https://www.cocorahs.org) | Community rain-hail-snow network (US/Canada). | Human task queue; station data. | curated | ok |
 | [eBird](https://ebird.org) | 1B+ bird observations globally. | eBird Basic Dataset (free registration) + API. | curated | ok |
 | [Encyclopedia of Life](https://eol.org) | Aggregated species pages with descriptions, media and taxonomy for millions of taxa. | Use the EOL API (eol.org/api) with a free key for taxon and media data. | curated | 403-bot |
