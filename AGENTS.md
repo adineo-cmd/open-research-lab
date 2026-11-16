@@ -39,6 +39,17 @@ than it found them.
 - Pushes go through the GitHub MCP (push_files); verify large files
   byte-for-byte after push.
 
+## Role in the lab structure (owner directive 2026-11-16)
+
+`open-research-lab` = **mathematics and other fields** — PRIORITY 2 in the
+two-machine program. `librephone-blob-research` = LibrePhone work
+(PRIORITY 1 on both machines; its workorders are at
+librephone-blob-research `workorders/`). `open-discovery-lab` = the
+NOTEBOOK that records every finding/solved/improved item from any repo
+(lead-merged). This repo's open items: A385403 a(13)/a(14) proofs (next
+levers in the results doc continuation section), EP614 exact-table
+extension, Track C format-targets queue.
+
 ## Repo principles (unchanged — see README.md)
 
 Uniqueness bar · negative results are results · everything reproducible ·
