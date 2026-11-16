@@ -1,71 +1,97 @@
-# open-research-lab
+<div align="center">
 
-Original research in mathematics and public-data science. Every result
-ships with reproducible scripts and machine-checkable certificates.
+# Open Research Lab
+
+**Original results in mathematics and sky surveys — with certificates.**
+
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+
+[![Stars](https://img.shields.io/github/stars/adineo-cmd/open-research-lab?style=flat&logo=github&label=stars)](https://github.com/adineo-cmd/open-research-lab/stargazers) [![Last commit](https://img.shields.io/github/last-commit/adineo-cmd/open-research-lab?style=flat)](https://github.com/adineo-cmd/open-research-lab/commits)
+
+[Quick start](#quick-start) · [How it works](#how-it-works) · [Features](#features)
+
+</div>
+
+---
+
 Split from the [Open Discovery Lab](https://github.com/adineo-cmd/open-discovery-lab)
-lab notebook (owner directive, 2026-11-10).
+notebook, this repository holds only results that can be re-checked: a solver, a
+witness, a certificate.
 
-## Results
+It currently carries **157 machine-checkable certificates**, a full-sky Gaia DR3
+harvest of **130,318 sources**, and a discovery registry of **8,000 sources**
+across 21 categories.
 
-### Mathematics — property-B covering triples (`math/property-b-covering/`)
+## Features
 
-OEIS A385403 (minimum triples covering {1..n} forcing a monochromatic
-triple under every 2-coloring) extended: **a(11)=9 and a(12)=9 exact**
-(CP-SAT lower-bound proofs + all-2ⁿ independent verification; 17
-certificates, zero contradictions), brackets 8≤a(13)≤9, 9≤a(14)≤10; the
-7+⌈(n−7)/3⌉ bound is exact at n=7..12. OEIS filing draft ready
-(owner-gated). Picked from OEIS's own `keyword:more` queue.
+| | Feature | What it does |
+| --- | --- | --- |
+| 🔢 | **Grid Ramsey values** | Four new exact OEIS values on row 9 of A399621, plus the first bounds for the open a(9). |
+| 🎯 | **Property-B covering** | A385403 extended with a(11)=9 and a(12)=9 exact, all-2ⁿ verified. |
+| 🌌 | **High-proper-motion harvest** | Full-sky Gaia DR3 scan in 4,096 indexed chunks, then multi-epoch vetting. |
+| 🗂️ | **Discovery registry** | 8,000 sources scored and categorised, with attribution kept per entry. |
 
-### Mathematics — grid Ramsey minima (`math/grid-ramsey/`)
+## How it works
 
-The minimum number of monochromatic rectangles over 2-colorings of grids
-(OEIS A399620/A399621 — entries created 2026-09-05, the OEIS itself asks
-for more terms).
+A result is only published when all three parts exist:
 
-- **Four new exact OEIS values** (row 9 of A399621): T(9,3)=3, T(9,4)=6,
-  T(9,5)=16, T(9,6)=24 — CP-SAT-proven optimal against a proven exact
-  aggregation-relaxation lower bound, witnesses independently re-counted.
-- **First bounds for the open a(9): 74 ≤ a(9) ≤ 80** (+ structural
-  evidence that 80 is the true value: strict local optimality of the
-  80-witness, rigid relaxation profile, pigeonhole exclusion of the
-  punctured-Hadamard construction family).
-- LB(10,10)=130. Method: exact aggregation relaxation + CP-SAT construction
-  search with symmetry breaking. OEIS submission package drafted.
-- **First quantitative counts for 3+ colors anywhere** (2026-11-12/15):
-  **13 exact values** incl. **T₃(12,13)=T₃(13,12)=36, T₃(13,13)=52,
-  T₃(11,13)=30, T₃(11,14)=45, T₃(12,14)=54, T₃(13,14)=74**;
-  **the first exact 4-color values: T₄(41,5)=1, T₄(31,6)=2, T₄(29,7)=3,
-  T₄(25,9)=6**; frontier lower bounds 15/30/45/54/74/91 at 11×12…14×14
-  (all proven CP-SAT optima, orientation-symmetric, witnesses double-recounted).
+1. **A solver** — `math/*/scripts` or `math/*/tools`, with symmetry breaking where
+   the search needs it.
+2. **A witness** — the explicit construction that attains the value.
+3. **A certificate** — JSON evidence that an independent verifier can replay.
 
-### Astronomy — uncatalogued-object mining (`astronomy/high-pm-survey/`)
+The astronomy track runs the same discipline: a harvest query, an exclusion set
+built from named catalogues, and a vetting script that records why each source
+was kept or dropped.
 
-- **Full-sky Gaia DR3 high-proper-motion harvest: 130,318 unique sources**
-  (|pm|>150 mas/yr, G<20, RUWE<1.4) via 4,096 indexed chunk scans of the
-  gaia.aip.de TAP mirror (3.3× parallel speedup, zero failures).
-- **1,385 ultracool-dwarf-like candidates → epoch-aware vetting leaves
-  621 genuinely uncatalogued (39 confidence-A)** — red/faint/fast at
-  110–350 pc, just beyond the GCNS 100-pc wall. Candidate list, not a
-  discovery claim: every screen recorded per object.
+```mermaid
+flowchart LR
+  A[Open problem] --> B[Solver]
+  B --> C[Upper bound witness]
+  B --> D[Lower bound relaxation]
+  C --> E[Independent recount]
+  D --> E
+  E --> F[Certificate JSON]
+  F --> G[results/]
+  H[Gaia DR3 chunks] --> I[Exclusion sets]
+  I --> J[Vetting]
+  J --> G
+```
 
-### Discovery engine (`discovery-engine/`)
+## Quick start
 
-A scored queue of unique research targets (novelty × feasibility × value)
-harvested from open-problem registries and famous GitHub projects used as
-instruments — the systematic version of "find something unique to work on".
-Its fuel: [`discovery-engine/sources/`](discovery-engine/sources/README.md) —
-**8,000 public sources of open research/work/discovery** (curated tier with
-per-source discovery-value and agent-access annotations + four attributed
-aggregated registries), mirrored from the canonical registry in
-[open-discovery-lab](https://github.com/adineo-cmd/open-discovery-lab)'s
-`discovery-sources/`; plus [`AGENT-REPOS.md`](discovery-engine/sources/AGENT-REPOS.md),
-the verified discovery-engine repositories (skills libraries, autonomous
-discovery pipelines, evolution loops) mapped onto the lab's tracks.
+Python 3.10+, `ortools` for the CP-SAT searches. Harvest scripts need network access to the Gaia TAP mirrors.
 
-## Principles
+**Mathematics**
 
-1. Uniqueness bar: verified gap before any claim. 2. Negative results are
-results. 3. Everything reproducible — every number regenerable from
-committed scripts. 4. No overclaiming: candidates are candidates.
+```bash
+python3 math/grid-ramsey/tools/count_rects.py --help
+python3 math/grid-ramsey/tools/relax_lb.py --help
+python3 math/property-b-covering/scripts/verify_a385403.py --help
+```
 
-License: MIT for code, CC BY 4.0 for documentation.
+**Astronomy**
+
+```bash
+cat astronomy/high-pm-survey/RESULTS.md
+python3 astronomy/high-pm-survey/scripts/check_knownness.py --help
+```
+
+## Project structure
+
+```text
+math/grid-ramsey/        A399620 / A399621 values and bounds
+math/property-b-covering/ A385403 extension + verifier
+math/erdos614-fnk/        FNK certificates
+astronomy/high-pm-survey/ harvest, exclusion sets, vetting
+discovery-engine/sources/ registry, categories, attribution
+```
+
+## What is not claimed
+
+The record matters as much as the result. Several entries in the log are
+corrections — a prior-art attribution overturned, a published guess disproven, a
+method that produced no signal. Those stay, because a research log that only
+records wins is not a research log.
+
+OEIS submissions are drafted in-repo and filed only after owner review.
