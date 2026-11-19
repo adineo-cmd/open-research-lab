@@ -18,7 +18,8 @@ Split from the [Open Discovery Lab](https://github.com/adineo-cmd/open-discovery
 notebook, this repository holds only results that can be re-checked: a solver, a
 witness, a certificate.
 
-It currently carries **157 machine-checkable certificates**, a full-sky Gaia DR3
+It currently carries **155 machine-checkable certificates** (JSON under the
+tracks' `results/certificates/` directories), a full-sky Gaia DR3
 harvest of **130,318 sources**, and a discovery registry of **8,000 sources**
 across 21 categories.
 

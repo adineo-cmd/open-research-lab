@@ -1,0 +1,21 @@
+{
+ "n": 4,
+ "k": 1,
+ "mode": "optimize",
+ "status": "OPTIMAL",
+ "wall_s": 0.01,
+ "subsets": 4,
+ "workers": 4,
+ "seed": 20261115,
+ "witness_edges": [
+  [
+   1,
+   4
+  ],
+  [
+   2,
+   3
+  ]
+ ],
+ "value": 2
+}
