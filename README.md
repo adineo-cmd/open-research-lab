@@ -28,12 +28,17 @@ instruments** built elsewhere.
 
 ## What the website shows
 
-- **In progress** — the open cells and the next lever for each.
-- **Findings ledger** — all 77 dated entries, filterable by track, each with its prior-art check.
-- **Research tracks** — mathematics, Android blobs, sky survey, format recovery, grid Ramsey.
-- **LibrePhone** — firmware documentation work for the FSF initiative.
-- **Reasoning instruments** — the ten independent apps and the Atrium front door.
-- **Method** — prior art, solver, witness, certificate, correction.
+A seven-page, mobile-first site, not a single demo page:
+
+| Page | Contents |
+| --- | --- |
+| `index.html` | Home: register, in-progress cells, latest findings, recent repositories and commits. |
+| `findings.html` | Searchable, filterable 77-entry findings ledger with expandable detail. |
+| `research.html` | Research tracks, selected proved results and certificate counts. |
+| `librephone.html` | LibrePhone contributions, firmware areas and the boundary rules. |
+| `projects.html` | All 29 public adineo-cmd repositories, searchable and filterable by language. |
+| `apps.html` | The ten reasoning instruments, Atrium and the data-boundary rules. |
+| `method.html` | The five steps, what is not claimed, and how the site is generated. |
 
 ## Features
 
@@ -80,13 +85,16 @@ Published at **https://adineo-cmd.github.io/open-research-lab/** from the
 To regenerate the site data and preview locally:
 
 ```bash
-python3 scripts/build_site_data.py          # docs/data.js from FINDINGS.md + certificates
-cd docs && python3 -m http.server 8123      # open http://127.0.0.1:8123
+python3 scripts/build_project_catalog.py   # refresh site/projects.json from GitHub
+python3 scripts/build_site_data.py         # docs/data.js from FINDINGS.md + certificates
+cd docs && python3 -m http.server 8123     # open http://127.0.0.1:8123
 ```
 
-`site/content.json` holds the curated copy; `scripts/build_site_data.py`
-derives the numbers, the 77 findings and the recent commits. Keep copy edits in
-the JSON and re-run the generator rather than editing `docs/data.js`.
+`site/content.json` holds the curated copy, `site/projects.json` is the checked-in
+repository snapshot, and `scripts/build_site_data.py` derives the numbers, the
+77 findings and the recent commits. Keep copy edits in the JSON files and
+re-run the generators rather than editing `docs/data.js`. The site ships its
+data locally, so it works offline and needs no API calls at page load.
 
 ## Quick start
 
@@ -111,9 +119,11 @@ python3 astronomy/high-pm-survey/scripts/check_knownness.py --help
 ## Project structure
 
 ```text
-docs/                      the showcase website (GitHub Pages source)
+docs/                      seven-page showcase site (GitHub Pages source)
 site/content.json          curated site copy
+site/projects.json         adineo-cmd repository catalog snapshot
 scripts/build_site_data.py regenerates docs/data.js
+scripts/build_project_catalog.py refreshes the repository catalog
 math/grid-ramsey/          A399620 / A399621 values and bounds
 math/property-b-covering/  A385403 extension + verifier
 math/erdos614-fnk/         FNK certificates + Turán-oracle validation

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reasoning instruments — Open Research Lab</title>
+<meta name="description" content="Ten independent reasoning applications plus the Atrium front door, each with its own backend, frontend and database.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="apps">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">Applications</p>
+    <h1>Reasoning <em>instruments</em></h1>
+    <p class="lead" id="apps-summary"></p>
+  </header>
+
+  <section class="section">
+    <div class="section-head"><h2>The instruments</h2></div>
+    <ol class="numbered ruled" id="app-index"></ol>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>The data boundary</h2></div>
+    <ul class="plain-list">
+      <li>No combined database — every backend uses its own SQLite file inside its own directory.</li>
+      <li>No combined search index — each app builds and ships its own.</li>
+      <li>No shared browser state — only Architecture Archaeologist saves a codebase identifier, and the build checks that no other app does.</li>
+      <li>No API proxy — the portal is static; each frontend calls its own backend on its own port.</li>
+      <li>No backend files in the static site — the build fails if a backend, environment file or database appears in the published output.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a href="research.html">Research</a><a href="https://github.com/adineo-cmd2">Apps on GitHub</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

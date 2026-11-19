@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Findings — Open Research Lab</title>
+<meta name="description" content="The full dated findings ledger: firmware, file formats, sky objects and integer sequences, each with a prior-art check.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="findings">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">The record</p>
+    <h1>Findings <em>ledger</em></h1>
+    <p class="lead" id="findings-sub"></p>
+  </header>
+
+  <section class="section">
+    <div class="controls">
+      <label>
+        <span class="hint">Search the ledger</span>
+        <input class="search" id="finding-search" type="search" placeholder="Fano, LPEC, Gaia, Ramsey…" autocomplete="off">
+      </label>
+      <div class="filters" id="filters" role="group" aria-label="Filter by track"></div>
+    </div>
+    <p class="hint" id="result-count" aria-live="polite"></p>
+    <div class="ledger ruled" id="ledger"></div>
+    <p class="ledger-note">Select a row to read the finding. Every entry carries a date and a prior-art check; several are corrections of published claims. Negative results stay in the record.</p>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="https://github.com/adineo-cmd/open-research-lab">Repository</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

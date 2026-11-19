@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — Open Research Lab</title>
+<meta name="description" content="Every public repository built under the adineo-cmd account, with descriptions, languages and links.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="projects">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">Portfolio</p>
+    <h1>Projects <em>built</em></h1>
+    <p class="lead">The public repositories under adineo-cmd: research tools, reference libraries, static sites and engineering work. The catalog is a snapshot refreshed from the GitHub API; each entry links to its source.</p>
+  </header>
+
+  <section class="section">
+    <div class="controls">
+      <label>
+        <span class="hint">Search projects</span>
+        <input class="search" id="project-search" type="search" placeholder="Name, topic or description…" autocomplete="off">
+      </label>
+      <div class="filters" id="lang-filters" role="group" aria-label="Filter by language"></div>
+    </div>
+    <p class="hint" id="project-count" aria-live="polite"></p>
+    <div class="ruled" id="project-list"></div>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="findings.html">Findings</a><a href="research.html">Research</a><a href="https://github.com/adineo-cmd?tab=repositories">GitHub profile</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

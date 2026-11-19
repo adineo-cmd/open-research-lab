@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LibrePhone — Open Research Lab</title>
+<meta name="description" content="Clean-room firmware documentation for the FSF's LibrePhone initiative: ISA identification, format documentation, boot-chain censuses and upstream contributions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="librephone">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">Firmware work</p>
+    <h1>Libre<em>Phone</em></h1>
+    <p class="lead" id="libre-summary"></p>
+  </header>
+
+  <section class="section two-col">
+    <div>
+      <div class="section-head"><h2>What was done</h2></div>
+      <ul class="plain-list" id="libre-highlights"></ul>
+    </div>
+    <div>
+      <div class="section-head"><h2>Firmware areas</h2></div>
+      <p class="prose" id="libre-workorders"></p>
+      <div class="chips" id="libre-areas"></div>
+      <a class="outlink" id="libre-link" href="#">Open the repository</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>How the boundary is kept</h2><p>Interoperability work stays on the safe side of the line.</p></div>
+    <ul class="plain-list">
+      <li>Blobs are never committed to a repository.</li>
+      <li>Only derived metadata is published: headers, segment tables, hashes, version strings and protocol constants.</li>
+      <li>Every finding ships the script that produced it, so the derivation can be rechecked.</li>
+      <li>Radio work follows the regulatory-safe order: Bluetooth, then WiFi, then GNSS and NFC, with modem last.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="https://github.com/adineo-cmd/librephone-blob-research">LibrePhone repo</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

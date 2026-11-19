@@ -77,6 +77,7 @@ def recent_commits(n=6):
 
 def main():
     content = json.loads(read("site/content.json"))
+    projects = json.loads(read("site/projects.json"))
     findings = parse_findings(read("open-discovery-lab/FINDINGS.md"))
     certs, by_track = count_certificates()
 
@@ -97,6 +98,7 @@ def main():
             "certificatesByTrack": by_track,
             "tracks": len(content["tracks"]),
             "apps": len(content["apps"]["items"]),
+            "repos": projects["count"],
             "dateSpan": span,
             "daysOfWork": days,
             "generated": datetime.now().strftime("%Y-%m-%d"),
@@ -106,6 +108,9 @@ def main():
         "tracks": content["tracks"],
         "librephone": content["librephone"],
         "apps": content["apps"],
+        "projects": projects,
+        "researchResults": content["researchResults"],
+        "notClaimed": content["notClaimed"],
         "method": content["method"],
         "findings": findings,
         "commits": recent_commits(),

@@ -16,6 +16,7 @@ window.SITE_DATA = {
     },
     "tracks": 5,
     "apps": 11,
+    "repos": 29,
     "dateSpan": "2026-11-09 – 2026-11-19",
     "daysOfWork": 11,
     "generated": "2026-11-19"
@@ -164,6 +165,467 @@ window.SITE_DATA = {
     ],
     "repo": "https://github.com/adineo-cmd2"
   },
+  "projects": {
+    "owner": "adineo-cmd",
+    "refreshed": "2026-11-19",
+    "count": 29,
+    "repos": [
+      {
+        "archived": false,
+        "description": "Clean-room, token-driven open-source reimplementation of OEM Android skins (HyperOS, ColorOS, realme UI, One UI) — spec-first, original assets only",
+        "forks": 0,
+        "homepage": "",
+        "language": "Kotlin",
+        "name": "openstock",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-14T17:55:33Z"
+      },
+      {
+        "archived": false,
+        "description": "Interactive science learning atlas — physics, chemistry, biology, and math on one Astro engine with in-browser search.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/interactive-science/",
+        "language": "Astro",
+        "name": "interactive-science",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "astro",
+          "education",
+          "interactive",
+          "science"
+        ],
+        "updated": "2026-11-12T16:42:43Z"
+      },
+      {
+        "archived": false,
+        "description": "An atlas of global problems, solved discoveries, and undiscovered ideas — Astro site with a 6-hourly Python data-refresh pipeline.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/idea-atlas/",
+        "language": "HTML",
+        "name": "idea-atlas",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "astro",
+          "ideas",
+          "knowledge",
+          "open-data"
+        ],
+        "updated": "2026-11-12T15:38:50Z"
+      },
+      {
+        "archived": false,
+        "description": "Clean-room reverse engineering of Android proprietary blobs for the FSF's LibrePhone initiative — Qualcomm (Fairphone FP6: WCN6750 wpss, QURT, WMI, BT, TrustZone) and MediaTek. Facts documented, never blobs committed.",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "librephone-blob-research",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-11T20:14:32Z"
+      },
+      {
+        "archived": false,
+        "description": "Original research in mathematics and public-data science: grid Ramsey minima (new OEIS values), uncatalogued-object mining in Gaia DR3, and a discovery engine that scores open problems. Every result ships with reproducible scripts and certificates.",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "open-research-lab",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-11T20:12:41Z"
+      },
+      {
+        "archived": false,
+        "description": "A census of human making: 180 ideas across 12 fields — already built, half-built, not built yet.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/unbuilt/",
+        "language": "HTML",
+        "name": "unbuilt",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-10T17:03:06Z"
+      },
+      {
+        "archived": false,
+        "description": "My personal website.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/personal/",
+        "language": "JavaScript",
+        "name": "personal",
+        "private": false,
+        "stars": 5,
+        "topics": [],
+        "updated": "2026-11-08T17:56:33Z"
+      },
+      {
+        "archived": false,
+        "description": "",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "cloud_predict",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-08T08:51:42Z"
+      },
+      {
+        "archived": false,
+        "description": "My Portfolio Website",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/",
+        "language": "JavaScript",
+        "name": "adineo-cmd.github.io",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-07T14:58:00Z"
+      },
+      {
+        "archived": false,
+        "description": "A human-curated map of the web — eleven directory sources, one tab each, never mixed. Astro.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/HumanWeb/",
+        "language": "Python",
+        "name": "HumanWeb",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "astro",
+          "curated",
+          "directory",
+          "web"
+        ],
+        "updated": "2026-11-07T11:00:57Z"
+      },
+      {
+        "archived": false,
+        "description": "An evidence-graded field guide to being better in company — 599 workbook findings plus the elite-curriculum chapters. Astro, static.",
+        "forks": 0,
+        "homepage": "",
+        "language": "TypeScript",
+        "name": "self-improvement-field-guide",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-01T16:08:15Z"
+      },
+      {
+        "archived": false,
+        "description": "An evidence-graded operating manual for one body — 546 graded rows from the Longevity Master Workbook, live calculator, site search. Astro, static.",
+        "forks": 0,
+        "homepage": "",
+        "language": "Astro",
+        "name": "longevity-protocol",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-01T16:08:12Z"
+      },
+      {
+        "archived": false,
+        "description": "Plain-English Indian law guides — refunds, deposits, wages, FIRs, cyber fraud — 30 guides, 15 templates, 88 terms. Astro, static.",
+        "forks": 0,
+        "homepage": "",
+        "language": "MDX",
+        "name": "law-simplified",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-11-01T16:08:08Z"
+      },
+      {
+        "archived": false,
+        "description": "Train your brain like a muscle — 41 mental models, 84 exercises, 17 brain regions, 2279-technique database. Static and offline-capable.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/mindgym/",
+        "language": "HTML",
+        "name": "mindgym",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "brain-training",
+          "education",
+          "mental-models",
+          "static-site"
+        ],
+        "updated": "2026-11-01T15:28:05Z"
+      },
+      {
+        "archived": false,
+        "description": "A shared front door for Library and Compass — one address, two separate datasets.",
+        "forks": 0,
+        "homepage": "",
+        "language": "JavaScript",
+        "name": "treehouse",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-10-29T07:57:41Z"
+      },
+      {
+        "archived": false,
+        "description": "A browsable map of human knowledge — fields, domains and learning paths.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/library/",
+        "language": "JavaScript",
+        "name": "library",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "astro",
+          "knowledge-graph",
+          "knowledge-management",
+          "svelte"
+        ],
+        "updated": "2026-10-29T07:56:49Z"
+      },
+      {
+        "archived": false,
+        "description": "Step-by-step career roadmaps for non-tech fields.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/compass/",
+        "language": "JavaScript",
+        "name": "compass",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "career",
+          "onet",
+          "python",
+          "roadmaps"
+        ],
+        "updated": "2026-10-29T07:56:42Z"
+      },
+      {
+        "archived": false,
+        "description": "A free photography and crafts reference library — a full photography wing plus eleven field studios. Pure static, no build step.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/the-open-studio/",
+        "language": "HTML",
+        "name": "the-open-studio",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "crafts",
+          "photography",
+          "reference",
+          "static-site"
+        ],
+        "updated": "2026-10-25T19:03:36Z"
+      },
+      {
+        "archived": false,
+        "description": "A free reference library for every sport — 119+ dedicated sport guides in one pure-static wiki.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/the-open-arena/",
+        "language": "Python",
+        "name": "the-open-arena",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "reference",
+          "sports",
+          "static-site",
+          "wiki"
+        ],
+        "updated": "2026-10-25T18:15:11Z"
+      },
+      {
+        "archived": false,
+        "description": "A complete offline-capable survival field guide — shelter, water, fire, first aid, navigation, gear, and a self-quiz. Pure static.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/survival-field-guide/",
+        "language": "HTML",
+        "name": "survival-field-guide",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "offline",
+          "reference",
+          "static-site",
+          "survival"
+        ],
+        "updated": "2026-10-25T18:15:04Z"
+      },
+      {
+        "archived": false,
+        "description": "A free martial arts reference library — styles, kata, ranks, terminology, syllabi, and sparring guides across 15 pages. Pure static.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/the-open-dojo/",
+        "language": "HTML",
+        "name": "the-open-dojo",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "education",
+          "martial-arts",
+          "reference",
+          "static-site"
+        ],
+        "updated": "2026-10-25T16:08:41Z"
+      },
+      {
+        "archived": false,
+        "description": "A registry of every skill humanity has ever mastered — skills.sh-style directory. Static, no tracking.",
+        "forks": 0,
+        "homepage": "https://adineo-cmd.github.io/human-skills/",
+        "language": "JavaScript",
+        "name": "human-skills",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "directory",
+          "education",
+          "skills",
+          "static-site"
+        ],
+        "updated": "2026-10-25T16:08:39Z"
+      },
+      {
+        "archived": false,
+        "description": "Harness-agnostic agentic coding setup — universal rules, agents, skills, MCP hub wiring, and two-account git identity. Works with any AI coding agent.",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "agentic-workflow",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "ai-agents",
+          "claude-code",
+          "mcp",
+          "opencode",
+          "workflow"
+        ],
+        "updated": "2026-10-25T16:08:36Z"
+      },
+      {
+        "archived": false,
+        "description": "Portable bash-core dotfiles for Linux, macOS, and WSL — zero-dependency install.",
+        "forks": 0,
+        "homepage": "",
+        "language": "Shell",
+        "name": "dotfiles",
+        "private": false,
+        "stars": 0,
+        "topics": [
+          "bash",
+          "dotfiles",
+          "linux",
+          "neovim",
+          "tmux"
+        ],
+        "updated": "2026-10-25T16:08:30Z"
+      },
+      {
+        "archived": false,
+        "description": "OpenWrt port for D-Link DIR-825 G1 (Realtek RTL8197DN) — device files, flash format RE, tooling, and full engineering log",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "dir825g1-openwrt",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-10-25T15:49:13Z"
+      },
+      {
+        "archived": false,
+        "description": "Github portfolio",
+        "forks": 0,
+        "homepage": "",
+        "language": "",
+        "name": "Adineo-cmd",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-10-24T16:04:09Z"
+      },
+      {
+        "archived": false,
+        "description": "AI-Based Mental Wellness Assistance System",
+        "forks": 0,
+        "homepage": "",
+        "language": "Python",
+        "name": "mindfulai",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-08-17T19:57:40Z"
+      },
+      {
+        "archived": false,
+        "description": "Akashic is an open-source Palantir alternative for connecting, exploring, and analyzing complex data. Fully self-hosted, privacy-first, and requiring no API keys.",
+        "forks": 0,
+        "homepage": "https://akashic.cavira.app",
+        "language": "",
+        "name": "Akashic",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2026-07-19T11:54:20Z"
+      },
+      {
+        "archived": false,
+        "description": "",
+        "forks": 0,
+        "homepage": "https://ai-career-assistant-ebon.vercel.app",
+        "language": "JavaScript",
+        "name": "ai-career-assistant",
+        "private": false,
+        "stars": 0,
+        "topics": [],
+        "updated": "2025-10-27T06:12:07Z"
+      }
+    ]
+  },
+  "researchResults": [
+    {
+      "title": "A385403 — a(13) = 9 proved",
+      "status": "proved",
+      "detail": "An edge-minimal non-2-colourable 3-graph has minimum degree 2 and at most floor(3e/2) vertices; with the Fano plane as the only 7-edge case, 8 triples cannot force-cover [13]. a(14) remains bracketed 9 to 10.",
+      "link": "math/property-b-covering/results/a385403-results.md"
+    },
+    {
+      "title": "Erdős #614 — f(10,3)=29 and f(10,4)=28",
+      "status": "proved",
+      "detail": "A symmetry-broken CP-SAT model reproduced every known value and settled two new cells. An independent Turán-oracle model re-derived f(10,3)=29 from the published reduction.",
+      "link": "math/erdos614-fnk/results/ep614-results.md"
+    },
+    {
+      "title": "Erdős #112 — k(4,4) lower bound 40",
+      "status": "open",
+      "detail": "Verified circulant witnesses on Z37 and Z39 improve the published bound from 34 to 40. The upper bound 50 stands; no circulant closes the gap.",
+      "link": "math/directed-ramsey/results/k112-2026-11-19.md"
+    },
+    {
+      "title": "Grid Ramsey — exact T3 and T4 frontier values",
+      "status": "proved",
+      "detail": "New exact OEIS values on A399621 and the first exact c=4 values, each with a witness and a double-recount certificate.",
+      "link": "math/grid-ramsey/results/a399620_a399621.md"
+    },
+    {
+      "title": "Gaia DR3 — 130,318 high-proper-motion sources",
+      "status": "survey",
+      "detail": "Full-sky harvest in 4,096 indexed chunks, multi-epoch vetting and a cross-check against named catalogues; candidates and query logs are retained.",
+      "link": "astronomy/high-pm-survey/RESULTS.md"
+    }
+  ],
+  "notClaimed": [
+    "Anything still bracketed is labelled as a bracket, never as a value.",
+    "Where prior art already determines a number, the work is called verification, not discovery.",
+    "Negative results, failed attacks and overturned claims stay in the record with a date.",
+    "OEIS filings are drafted in-repo and filed only after owner review.",
+    "Firmware blobs are never committed — only derived metadata and the scripts that produced it."
+  ],
   "method": [
     {
       "step": "Prior art",
@@ -729,6 +1191,11 @@ window.SITE_DATA = {
   ],
   "commits": [
     {
+      "hash": "19d27d6",
+      "date": "2026-11-19",
+      "subject": "site: refresh generated register after consolidation commit"
+    },
+    {
       "hash": "a0c0c8c",
       "date": "2026-11-19",
       "subject": "Consolidate Open Discovery Lab + launch showcase website"
@@ -752,11 +1219,6 @@ window.SITE_DATA = {
       "hash": "7aeb3b8",
       "date": "2026-11-16",
       "subject": "Role note: open-research-lab = math/other fields (PRIORITY 2) in the two-machine LibrePhone-first program; open items pointer"
-    },
-    {
-      "hash": "b6bc888",
-      "date": "2026-11-16",
-      "subject": "docs: rewrite README in modern OSS style"
     }
   ]
 };

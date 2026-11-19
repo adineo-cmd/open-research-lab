@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research — Open Research Lab</title>
+<meta name="description" content="Research tracks, exact results and machine-checkable certificates from the Open Research Lab.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="research">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">The work</p>
+    <h1>Research <em>tracks</em></h1>
+    <p class="lead">Five lines of work, one discipline: verify the gap, then earn the result. Exact values come with witnesses; survey results come with query logs and vetting decisions.</p>
+  </header>
+
+  <section class="section">
+    <div class="stat-strip" id="stat-strip"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Tracks</h2></div>
+    <div class="ruled" id="track-list"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Selected results</h2><p>Proved values, verified witnesses and honest open brackets.</p></div>
+    <div class="ruled" id="result-list"></div>
+    <div class="actions"><a class="quiet" href="findings.html">Browse all findings</a></div>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="findings.html">Findings</a><a href="projects.html">Projects</a><a href="https://github.com/adineo-cmd/open-research-lab">Repository</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Method — Open Research Lab</title>
+<meta name="description" content="How the lab works: prior art, solver, witness, certificate, correction. And what it deliberately does not claim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="method">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="wordmark" href="index.html"><span class="wordmark-mark" aria-hidden="true">◈</span><span>Open Research Lab</span></a>
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav">☰</button>
+  <nav class="site-nav" id="site-nav" aria-label="Sections"></nav>
+</header>
+<main id="main">
+  <header class="page-head">
+    <p class="kicker">The discipline</p>
+    <h1>Method &amp; <em>limits</em></h1>
+    <p class="lead">The same five steps for a theorem, a decoder or a firmware map — and a clear statement of what the lab will not claim.</p>
+  </header>
+
+  <section class="section">
+    <div class="section-head"><h2>Five steps</h2></div>
+    <ol class="numbered ruled" id="method-steps"></ol>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>What is not claimed</h2></div>
+    <ul class="plain-list" id="not-claimed"></ul>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Keeping this site honest</h2></div>
+    <p class="prose">The site is generated from the repository. <code>site/content.json</code> holds the curated copy; <code>scripts/build_site_data.py</code> derives the findings, counts and recent commits into <code>docs/data.js</code>; <code>scripts/build_project_catalog.py</code> refreshes the repository snapshot. A number shown here should always trace back to a file in the repo.</p>
+    <div class="actions"><a class="quiet" href="https://github.com/adineo-cmd/open-research-lab/blob/main/README.md">Read the repository README</a></div>
+  </section>
+</main>
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <nav><a href="index.html">Home</a><a href="findings.html">Findings</a><a href="research.html">Research</a><a href="projects.html">Projects</a></nav>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
