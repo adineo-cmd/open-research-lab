@@ -1,0 +1,11 @@
+{
+ "n": 8,
+ "edges": 8,
+ "status": "INFEASIBLE",
+ "wall_s": 1.72,
+ "vars": 56,
+ "fano_constraints": 240,
+ "coloring_constraints": 256,
+ "workers": 3,
+ "seed": 20261119
+}

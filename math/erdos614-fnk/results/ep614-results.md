@@ -103,6 +103,14 @@ Also landed as OPTIMAL (independent confirmation only — see prior-art
 correction): f(10,2)=29 (13.1 s), f(11,2)=37 (213.65 s).
 k=1 closed-form certificates now exist for n=4..12 (all OPTIMAL, 0.01–0.19 s).
 
+An **independent Turán-oracle validation** (a structurally different CP-SAT
+model built from the published Cor. 4.6: maximize complement edges avoiding
+{C5, K2,3, bowtie} as subgraphs) re-derived f(10,3)=29 from scratch, reproduced
+all five known small values 5/5, and tightened the unresolved n=11 k=3 cell to
+**36 ≤ f(11,3) ≤ 37** (counting bound 36, witness 37). See
+`results/ep614-turan-oracle-2026-11-19.md`. This is validation only — no
+novelty claim.
+
 All new witnesses PASS `scripts/verify_fnk.py` (full C(n,k+2) enumeration,
 stdlib only). Honest negative: **n=11, k=3 and k=4 stayed FEASIBLE** at
 600 s and 900 s (best lower bounds 27–28 and 25) — no value claimed there.

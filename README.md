@@ -28,7 +28,7 @@ across 21 categories.
 | | Feature | What it does |
 | --- | --- | --- |
 | 🔢 | **Grid Ramsey values** | Four new exact OEIS values on row 9 of A399621, plus the first bounds for the open a(9). |
-| 🎯 | **Property-B covering** | A385403 extended with a(11)=9 and a(12)=9 exact, all-2ⁿ verified. |
+| 🎯 | **Property-B covering** | A385403 extended with a(11)=9, a(12)=9 and a(13)=9 exact (a(13) via a counting proof), all-2ⁿ verified. |
 | 🌌 | **High-proper-motion harvest** | Full-sky Gaia DR3 scan in 4,096 indexed chunks, then multi-epoch vetting. |
 | 🗂️ | **Discovery registry** | 8,000 sources scored and categorised, with attribution kept per entry. |
 

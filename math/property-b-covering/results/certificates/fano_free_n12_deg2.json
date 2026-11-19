@@ -1,0 +1,11 @@
+{
+ "n": 12,
+ "edges": 8,
+ "status": "UNKNOWN",
+ "wall_s": 905.26,
+ "vars": 220,
+ "fano_constraints": 0,
+ "coloring_constraints": 4096,
+ "workers": 12,
+ "seed": 20261119
+}

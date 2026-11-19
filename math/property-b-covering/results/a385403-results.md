@@ -40,17 +40,26 @@ known values exactly — a(5)=10, a(6)=10, a(7)=7, a(8)=8, a(9)=8, a(10)=8
 |---|---|---|---|
 | 11 | 9 | **a(11) = 9 EXACT** | proved: INFEASIBLE at 8 (0.4 s) + FEASIBLE at 9 |
 | 12 | 9 | **a(12) = 9 EXACT** | proved: INFEASIBLE at 8 + FEASIBLE at 9 |
-| 13 | 9 | **8 ≤ a(13) ≤ 9** | k=9 FEASIBLE; k=8 UNKNOWN at 600 s AND 900 s (12 workers) — honestly unresolved |
+| 13 | 9 | **a(13) = 9 EXACT** (2026-11-19) | k=9 witness certified; k=8 impossible by the degree-bound lemma + Fano uniqueness — see 2026-11-19 section |
 | 14 | 10 | **9 ≤ a(14) ≤ 10** | k=10 FEASIBLE (witness); k=9 UNKNOWN at 900 s |
 
 - **a(11) = 9** — witness (9 triples, covers [11], verified forcing by an
   independent pure-Python scan of all 2¹¹ colorings):
   {123, 12-11-… see certificate} — full edge list in
-  `results/certificates/verify_n11_witness.json` and the OEIS draft.
+  `results/certificates/verify_n11_k9.json` (PASS) and the OEIS draft.
 - **a(12) = 9** — witness includes {1,11,12} replacing the n=11 witness's
-  {1,2,11}+{8,9,10} arrangement; notably the a(12) witness contains **no
-  Fano sub-family** (structural check in the verifier) — the bound's
-  tightness at n=12 is witnessed by a non-Fano system.
+  {1,2,11}+{8,9,10} arrangement; verified by all 2¹² colorings
+  (`results/certificates/verify_n12_k9.json`, PASS).
+  **Correction (2026-11-19, Rule 0):** an earlier revision of this doc claimed
+  the a(12) witness contained **no Fano sub-family**. That was false. An
+  independent re-enumeration of all C(9,7)=36 seven-edge sub-families of the
+  certified witness finds exactly **one Fano plane** (the triples
+  {123,145,167,246,257,347,356}), and `verify_n12_k9.json` itself records
+  `fano_subfamily_present: true`. The a(12) witness is therefore *not* a
+  non-Fano system; the bound's tightness at n=12 is witnessed by a system
+  that does contain a Fano sub-family. The conditional analytic lower-bound
+  discussion below is unaffected (it already treats non-Fano forcing as a
+  possibility), but the structural claim is withdrawn.
 - a(13)/a(14): the conjectured bound is witnessed (k = bound FEASIBLE with
   verified witnesses), but the k−1 infeasibility proofs did not converge
   within 600–900 s — the brackets are honest, not values.
@@ -144,6 +153,45 @@ vertices (literature-first: the Fano-uniqueness case analysis).
   there proves BOTH (13,8) and (14,9) by counting alone; re-run halved
   (13,8) / fano (14,9) at 12 workers ≥ 3600 s. If (13,8) INFEASIBLE
   lands, a(13)=9 is immediately proved (k=9 witness already certified).
+
+### 2026-11-19 — a(13) = 9 PROVED; Fano-free 8-edge probe for a(14)
+
+**a(13) = 9 is now exact.** The previous bracket 8 ≤ a(13) ≤ 9 is closed by
+a short argument the earlier sessions missed:
+
+1. An edge-minimal non-2-colourable hypergraph has minimum vertex degree ≥ 2
+   (a degree-1 vertex is coloured last, opposite to the other two vertices of
+   its unique edge). A 3-uniform one with e edges therefore meets at most
+   ⌊3e/2⌋ vertices.
+2. The only 7-edge non-2-colourable 3-graph is the Fano plane on exactly 7
+   vertices (classical; re-certified here: `fano_uniqueness_n{7..10}_e7.json`
+   are all INFEASIBLE with Fano forbidden — and ⌊21/2⌋ = 10 bounds the vertex
+   count, so n = 7..10 is exhaustive).
+3. If 8 triples covered [13] and forced, take a minimal non-2-colourable
+   subfamily E'. If |E'|=8 then E' meets ≤ 12 vertices < 13; if |E'|=7 then
+   E' is the Fano plane (7 vertices) and the remaining triple covers ≤ 3 more,
+   giving ≤ 10 < 13. Both impossible. The certified k=9 witness gives the
+   upper bound, so a(13)=9.
+
+Full derivation and the probe for a(14): `results/fano-free-8edge-probe-2026-11-19.md`.
+The 8-edge Fano-free probe is INFEASIBLE at n=8,9,10,11 (certificates present;
+n=10 in 106 s, n=11 in 950 s at 12 workers) but UNKNOWN at n=12 after 1200 s
+(with and without the redundant Fano cuts). The only remaining case is the
+2-regular 3-graphs on 12 vertices, so **a(14) remains bracketed 9 ≤ a(14) ≤ 10**.
+
+### 2026-11-19 — structure claim corrected (Rule 0)
+
+- The named "does any Fano-free non-2-colourable 8-edge 3-graph exist" probe
+  was implemented (`scripts/fano_free_probe.py`, plus a lazy-cut variant).
+  The finite reduction (minimal ⇒ min degree ≥ 2 ⇒ ≤ 12 vertices) is proven
+  in `results/fano-free-8edge-probe-2026-11-19.md`. INFEASIBLE at n=8 (1.7 s),
+  n=9 (19.7 s), n=10 (106 s) and n=11 (950 s); n=12 UNKNOWN. The a(13) bracket
+  is closed by the degree-bound argument above; a(14) awaits n=12.
+- **Rule 0 correction in place:** an earlier claim in this doc that the a(12)
+  witness "contains no Fano sub-family" was false. Independent re-enumeration
+  finds exactly one Fano sub-family, and `verify_n12_k9.json` already recorded
+  `fano_subfamily_present: true`. The claim is withdrawn above and in the
+  OEIS draft; no result value changes.
 
 ## Reproduce
 
