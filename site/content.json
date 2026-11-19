@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Open Research Lab",
+    "tagline": "Work you can re-check.",
+    "intro": "Original results in mathematics, sky surveys, firmware and file formats — each one backed by a solver, a witness and a certificate, or by a dated prior-art check. This is the consolidated record of what has been discovered, what is still open, and what is being worked on now.",
+    "updated": "2026-11-19",
+    "repo": "https://github.com/adineo-cmd/open-research-lab"
+  },
+  "now": [
+    {
+      "title": "Erdős #112 — directed Ramsey number k(4,4)",
+      "status": "active",
+      "detail": "Circulant witnesses on Z37 and Z39 raise the lower bound from 34 to 40. The bracket is now 40–50; closing it needs the case-split/DRAT method.",
+      "link": "math/directed-ramsey/results/k112-2026-11-19.md"
+    },
+    {
+      "title": "A385403 — a(14) and the 2-regular n=12 case",
+      "status": "active",
+      "detail": "a(13)=9 is proved. The Fano-free 8-edge probe is INFEASIBLE through n=11; n=12 remains UNKNOWN, so 9 <= a(14) <= 10 still stands.",
+      "link": "math/property-b-covering/results/fano-free-8edge-probe-2026-11-19.md"
+    },
+    {
+      "title": "Erdős #614 — exact f(n,3) at n=11",
+      "status": "active",
+      "detail": "A symmetry-broken solver and an independent Turán oracle narrow the unresolved cell to 36 <= f(11,3) <= 37.",
+      "link": "math/erdos614-fnk/results/ep614-turan-oracle-2026-11-19.md"
+    },
+    {
+      "title": "LPEC — pulse allocator mirror and PCM validation",
+      "status": "active",
+      "detail": "Bitstream fully accounted bit-for-bit in both modes; next is decompiling the remaining synthesis functions and validating against reference audio.",
+      "link": "open-discovery-lab/task.md"
+    },
+    {
+      "title": "Historic first-3 blob RE and the QCA BT fleet",
+      "status": "active",
+      "detail": "FP2/hammerhead/m0 blobs hash-verified; bootchain and modem segments mapped. Continuing the radio-regulatory-safe ordering BT then WiFi then GNSS/NFC.",
+      "link": "open-discovery-lab/FINDINGS.md"
+    }
+  ],
+  "tracks": [
+    { "id": "math", "label": "Mathematics", "desc": "Exact values, bounds and machine-checkable certificates for OEIS sequences and Erdős problems.", "examples": "A385403, Erdős #614, #112, grid Ramsey" },
+    { "id": "A", "label": "Android blobs", "desc": "Clean-room ISA and format analysis of vendor firmware; derived metadata only, never the blobs.", "examples": "WCN6750, Hexagon MDT/PIL, MT6785 MD32, QCA BT" },
+    { "id": "B", "label": "Sky survey", "desc": "Chunked Gaia DR3 harvests with multi-epoch vetting of high-proper-motion sources.", "examples": "130,318 sources, 8,000-source registry" },
+    { "id": "C", "label": "Format recovery", "desc": "First public decoders and specs for undocumented legacy formats, with sample-validated parsers.", "examples": "LPEC, DiamondWare DWM, Clarion DAT, NTitler, IGS" },
+    { "id": "D", "label": "Grid Ramsey", "desc": "Exact rectangle-counting values and bounds on the OEIS A399620/A399621 family.", "examples": "T3 and T4 exact frontier values" }
+  ],
+  "librephone": {
+    "summary": "Work for the FSF's LibrePhone initiative: identify what proprietary firmware on production phones actually is, and write it down. Facts are documented; blobs are never committed. Every analysis ships derived metadata only — headers, segment tables, hashes, version strings and protocol constants — plus the script that produced it.",
+    "highlights": [
+      "Instruction-level proof of which core runs each firmware family, including the vendor's own mistakes.",
+      "Container layouts, segment chains, signing schemes and the tools that walk them.",
+      "Boot-chain census mapping every firmware family on the SoC, from bootloader to TrustZone.",
+      "Paste-ready upstream contributions reconciled against live upstream documentation."
+    ],
+    "areas": ["adreno650 / adreno-fleet", "adsp-fleet", "qca-bt / qca-bt-gen2", "wifi-cpp-fleet", "wmi", "mediatek md1dsp / md1rom", "qualcomm-fp6", "historic devices", "pil-manifests", "lpec"],
+    "repo": "https://github.com/adineo-cmd/librephone-blob-research",
+    "workorders": "Two workorders track the desktop and laptop halves of the programme."
+  },
+  "apps": {
+    "summary": "Ten independent applications with their own backend, frontend and SQLite database, plus Atrium — a static front door on one origin. Each app calls its own API on its own port; there is no combined database, index or browser state.",
+    "items": [
+      { "name": "Socratic Debate Partner", "desc": "An AI debate partner that argues any position Socratically." },
+      { "name": "Cognitive Bias Detector", "desc": "Detect cognitive biases in reasoning and text." },
+      { "name": "Contradiction Finder", "desc": "Surface contradictions across a corpus of claims and documents." },
+      { "name": "Unknown Research Engine", "desc": "Map the boundary between the known and the unknown." },
+      { "name": "AI Showrunner", "desc": "Story bible, continuity and episode generation for serialized fiction." },
+      { "name": "Counterfactual History", "desc": "Explore alternate history branches from real divergence points." },
+      { "name": "Architecture Archaeologist", "desc": "Dig through a codebase's architecture — ingest, explore, ask." },
+      { "name": "Code Optimizer", "desc": "Analyze code and propose measured optimizations." },
+      { "name": "Policy Simulator", "desc": "Simulate and compare policy outcomes." },
+      { "name": "Premortem Engine", "desc": "Run premortem analyses on plans before committing." },
+      { "name": "Atrium", "desc": "The shared front door; builds all ten frontends and serves them on one origin." }
+    ],
+    "repo": "https://github.com/adineo-cmd2"
+  },
+  "method": [
+    { "step": "Prior art", "detail": "Search first. If someone already did it, record that and find the real delta." },
+    { "step": "Solver", "detail": "Write a script that produces evidence, not just a conclusion." },
+    { "step": "Witness", "detail": "Keep the explicit construction — a graph, a connection set, a decoder output." },
+    { "step": "Certificate", "detail": "JSON or reproducible log that an independent verifier can replay." },
+    { "step": "Correction", "detail": "Negative results and overturned claims stay in the record with a date." }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+ "id": "lpec-pulse-analysis-v2",
+ "title": "LPEC allocator: FUN_1000c450/FUN_1000b110 resolved, state+0xec/0xfc calibration attributed - model closes 100.00% on both real samples",
+ "date": "2026-11-15",
+ "track": "track-c-discovery-engine/format-re/lpec",
+ "roadmap": "Q-1 (RESOLVED 2026-11-15)",
+ "prior": ["F-47", "F-48", "F-49", "F-50", "F-51", "F-52", "F-58 (lpec-pulse-analysis.json, kept intact)"],
+ "tooling": "capstone 5.0.7 + pefile (no Ghidra this session); targeted disassembly at F-48 function addresses",
+ "provenance": {
+  "refetch_chain": "archive.org item dve3301icdpx820 -> DVE_3301 ICD-PX820.iso (112668672 B, md5 b361a0a315d4ab5dd4c92aad1f0c337f, curl -C - resume loop, 10 attempts) -> 7zz 25.01 static (ip7z/7zip GitHub release; 26.06 URL 404s, 26.00 returns 0 bytes) -> unshield rebuilt from source (github.com/twogood/unshield default branch, cmake) -> data1.cab (10900003 B) + data2.cab (86400898 B) MUST both sit beside data1.hdr (CORRECTION to F-48's chain: without data2.cab every file >= ~100 KB fails) -> System/LPEC.dll",
+  "lpec_dll": {"size": 329064, "sha256": "d0d8d88800f605a0ab3bcca609db7f51433049d3621a9d4bce40e4092eab50ce", "sha1": "a0ce8195846fb7053ade25179d834eaac564c158", "note": "first hash record for this artifact (F-48/F-58 recorded none)"},
+  "sample_correction": "budgtele.dvf and 07011600.MSV are NOT on the CD (full ISO + cab listing has no .dvf/.msv); F-49 origin sembiance.com/fileFormatSamples/audio/sonyCompressedVoiceFile/ re-confirmed by re-fetch",
+  "samples": {
+   "budgtele.dvf": {"size": 2451456, "sha256": "fe7611400252b596dd29e6f668a9c7f30fc79634f4292ceeb8471fff3f92d218"},
+   "07011600.MSV": {"size": 22528, "sha256": "6229250af9e5fbe6d144fb91d803b8c6c9fff16faa6f0e1125f8864e64afad01"}
+  },
+  "policy": "no binaries/decompiled code committed; addresses + scalar constant values + formulas only"
+ },
+ "resolved_functions": {
+  "FUN_1000b110": {
+   "role": "recursive quicksort of the 16-byte position records {double position; int32 word_index; int32 pad} by position (F-58's 'record initializer' guess was WRONG)",
+   "called_from": "FUN_100060e0 once per band (0x10006214 loop) before value placement - pulses consumed in ascending position order",
+   "pseudocode": "pivot=rec[0].position; scan i=1..count-1: if rec[i].position<pivot: m++, swap(rec[i],rec[m]) [double + +8 dword swapped, pad untouched]; swap(rec[0],rec[m]); recurse (rec, m-1) if m>1 and (rec+m+1, count-m-1) if count-m>1"
+  },
+  "FUN_1000c450": {
+   "role": "vector energy/normalization + autocorrelation window builder for FUN_1000c680",
+   "signature": "(out_a *i32, out_b *i32, window *i16, vec *i16, n) - called from FUN_1000c680 prologue (0x1000c7b) with c680 locals 0x18/0x1c/0x20 and c680 args (int16 LSF vector, count)",
+   "pseudocode": "sum2 = sum(vec[i]^2) [64-bit-safe split accumulation: low 15-bit chunks + high chunks]; exponent/mantissa normalization via <=20-iteration bit-scan (test 0x40000, doubling); *out_a/*out_b = the two 32-bit normalization halves (c680 uses them as multipliers); for j in 1..n-1: window[j] = (int16)((sum(vec[i]*vec[i+j]) split-accumulated) >> shift) - normalized autocorrelation taps",
+   "note": "the lag-parity window TABLES (lag%3==0 -> DAT_10047f10 1536/lag, else DAT_10046f10 2048/lag) are separate factors read by FUN_1000c680 itself"
+  },
+  "FUN_1000c680_prologue_facts": "comb-shape base = (int)trunc(lag_value * 1/32768 * 32768.0) further truncated to int16 (DAT_1006b440 = 3.0517578125e-05 = 1/2^15) - F-58's scaling description now constant-exact; lag%3 window-table selection confirmed"
+ },
+ "weight_calibration": {
+  "status": "RESOLVED (was F-58's named honest negative)",
+  "application_FUN_10004450": "0x10004461-0x10004484: calib = (int16)(((budget - state[0xec+4*slot]) * state[0xfc+4*slot]) >> 9); w_band = (int16)weight_table[state+0x10c][row*bands+band] + calib; then FUN_10003d80(w_band, ppb)",
+  "base_FUN_1000df10": "state[0xec+4*slot] = {x, 3x/2, 3x/2, 2x} for slots 0..3 (truncating signed 3x/2); x = (int16) mode-table scalar: LP-6000 -> int16@0x10038cb0 = 128; LP-other -> int16@0x100390c0 = 128; SP-16000 -> int16@0x100388a0 = 432; the scalars sit immediately after each mode's 64-row band-weight table (F-48's 'short scalar' pairing now attributed = slot-0 base budget)",
+  "slope_FUN_10003e60": "state[0xfc+4*slot] = (int)ceil(4194304.0 / (state[0x30+4*slot] * state[0x2c]) + 0.5), clamped to 0 if < 1.0 (ceil = FUN_1000f8e0 = MSVC ceil(); 2^22 double @0x1006b390, +0.5 @0x1006b3a0)",
+  "slot_semantics": "slot = FRAME-TYPE slot: 0 = type 0 (both halves), 1 = type 1 AND type 3, 2 = type 2 first region, 3 = type 2 second region (empirically discriminated by SP: per-half mappings stall at <=82.4% closure, frame-type mapping reaches 100%)",
+  "derived_base_values": {"LP_x128": [128, 192, 192, 256], "SP_x432": [432, 648, 648, 864]}
+ },
+ "positions_per_band": {
+  "status": "empirically pinned; static chain has one unresolved scale factor (honest negative)",
+  "writer": "FUN_10003e60 negative-indexed loop ([esi+ebx*4+0x40] with ebx=-4..-1 lands on +0x30..0x3c) - why F-48/F-58 saw no direct writer",
+  "static_chain": "state[0x30+4*slot] = trunc(X * local[slot] / 128) * state[0x18]; X = 32 if bitrate <= 6000 else 30; local = {B/4, 3B/8, 3B/8, B/2}, B = state+4 (1024 LP / 2048 SP); state[0x18] = (int)ceil(bitrate * 128.0 / (rate/2 * bands)) [128.0 @0x1006b370]; also state[0x40+4*slot] = ceil(X*local[slot]/(rate/2)+0.5) = {3,4,4,5} LP = initial word-stream offset per slot (band cursors advance cumulatively ppb words per band in FUN_10005d50); state[0x50+4*slot] = ppb*bands + start (word-span end)",
+  "conflict": "static chain with state[0x18] = ceil(3504*128/(4000*8)) = 15 (LP-6k) yields ppb {960,1440,1440,1920}, contradicting FUN_10005d50 stack buffers (1026 records / 1024 words -> ppb <= 128) and the natural-cost identity (cost ~= sum(w)*ppb/8192 must ~= budget -> ppb ~= 32 LP / ~50-60 SP)",
+  "empirical_effective": {"LP": [32, 48, 48, 64], "SP": [60, 90, 90, 120], "note": "exactly trunc(X*local[slot]/256) - runtime scale = 1/30 of static first-call for LP-6k; resolution needs the runtime BSS config generator (0x100020d0 chain, statically opaque) or Wine (Q-2)"},
+  "buffers": "FUN_10005d50 frame 0x51b8: records at ebp-0x5130 (0x4024 B = 1026 x 16 B), words at ebp-0x110c (0x1000 B = 1024 dwords), LSF vec at ebp-0x5180, alloc records at ebp-0x10c, out5 at ebp-0x6c"
+ },
+ "FUN_10004450_complete_algorithm": {
+  "per_band_split_FUN_10003d80": "q = 0x5000 - (w>>1); p1 = ((((q*w)>>14)^2 >>15) * 0x71c7 >>13) * n >>15; p0 = (((w*w)>>15) * 0x71c7 >>15) * n >>15; c2 = ((w*n)>>13) - 4*p0 - 2*p1; if c2 > n-p0-p1: p2=0, p0 = ((w-0x4000)*n + 0x2000)>>14, p1 = n-p0; else p2 = c2 (all shifts arithmetic)",
+  "fixups": [
+   "sum(p0) parity: if odd, scan bands DECREMENTING BY 1 from last to first (F-58 said stride-2 - corrected), first p0>0 donates p0-=1, p1+=2",
+   "sum(p1) %4 (C-trunc): if budget - cost <= 0 drain p1->p2 one unit per band scanning from LAST band down; else grow p2->p1 (4-r units) one unit per band scanning from band 0 up",
+   "byte align: f8 = trunc(budget/8)*8; if f8 <= cost drain p2 (bands from end) until cost == f8; else grow p2 single pass bands 0-up in half-remainder steps min((need+1)/2, capacity)",
+   "extras: leftover = budget - cost; SKIPPED when leftover <= 0 (jle - a port applying negative extras silently masquerades as closure); else single pass bands 0-up: rec.p3 = min(leftover, n-(p0+p1+p2)), leftover -= until 0; remaining bands p3 = 0"
+  ],
+  "outputs": "out5 = {sum(p0)/2, sum(p1)/4, sum(p2)/8, sum(p3)} (C truncating divisions); return = 4*sum(p0) + 2*sum(p1) + sum(p2) + sum(p3)",
+  "records": "allocation records = 16 B {p0, p1, p2, extras} per band (distinct from the 16 B position records that FUN_1000b110 sorts: {double position, int32 word_index})"
+ },
+ "validation": {
+  "method": "instruction-faithful Python port of FUN_10003d80/FUN_10004450 (incl. extras jle), F-51 parser for framing/budgets/LSF rows, band-weight table read from the PE image at runtime (addresses only committed); dual-LSP frames use their own set's first index as the weight row (single-row rule also closes 100%)",
+  "model_parameters_that_close_100pct": {
+   "LP_budgtele_6000": {"ppb": [32, 48, 48, 64], "base": [128, 192, 192, 256], "slope": [16385, 10924, 10924, 8193], "bands": 8, "weight_table": "0x100388b0"},
+   "SP_07011600_16000": {"ppb": [60, 90, 90, 120], "base": [432, 648, 648, 864], "slope": [6991, 4661, 4661, 3496], "bands": 10, "weight_table": "0x100383a0"},
+   "slot_map": {"T0_both_halves": 0, "T1": 1, "T3": 1, "T2_first_region": 2, "T2_second_region": 3}
+  },
+  "results": {
+   "budgtele_dvf_LP6k": {"subframes": 94600, "exact_calibrated": 94600, "exact_calibrated_pct": 100.00, "exact_raw_weights_same_port": 88683, "exact_raw_weights_pct": 93.75, "f58_raw_weights_earlier_port_pct": 74.2, "capacity_binds_calibrated": 12548, "codes_class0": 278131, "codes_class1": 686453, "codes_class2": 794913, "extras": 254362},
+   "07011600_MSV_SP": {"subframes": 313, "exact_calibrated": 313, "exact_calibrated_pct": 100.00, "exact_raw_weights_same_port": 306, "exact_raw_weights_pct": 97.76, "f58_raw_weights_earlier_port_pct": 62.9, "capacity_binds_calibrated": 269, "codes_class0": 7239, "codes_class1": 7543, "codes_class2": 2956, "extras": 1078}
+  },
+  "interpretation": "the calibration term is DISCRIMINATED by the data: same port, same capacity, only weights change - all 5917 (LP) + 7 (SP) residual raw-weight subframes close under base {x,3x/2,3x/2,2x} with slope ceil(2^22/(ppb*bands)+0.5); alternatives tested and rejected: per-half slot mappings (m1/m5/m6), ppb scales {16..128}-derived, div-512 linear ppb (LP 91-92%, SP <=49.8%)",
+  "f58_residual_explained": "F-58's 74.2%/62.9% residual was a port artifact (strict leftover-0 accounting + uniform n=32 capacity pressure), not purely the calibration; on the faithful port the raw baseline is 93.75%/97.76% and the calibration closes the rest exactly"
+ },
+ "honest_negatives": [
+  "static ppb chain has one unresolved scale factor (state[0x18] runtime value vs statically computed 15) - empirical effective ppb is pinned by closure on both samples; needs runtime BSS config generator or Wine (Q-2) to close statically",
+  "FUN_1000c450 normalization shift semantics characterized (energy + exponent scan + split accumulations) but bit-level mantissa packing only approximated in pseudocode",
+  "FUN_1000c680 end-to-end position-word synthesis still unimplemented - physical positions not synthesized; now bounded by the resolved helpers (last gap to a sample-exact position synthesizer)",
+  "no Sony reference PCM; validation structural (bit-economy + capacity + code counts), not sample-accurate"
+ ],
+ "next": [
+  "implement FUN_1000c680 end-to-end in lpec_synthesis.py (input int16 LSF vector + normalized autocorrelation window + lag-parity tables + comb-shape base) and replace the impulse-train approximation with real positions + value-table values",
+  "optional: Wine Rosetta (Q-2) to pin the runtime state[0x18]/ppb scale and cross-check the calibration in the encoder direction",
+  "dump per-mode value tables at runtime and wire classes 0/1/2 + extras + FUN_1000f4e0 pitch pulses into the synthesis chain"
+ ]
+}

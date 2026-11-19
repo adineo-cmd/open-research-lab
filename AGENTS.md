@@ -39,16 +39,28 @@ than it found them.
 - Pushes go through the GitHub MCP (push_files); verify large files
   byte-for-byte after push.
 
-## Role in the lab structure (owner directive 2026-11-16)
+## Role in the lab structure (owner directive, updated 2026-11-19)
 
-`open-research-lab` = **mathematics and other fields** — PRIORITY 2 in the
-two-machine program. `librephone-blob-research` = LibrePhone work
-(PRIORITY 1 on both machines; its workorders are at
-librephone-blob-research `workorders/`). `open-discovery-lab` = the
-NOTEBOOK that records every finding/solved/improved item from any repo
-(lead-merged). This repo's open items: A385403 a(13)/a(14) proofs (next
-levers in the results doc continuation section), EP614 exact-table
-extension, Track C format-targets queue.
+`open-research-lab` is now the **single consolidated repo**. The former
+`open-discovery-lab` notebook was merged here as `open-discovery-lab/` and its
+separate repository (local and GitHub) was retired. `librephone-blob-research`
+remains a separate PRIORITY 1 repo; its work is summarised on the website and
+its workorders stay at `workorders/` in that repo. The adineo-cmd2 apps are
+also summarised on the website.
+
+Open items recorded here: A385403 a(14) (only the 2-regular n=12 case remains),
+Erdős #614 f(11,3) in {36,37}, Erdős #112 k(4,4) in [40,50] and k(3,5) in
+[31,55], EP614 exact-table extension beyond n=10, and the Track C
+format-targets queue.
+
+## Website (owner directive 2026-11-19)
+
+`docs/` is the GitHub Pages source, published at
+https://adineo-cmd.github.io/open-research-lab/. Never hand-edit `docs/data.js`:
+edit `site/content.json` and run `python3 scripts/build_site_data.py`, which
+derives the findings, counts and recent commits from the repository itself.
+Every finding and every status shown on the site must already exist in this
+repo's record — the site reports work, it does not make claims.
 
 ## Repo principles (unchanged — see README.md)
 

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Research Lab — Work you can re-check</title>
+<meta name="description" content="Original results in mathematics, sky surveys, firmware and file formats, each backed by a solver, a witness and a certificate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">
+    <span class="wordmark-mark" aria-hidden="true">◈</span>
+    <span>Open Research Lab</span>
+  </a>
+  <nav aria-label="Sections">
+    <a href="#now">Now</a>
+    <a href="#findings">Findings</a>
+    <a href="#tracks">Tracks</a>
+    <a href="#librephone">LibrePhone</a>
+    <a href="#apps">Apps</a>
+    <a href="#method">Method</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="kicker" id="hero-kicker">Consolidated record · 2026</p>
+      <h1>Work you can<br><em>re-check.</em></h1>
+      <p class="hero-intro" id="hero-intro"></p>
+      <div class="hero-actions">
+        <a class="primary" href="#findings">Browse the findings</a>
+        <a class="quiet" href="#now">See what is open</a>
+      </div>
+    </div>
+
+    <aside class="register" aria-label="Live register">
+      <div class="register-head">
+        <span>The register</span>
+        <span id="register-date"></span>
+      </div>
+      <dl id="register-rows"></dl>
+      <div class="register-foot">
+        <span>Updated from the repository, not by hand.</span>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section" id="now">
+    <div class="section-head">
+      <h2>In progress</h2>
+      <p>Open cells and the next lever for each. Nothing here is presented as finished.</p>
+    </div>
+    <div class="now-list" id="now-list"></div>
+  </section>
+
+  <section class="section" id="findings">
+    <div class="section-head">
+      <h2>The findings ledger</h2>
+      <p id="findings-sub"></p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter findings by track"></div>
+    <div class="ledger" id="ledger"></div>
+    <p class="ledger-note">Select a row to read the finding. Every entry carries a date and a prior-art check; several are corrections of published claims.</p>
+  </section>
+
+  <section class="section" id="tracks">
+    <div class="section-head">
+      <h2>Research tracks</h2>
+      <p>Five lines of work, one discipline: verify the gap, then earn the result.</p>
+    </div>
+    <div class="track-list" id="track-list"></div>
+  </section>
+
+  <section class="section two-col" id="librephone">
+    <div>
+      <div class="section-head">
+        <h2>LibrePhone</h2>
+      </div>
+      <p class="prose" id="libre-summary"></p>
+      <ul class="plain-list" id="libre-highlights"></ul>
+    </div>
+    <div>
+      <div class="section-head">
+        <h2>Firmware areas</h2>
+      </div>
+      <p class="prose" id="libre-workorders"></p>
+      <div class="chip-list" id="libre-areas"></div>
+      <a class="outlink" id="libre-link" href="#">Repository ↗</a>
+    </div>
+  </section>
+
+  <section class="section" id="apps">
+    <div class="section-head">
+      <h2>Reasoning instruments</h2>
+      <p id="apps-summary"></p>
+    </div>
+    <ol class="app-index" id="app-index"></ol>
+  </section>
+
+  <section class="section" id="method">
+    <div class="section-head">
+      <h2>How the work is made</h2>
+      <p>The same five steps for a theorem, a decoder or a firmware map.</p>
+    </div>
+    <ol class="method-steps" id="method-steps"></ol>
+  </section>
+
+  <section class="section cta">
+    <div class="section-head">
+      <h2>Read the raw record</h2>
+      <p>Every certificate, script and dated journal entry is in the repository.</p>
+    </div>
+    <a class="primary" id="repo-link" href="#">Open the repository</a>
+    <div class="recent" id="recent"></div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Open Research Lab</span>
+  <span id="footer-meta"></span>
+  <a href="#top">Back to top</a>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

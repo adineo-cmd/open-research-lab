@@ -1,0 +1,27 @@
+[
+ {
+  "origin": "aggregated:awesome-public-datasets",
+  "entry_count": 1120,
+  "fetch_status": "ok (from cache)"
+ },
+ {
+  "origin": "aggregated:awesome-mcp-servers",
+  "entry_count": 4632,
+  "fetch_status": "ok (from cache)"
+ },
+ {
+  "origin": "aggregated:dataportals.org",
+  "entry_count": 694,
+  "fetch_status": "ok (from cache)"
+ },
+ {
+  "origin": "aggregated:zooniverse",
+  "entry_count": 573,
+  "fetch_status": "ok (from cache)"
+ },
+ {
+  "origin": "curated",
+  "entry_count": 1088,
+  "fetch_status": "ok (lead-authored, URL-verified at creation; see README tiers)"
+ }
+]
