@@ -1,0 +1,10 @@
+{
+ "n": 4,
+ "m": 4,
+ "N": 35,
+ "status": "INFEASIBLE",
+ "wall_s": 16.75,
+ "subsets": 5984,
+ "workers": 12,
+ "seed": 20261119
+}

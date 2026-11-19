@@ -18,7 +18,7 @@ Split from the [Open Discovery Lab](https://github.com/adineo-cmd/open-discovery
 notebook, this repository holds only results that can be re-checked: a solver, a
 witness, a certificate.
 
-It currently carries **155 machine-checkable certificates** (JSON under the
+It currently carries **187 machine-checkable certificates** (JSON under the
 tracks' `results/certificates/` directories), a full-sky Gaia DR3
 harvest of **130,318 sources**, and a discovery registry of **8,000 sources**
 across 21 categories.
@@ -29,6 +29,7 @@ across 21 categories.
 | --- | --- | --- |
 | 🔢 | **Grid Ramsey values** | Four new exact OEIS values on row 9 of A399621, plus the first bounds for the open a(9). |
 | 🎯 | **Property-B covering** | A385403 extended with a(11)=9, a(12)=9 and a(13)=9 exact (a(13) via a counting proof), all-2ⁿ verified. |
+| 🧭 | **Directed Ramsey** | Erdős #112: verified circulant witnesses improve the k(4,4) lower bound from 34 to 40; exact k(3,3)=9 reproduced. |
 | 🌌 | **High-proper-motion harvest** | Full-sky Gaia DR3 scan in 4,096 indexed chunks, then multi-epoch vetting. |
 | 🗂️ | **Discovery registry** | 8,000 sources scored and categorised, with attribution kept per entry. |
 
@@ -83,7 +84,8 @@ python3 astronomy/high-pm-survey/scripts/check_knownness.py --help
 ```text
 math/grid-ramsey/        A399620 / A399621 values and bounds
 math/property-b-covering/ A385403 extension + verifier
-math/erdos614-fnk/        FNK certificates
+math/erdos614-fnk/        FNK certificates + Turán-oracle validation
+math/directed-ramsey/     Erdős #112 k(n,m) witnesses + certified bounds
 astronomy/high-pm-survey/ harvest, exclusion sets, vetting
 discovery-engine/sources/ registry, categories, attribution
 ```
