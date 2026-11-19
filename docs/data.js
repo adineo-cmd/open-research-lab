@@ -729,6 +729,11 @@ window.SITE_DATA = {
   ],
   "commits": [
     {
+      "hash": "a0c0c8c",
+      "date": "2026-11-19",
+      "subject": "Consolidate Open Discovery Lab + launch showcase website"
+    },
+    {
       "hash": "1eb6558",
       "date": "2026-11-19",
       "subject": "Erdos #112: improve k(4,4) lower bound 34 -> 40 with verified circulants"
@@ -752,11 +757,6 @@ window.SITE_DATA = {
       "hash": "b6bc888",
       "date": "2026-11-16",
       "subject": "docs: rewrite README in modern OSS style"
-    },
-    {
-      "hash": "60c897e",
-      "date": "2026-11-16",
-      "subject": "A385403 final-report additions: NEW verified upper bounds a(15)<=10, a(16)<=10; measured dedupe dud; LP-feasible finding; balanced-escape insight (177/196 cuts at red-size 6/7); next-session plan with replay-seeded lazy master"
     }
   ]
 };
