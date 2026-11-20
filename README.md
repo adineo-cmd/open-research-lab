@@ -20,7 +20,7 @@ separate repository retired. The showcase website in [`docs/`](docs/) renders
 this repository's own data — it is regenerated from the findings ledger and
 the certificate tree, not maintained by hand.
 
-It currently carries **190 machine-checkable certificates**, **77 dated
+It currently carries **198 machine-checkable certificates**, **77 dated
 findings** spanning firmware, file formats, sky objects and integer sequences,
 a full-sky Gaia DR3 harvest of **130,318 sources**, a discovery registry of
 **8,000 sources** across 21 categories, and the record of **ten reasoning
@@ -47,7 +47,7 @@ A seven-page, mobile-first site, not a single demo page:
 | 📡 | **Firmware & format findings** | 77 dated entries, many of them first public decoders or specs, with reproducible scripts. |
 | 🔢 | **Grid Ramsey values** | Four new exact OEIS values on row 9 of A399621, plus the first bounds for the open a(9). |
 | 🎯 | **Property-B covering** | A385403 extended with a(11)=9, a(12)=9 and a(13)=9 exact (a(13) via a counting proof). |
-| 🧭 | **Directed Ramsey** | Erdős #112: verified circulant witnesses improve the k(4,4) lower bound from 34 to 40. |
+| 🧭 | **Directed Ramsey** | Erdős #112: verified circulant witnesses improve k(4,4) from 34 to 40 and k(3,5) from 31 to 39. |
 | 🌌 | **High-proper-motion harvest** | Full-sky Gaia DR3 scan in 4,096 indexed chunks, then multi-epoch vetting. |
 | 🗂️ | **Discovery registry** | 8,000 sources scored and categorised, with attribution kept per entry. |
 | 🧾 | **LibrePhone record** | Clean-room ISA and format analysis; derived metadata only, never the blobs. |

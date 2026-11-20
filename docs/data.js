@@ -9,9 +9,9 @@ window.SITE_DATA = {
   },
   "stats": {
     "findings": 77,
-    "certificates": 190,
+    "certificates": 198,
     "certificatesByTrack": {
-      "math": 187,
+      "math": 195,
       "open-discovery-lab": 3
     },
     "tracks": 5,
@@ -601,9 +601,9 @@ window.SITE_DATA = {
       "link": "math/erdos614-fnk/results/ep614-results.md"
     },
     {
-      "title": "Erdős #112 — k(4,4) lower bound 40",
+      "title": "Erdős #112 — better bounds for k(4,4) and k(3,5)",
       "status": "open",
-      "detail": "Verified circulant witnesses on Z37 and Z39 improve the published bound from 34 to 40. The upper bound 50 stands; no circulant closes the gap.",
+      "detail": "Verified circulant witnesses raise k(4,4) from 34 to at least 40, and k(3,5) from 31 to at least 39. The brackets are now 40–50 and 39–55; no circulant closes either gap.",
       "link": "math/directed-ramsey/results/k112-2026-11-19.md"
     },
     {
@@ -1195,6 +1195,11 @@ window.SITE_DATA = {
   ],
   "commits": [
     {
+      "hash": "41b0b53",
+      "date": "2026-11-20",
+      "subject": "Prior art: record erdosproblemaday overlap, withdraw EP614 numeric-novelty claim"
+    },
+    {
       "hash": "fbe7701",
       "date": "2026-11-19",
       "subject": "site: add favicon to every page"
@@ -1218,11 +1223,6 @@ window.SITE_DATA = {
       "hash": "1eb6558",
       "date": "2026-11-19",
       "subject": "Erdos #112: improve k(4,4) lower bound 34 -> 40 with verified circulants"
-    },
-    {
-      "hash": "4d08f87",
-      "date": "2026-11-19",
-      "subject": "A385403: prove a(13)=9; EP614 Turan-oracle validation; Fano-free probe + corrections"
     }
   ]
 };

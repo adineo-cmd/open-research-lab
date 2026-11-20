@@ -1,0 +1,11 @@
+{
+ "n": 3,
+ "m": 5,
+ "N": 32,
+ "status": "UNKNOWN",
+ "wall_s": 243.38,
+ "n_subsets": 465,
+ "m_subsets": 31465,
+ "workers": 12,
+ "seed": 20261119
+}

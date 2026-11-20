@@ -27,11 +27,15 @@ def verify(d):
     def arc(u, v):
         return (v - u) % N in S
 
-    for T in itertools.combinations(range(N), n):
+    # A circulant is translation-invariant, so every subset can be shifted to
+    # one containing vertex 0; checking those is exhaustive and much faster.
+    for rest in itertools.combinations(range(1, N), n - 1):
+        T = (0,) + rest
         if not any(arc(u, v) or arc(v, u) for u, v in itertools.combinations(T, 2)):
             errs.append(f"independent {n}-set {T}")
             break
-    for T in itertools.combinations(range(N), m):
+    for rest in itertools.combinations(range(1, N), m - 1):
+        T = (0,) + rest
         for order in itertools.permutations(T):
             if all(arc(order[i], order[j])
                    for i in range(m) for j in range(i + 1, m)):

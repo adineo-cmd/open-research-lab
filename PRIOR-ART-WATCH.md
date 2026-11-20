@@ -55,8 +55,9 @@ Their 18 Nov 2026 headline
 verification of Kirtchakov's 245 GB proof of **k(3,4) = 21**: 445 formulas
 rebuilt to the recorded hash, 445/445 proofs accepted by cake_lpr, 307
 byte-identical. This corroborates the prior-art value in our catalog. We found
-no claim there about **k(4,4)**; our circulant witnesses at N=37 and N=39
-remain a bounded improvement with no novelty claim beyond the certificates.
+no claim there about **k(4,4)** or improved bounds for **k(3,5)**; our
+circulant witnesses (k(4,4) ≥ 40, k(3,5) ≥ 39) remain bounded improvements
+with no novelty claim beyond the certificates.
 
 ### A385403
 

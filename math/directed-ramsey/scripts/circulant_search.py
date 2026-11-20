@@ -29,18 +29,22 @@ def solve(n, m, N, tl=120.0, workers=6, seed=20261119):
         if s < t:
             mdl.Add(y[s] + y[t] <= 1)
 
-    # subsets containing vertex 0
-    subsets = []
-    for rest in itertools.combinations(range(1, N), m - 1):
-        subsets.append((0,) + rest)
+    # By translation symmetry it suffices to check subsets containing vertex 0.
+    # IMPORTANT: the independent-set constraint applies to n-subsets and the
+    # transitive-tournament constraint to m-subsets. Using m for both was a bug
+    # caught by the independent verifier on (3,5); n=m in the (4,4) cell, so
+    # those results were unaffected.
+    n_subsets = [(0,) + rest for rest in itertools.combinations(range(1, N), n - 1)]
+    m_subsets = [(0,) + rest for rest in itertools.combinations(range(1, N), m - 1)]
 
-    for T in subsets:
+    for T in n_subsets:
         # not independent: at least one arc among the pairs
         arcs = []
         for u, v in itertools.combinations(T, 2):
             arcs += [y[(v - u) % N], y[(u - v) % N]]
         mdl.AddBoolOr(arcs)
 
+    for T in m_subsets:
         # no transitive m-tournament: for each linear order of T, the
         # m(m-1)/2 "forward" arcs cannot all be present.
         for order in itertools.permutations(T):
@@ -57,7 +61,8 @@ def solve(n, m, N, tl=120.0, workers=6, seed=20261119):
     wall = round(time.time() - t0, 2)
     status = solver.StatusName(st)
     out = {"n": n, "m": m, "N": N, "status": status, "wall_s": wall,
-           "subsets": len(subsets), "workers": workers, "seed": seed}
+           "n_subsets": len(n_subsets), "m_subsets": len(m_subsets),
+           "workers": workers, "seed": seed}
     if status in ("OPTIMAL", "FEASIBLE"):
         S = sorted(s for s in range(1, N) if solver.Value(y[s]))
         out["S"] = S
