@@ -103,6 +103,11 @@ here used at most **4 workers** and caps ≤ **240 s** to avoid contention.
 
 ## 5. Verdict
 
+**Rule 0 update 2026-11-20:** web search is now available and found that
+Erdős Problem a Day had already computed 14 small exact f(n,k) values in July
+2026. This document remains validation only — and the parent results doc has
+withdrawn its numeric-novelty claim. See `PRIOR-ART-WATCH.md` at repo root.
+
 1. **f(10,3)=29 is INDEPENDENTLY CONFIRMED.** A separate maximization model
    built from the published Turán reduction (Cor. 4.6), with a different
    variable semantics and different constraints from the lab's solver, returns

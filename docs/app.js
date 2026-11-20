@@ -236,6 +236,8 @@
           '<a class="inline-link" href="' + esc(repoLink(x.link)) + '">Read the result</a></article>';
       }).join('');
     }
+    if (has('prior-art-summary')) el('prior-art-summary').textContent = D.priorArt.summary;
+    if (has('prior-art-link')) el('prior-art-link').href = repoLink(D.priorArt.link);
   }
 
   /* ---- librephone ---- */

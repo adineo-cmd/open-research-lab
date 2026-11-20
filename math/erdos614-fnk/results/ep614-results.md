@@ -28,8 +28,8 @@ but no k=1 certificates had actually been stored; the gap is closed as of
 |---|---|
 | 1 | closed form C(n,2) − ⌊n²/4⌋ (validated n=4..12) |
 | 2 | 4:2, 5:4, 6:8, 7:12, 8:17, 9:23, **10:29, 11:37** (2026-11-19; prior art — see below) |
-| 3 | 5:3, 6:7, 7:11, 8:15, 9:22, **10:29** (2026-11-19 NEW) |
-| 4 | 6:4, 7:9, 8:15, 9:21, **10:28** (2026-11-19 NEW) |
+| 3 | 5:3, 6:7, 7:11, 8:15, 9:22, **10:29** (2026-11-19 re-derived) |
+| 4 | 6:4, 7:9, 8:15, 9:21, **10:28** (2026-11-19 re-derived) |
 
 Bounds beyond (FEASIBLE, proven lower bound = solver's BestObjectiveBound;
 these are the ORIGINAL 2026-11-15 runs, superseded by the symmetry-broken
@@ -92,7 +92,14 @@ k=1 closed form at n=4..12 (9/9). For k=2, the new OPTIMAL values at n=10
 (29) and n=11 (37) independently match the published Turán oracle below.
 No new value was trusted without this gauntlet.
 
-### New exact values (OPTIMAL + witness, independently verified)
+### Small values re-derived with new certificates (OPTIMAL + witness)
+
+**Rule 0 correction 2026-11-20:** these values were originally labelled "NEW".
+A working web search found that Erdős Problem a Day had already computed 14
+small exact f(n,k) values with CP-SAT in July 2026 (see
+`PRIOR-ART-WATCH.md`). Their write-up does not list which cells, so overlap is
+possible but unproven. The "new exact value" claim is withdrawn; these are
+independent re-derivations with our own witnesses and certificates.
 
 | n | k | f(n,k) | status | wall_s | certificate |
 |---|---|---|---|---|---|
@@ -132,13 +139,18 @@ The 2026-11-15 audit was incomplete. The adversarial re-audit found:
 
 Therefore the k=2 extension is **downgraded from "new exact values" to
 "independent CP-SAT verification of published values, with witness
-graphs."** The only defensible novelty claim is:
-> first exact OPTIMAL certificates + witness graphs at f(10,3)=29 and
-> f(10,4)=28, via a symmetry-broken model — explicitly conditional on an
-> incomplete GitHub *code* search (sign-in wall) and a rate-limited mirror.
+graphs."**
 
-Per Rule 0, no OEIS filing is drafted for k=2. For k=3/k=4, re-run the audit
-if code search becomes available before filing anything.
+**Further correction 2026-11-20:** the 2026-11-15 audit was still incomplete.
+Erdős Problem a Day computed 14 small exact f(n,k) values in July 2026 and
+proved asymptotic orders for k in {1,2,3,4,5,7,8,13}. Our earlier "first exact
+certificates at f(10,3) and f(10,4)" claim is withdrawn for the same reason:
+the cells they computed are not enumerated in their write-up, so overlap
+cannot be excluded. We now claim only **independent re-derivation plus our
+own solver, oracle and certificates** — no numeric novelty.
+
+Per Rule 0, no OEIS filing is drafted. See `PRIOR-ART-WATCH.md` for queries,
+URLs and the standing instruction to re-audit before any future claim.
 
 ### Rule 1 fixes made this session
 

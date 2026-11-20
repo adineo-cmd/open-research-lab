@@ -111,6 +111,7 @@ def main():
         "projects": projects,
         "researchResults": content["researchResults"],
         "notClaimed": content["notClaimed"],
+        "priorArt": content["priorArt"],
         "method": content["method"],
         "findings": findings,
         "commits": recent_commits(),

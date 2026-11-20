@@ -76,11 +76,15 @@
   },
   "researchResults": [
     { "title": "A385403 — a(13) = 9 proved", "status": "proved", "detail": "An edge-minimal non-2-colourable 3-graph has minimum degree 2 and at most floor(3e/2) vertices; with the Fano plane as the only 7-edge case, 8 triples cannot force-cover [13]. a(14) remains bracketed 9 to 10.", "link": "math/property-b-covering/results/a385403-results.md" },
-    { "title": "Erdős #614 — f(10,3)=29 and f(10,4)=28", "status": "proved", "detail": "A symmetry-broken CP-SAT model reproduced every known value and settled two new cells. An independent Turán-oracle model re-derived f(10,3)=29 from the published reduction.", "link": "math/erdos614-fnk/results/ep614-results.md" },
+    { "title": "Erdős #614 — f(10,3)=29 and f(10,4)=28", "status": "re-derived", "detail": "A symmetry-broken CP-SAT model reproduced every known value and settled two further cells; an independent Turán-oracle model re-derived f(10,3)=29 from the published reduction. Numeric novelty is not claimed: an overlapping computation from July 2026 was found on 2026-11-20.", "link": "math/erdos614-fnk/results/ep614-results.md" },
     { "title": "Erdős #112 — k(4,4) lower bound 40", "status": "open", "detail": "Verified circulant witnesses on Z37 and Z39 improve the published bound from 34 to 40. The upper bound 50 stands; no circulant closes the gap.", "link": "math/directed-ramsey/results/k112-2026-11-19.md" },
     { "title": "Grid Ramsey — exact T3 and T4 frontier values", "status": "proved", "detail": "New exact OEIS values on A399621 and the first exact c=4 values, each with a witness and a double-recount certificate.", "link": "math/grid-ramsey/results/a399620_a399621.md" },
     { "title": "Gaia DR3 — 130,318 high-proper-motion sources", "status": "survey", "detail": "Full-sky harvest in 4,096 indexed chunks, multi-epoch vetting and a cross-check against named catalogues; candidates and query logs are retained.", "link": "astronomy/high-pm-survey/RESULTS.md" }
   ],
+  "priorArt": {
+    "summary": "A working web search found an overlapping project on 2026-11-20: Erdős Problem a Day has attempted 621 problems since July 2026, including a full #614 write-up with 14 exact small values and asymptotic orders for k in {1,2,3,4,5,7,8,13}. Our numeric-novelty claim for the #614 small values is withdrawn; the certificates and solvers remain our own artifacts.",
+    "link": "PRIOR-ART-WATCH.md"
+  },
   "notClaimed": [
     "Anything still bracketed is labelled as a bracket, never as a value.",
     "Where prior art already determines a number, the work is called verification, not discovery.",

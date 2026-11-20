@@ -19,7 +19,7 @@ window.SITE_DATA = {
     "repos": 29,
     "dateSpan": "2026-11-09 – 2026-11-19",
     "daysOfWork": 11,
-    "generated": "2026-11-19"
+    "generated": "2026-11-20"
   },
   "trackCounts": {
     "A": 32,
@@ -596,8 +596,8 @@ window.SITE_DATA = {
     },
     {
       "title": "Erdős #614 — f(10,3)=29 and f(10,4)=28",
-      "status": "proved",
-      "detail": "A symmetry-broken CP-SAT model reproduced every known value and settled two new cells. An independent Turán-oracle model re-derived f(10,3)=29 from the published reduction.",
+      "status": "re-derived",
+      "detail": "A symmetry-broken CP-SAT model reproduced every known value and settled two further cells; an independent Turán-oracle model re-derived f(10,3)=29 from the published reduction. Numeric novelty is not claimed: an overlapping computation from July 2026 was found on 2026-11-20.",
       "link": "math/erdos614-fnk/results/ep614-results.md"
     },
     {
@@ -626,6 +626,10 @@ window.SITE_DATA = {
     "OEIS filings are drafted in-repo and filed only after owner review.",
     "Firmware blobs are never committed — only derived metadata and the scripts that produced it."
   ],
+  "priorArt": {
+    "summary": "A working web search found an overlapping project on 2026-11-20: Erdős Problem a Day has attempted 621 problems since July 2026, including a full #614 write-up with 14 exact small values and asymptotic orders for k in {1,2,3,4,5,7,8,13}. Our numeric-novelty claim for the #614 small values is withdrawn; the certificates and solvers remain our own artifacts.",
+    "link": "PRIOR-ART-WATCH.md"
+  },
   "method": [
     {
       "step": "Prior art",
@@ -1191,6 +1195,16 @@ window.SITE_DATA = {
   ],
   "commits": [
     {
+      "hash": "fbe7701",
+      "date": "2026-11-19",
+      "subject": "site: add favicon to every page"
+    },
+    {
+      "hash": "4a78fc3",
+      "date": "2026-11-19",
+      "subject": "Site: multi-page professional portfolio, all adineo-cmd repos, mobile-first"
+    },
+    {
       "hash": "19d27d6",
       "date": "2026-11-19",
       "subject": "site: refresh generated register after consolidation commit"
@@ -1209,16 +1223,6 @@ window.SITE_DATA = {
       "hash": "4d08f87",
       "date": "2026-11-19",
       "subject": "A385403: prove a(13)=9; EP614 Turan-oracle validation; Fano-free probe + corrections"
-    },
-    {
-      "hash": "c99e027",
-      "date": "2026-11-19",
-      "subject": "EP614: symmetry-broken solver, exact f(10,3)=29 / f(10,4)=28, independent verifier + prior-art correction"
-    },
-    {
-      "hash": "7aeb3b8",
-      "date": "2026-11-16",
-      "subject": "Role note: open-research-lab = math/other fields (PRIORITY 2) in the two-machine LibrePhone-first program; open items pointer"
     }
   ]
 };

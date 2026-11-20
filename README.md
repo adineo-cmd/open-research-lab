@@ -137,6 +137,15 @@ Other repositories represented on the website:
 [LibrePhone Blob Research](https://github.com/adineo-cmd/librephone-blob-research)
 and the [adineo-cmd2 apps](https://github.com/adineo-cmd2).
 
+## Prior-art watch
+
+[`PRIOR-ART-WATCH.md`](PRIOR-ART-WATCH.md) is a dated record of outside work that
+overlaps the lab's claims, with the exact queries and URLs. The 2026-11-20 entry
+found that *Erdős Problem a Day* had already computed small exact f(n,k) values
+in July 2026, so the #614 numeric-novelty claim was withdrawn in place. The site's
+Research page carries a summary. Do not make a novelty claim without re-running
+those queries first.
+
 ## What is not claimed
 
 The record matters as much as the result. Several entries are corrections —
